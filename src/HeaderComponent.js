@@ -2,6 +2,8 @@ import React from 'react'
 import './HeaderComponent.css';
 
 function HeaderComponent() {
+  const [activeDropdown, setActiveDropdown] = useState(-1);
+
   const navigationItems = [
     {
       label: 'Nav 1',
