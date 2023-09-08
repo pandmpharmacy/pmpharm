@@ -1,46 +1,35 @@
-import React, { useState } from 'react';
-import logo from '../src/PMLOGO.png'
-import './HeaderComponent.css';
-function HeaderComponent() {
-  const [activeDropdown, setActiveDropdown] = useState(-1);
+import React from "react";
+import logo from "../src/PMLOGO.png";
+import "./HeaderComponent.css";
 
+function HeaderComponent() {
   const navigationItems = [
-    {
-      label: 'Nav 1',
-      dropdown: ['Option 1.1', 'Option 1.2']
-    },
-    {
-      label: 'Nav 2',
-      dropdown: ['Option 2.1', 'Option 2.2']
-    },
-    // Add more navigation items as needed
+    "Products",
+    "Refill",
+    "Retail Pharmacy",
+    "Compounding Pharmacy",
+    "Medical & ADA Supplies",
+    "About",
+    "Contact Us",
+    // ... Add more navigation items as needed
   ];
+
   return (
-    <header className="header-container">
-    <img src={logo} alt="logo" className="logo" />
-    <nav className="nav-section">
-      {navigationItems.map((navItem, index) => (
-        <div
-          className="nav-item"
-          onMouseEnter={() => setActiveDropdown(index)}
-          onMouseLeave={() => setActiveDropdown(-1)}
-          key={index}
-        >
-          {navItem.label}
-          {activeDropdown === index && (
-            <div className="dropdown">
-              {navItem.dropdown.map((option, optIndex) => (
-                <div className="dropdown-item" key={optIndex}>
-                  {option}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      ))}
-    </nav>
-  </header>
-  )
+    <div className="header_wrapper">
+      <div className="logo_div">
+        <img src={logo} alt="logo" className="logo" />
+      </div>
+      <header className="header-container">
+        <nav className="nav-section">
+          {navigationItems.map((navItem, index) => (
+            <h2 className="nav-item" key={index}>
+              {navItem}
+            </h2>
+          ))}
+        </nav>
+      </header>
+    </div>
+  );
 }
 
-export default HeaderComponent
+export default HeaderComponent;

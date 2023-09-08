@@ -1,9 +1,15 @@
 import React from "react";
 import "./FooterComponent.css";
+import logo from "../src/PMLOGO.png";
 
 const navigationItems = [
-  "Nav 1",
-  "Nav 2",
+  "Products",
+  "Refill",
+  "Retail Pharmacy",
+  "Compounding Pharmacy",
+  "Medical & ADA Supplies",
+  "About",
+  "Contact Us",
   // ... Add more navigation items as needed
 ];
 
@@ -12,11 +18,7 @@ function FooterComponent() {
     <>
       <footer className="footer-container">
         <div className="footer-column">
-          <img
-            src="path_to_logo_image.jpg"
-            alt="logo"
-            className="footer-logo"
-          />
+          <img src={logo} alt="logo" className="footer-logo" />
         </div>
 
         <div className="footer-column">
