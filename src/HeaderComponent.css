@@ -3,7 +3,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #333;
+  background: #008238;
+  margin: 20px;
+  border-radius: 10px;
+  /* border-color:  #008238; */
+  /* border-bottom: 10px; */
+  /* border-width: 10px; */
 }
 
 .logo {

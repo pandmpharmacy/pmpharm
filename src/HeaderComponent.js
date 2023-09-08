@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import logo from '../src/PMLOGO.png'
 import './HeaderComponent.css';
-
 function HeaderComponent() {
   const [activeDropdown, setActiveDropdown] = useState(-1);
 
@@ -17,7 +17,7 @@ function HeaderComponent() {
   ];
   return (
     <header className="header-container">
-    <img src="path_to_logo_image.jpg" alt="logo" className="logo" />
+    <img src={logo} alt="logo" className="logo" />
     <nav className="nav-section">
       {navigationItems.map((navItem, index) => (
         <div
