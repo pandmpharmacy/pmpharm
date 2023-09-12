@@ -12,15 +12,7 @@ function BodyComponent() {
     "Wound Care",
     "Hormone Replacement"
   ];
-  const Compounding_specialties = [
-    "Dermatology",
-    "Pets",
-    "Podiatry",
-    "Pediatrics",
-    "Sports Medicine",
-    "Wound Care",
-    "Hormone Replacement Therapy"
-  ];
+
   return (
     <div className="body-wrapper">
 
@@ -41,7 +33,7 @@ function BodyComponent() {
           {specialties.map((specialty, index) => (
             <div className="body_box" key={index}>
               <h4>{specialty}</h4>
-              <img src={logo} alt={`Image for ${specialty}`} className="box_image" />
+              <img src={logo} alt={`${specialty}`} className="box_image" />
               <button className="box_button">More</button>
             </div>
           ))}
