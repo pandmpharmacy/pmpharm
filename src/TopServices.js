@@ -5,27 +5,24 @@ function TopServices() {
     return (
         <div className="service-container">
             <div className="service-box">
-            <h3>
-                    P&M Pharmacy is a full service Greenacres Pharmacy / Drug Store. We
-                    serve Lake Worth, Wellington, Atlantis, Greenacres, Boynton Beach, West
-                    Palm Beach, Lantana and all surrounding areas in Florida.
-                </h3>
+                <h1>Retail Pharmacy</h1>
+                <h2 id="alert">Learn More</h2>
             </div>
             <div className="service-box">
-                <h1>Welcome to P & M Pharmacy for all your medication needs</h1>
+                <h1>Compounding Services</h1>
+                <h2 id="alert">Learn More</h2>
             </div>
             <div className="service-box">
-                <h2 id="alert">The Most Trusted Compounding Pharmacy in West Palm Beach.</h2>
-                <h3>
-                    P&M Pharmacy is a full service Greenacres Pharmacy / Drug Store. We
-                    serve Lake Worth, Wellington, Atlantis, Greenacres, Boynton Beach, West
-                    Palm Beach, Lantana and all surrounding areas in Florida.
-                </h3>
+                <h1>
+                    Medical Equipment
+                </h1>
+                <h2 id="alert">Learn More</h2>
             </div>
             <div className="service-box">
-                P&M Pharmacy is a full service Greenacres Pharmacy / Drug Store. We
-                serve Lake Worth, Wellington, Atlantis, Greenacres, Boynton Beach, West
-                Palm Beach, Lantana and all surrounding areas in Florida.
+                <h1>
+                    Pet Pharmacy
+                </h1>
+                <h2 id="alert">Learn More</h2>
             </div>
         </div>
     );

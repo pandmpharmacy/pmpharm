@@ -21,7 +21,9 @@ function BodyComponent() {
           <img src={logo} alt="" className="featured_image" />
         </div>
         <div className="featured_box" >
-          <h1>Welcome to P & M Pharmacy for all your medication needs</h1>
+          <h1>Welcome to P & M Pharmacy for all your medication needs.
+          </h1>
+          <h1>Contact <br></br> 561-660-8650</h1>
         </div>
         <div className="featured_box" >
           <h2 id="alert">The Most Trusted Compounding Pharmacy in West Palm Beach.</h2>
