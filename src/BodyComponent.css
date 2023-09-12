@@ -1,14 +1,94 @@
 .body-container {
-  font-size: 24px; /* Adjust size as needed */
   font-weight: bold;
   text-align: center;
-  margin-top: 50px;
-  background: #e5e9e7;
-  margin: 20px;
+  margin: 50px auto;
+  /* Center the container horizontally and add top margin */
+
   border-radius: 10px;
-  color: #eeee;
-  background-color: #616C4E;
+  color: #616C4E;
+  border-color: #616C4E;
   padding: 30px;
-  /* box-shadow property */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(35, 118, 59, 0.3);
+
+}
+.featured_image{
+  width: 500px;
+}
+.body-container h1 {
+  font-size: 40px;
+}
+
+.body-container h2 {
+  font-size: 32px;
+}
+
+.body-container h3 {
+  font-size: 24px;
+}
+
+#alert {
+  color: rgba(184, 3, 1, 0.7);
+
+}
+
+.body-wrapper {
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body-speacialtiy {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.body-speacialtiy h1 {
+  color: #616C4E;
+}
+
+.body-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.body_boxes {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+.body_box {
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(35, 118, 59, 0.3);
+  background-color: rgba(254, 255, 255, 0.981);
+  /* opacity: 0.5; */
+  border-radius: 10px;
+  text-align: center;
+}
+
+.body_box h4 {
+  color: #616C4E;
+}
+
+.box_image {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  display: block;
+}
+
+.box_button {
+  background-color: #616C4E;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box_button:hover {
+  background-color: #0056b3;
 }

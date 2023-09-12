@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../src/PMLOGO.png";
 import "./HeaderComponent.css";
 
 function HeaderComponent() {
   const navigationItems = [
     "Products",
-    "Refill",
-    "Retail Pharmacy",
-    "Compounding Pharmacy",
-    "Medical & ADA Supplies",
     "About",
     "Contact Us",
     // ... Add more navigation items as needed
   ];
+
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
 
   return (
     <div className="header_wrapper">
@@ -21,11 +23,27 @@ function HeaderComponent() {
       </div>
       <header className="header-container">
         <nav className="nav-section">
-          {navigationItems.map((navItem, index) => (
-            <h2 className="nav-item" key={index}>
-              {navItem}
-            </h2>
-          ))}
+          <ul className="nav-list">
+            {navigationItems.map((navItem, index) => (
+              <li className="nav-item" key={index}>
+                {navItem}
+              </li>
+            ))}
+            {/* Toggle button for the dropdown */}
+            <li
+              className={`nav-item more-button ${showDropdown ? "active" : ""}`}
+              onClick={toggleDropdown}
+            >
+              More
+              <ul className={`dropdown ${showDropdown ? "show" : ""}`}>
+                {navigationItems.map((navItem, index) => (
+                  <li className="dropdown-item" key={index}>
+                    {navItem}
+                  </li>
+                ))}
+              </ul>
+            </li>
+          </ul>
         </nav>
       </header>
     </div>

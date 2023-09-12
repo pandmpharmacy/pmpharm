@@ -23,9 +23,10 @@ function FooterComponent() {
 
         <div className="footer-column">
           <h3>Contact Us</h3>
-          <p>Address: 1234 Pharmacy St.</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Email: contact@pmpharmacy.com</p>
+          <p>Address: 7753 Lake Worth Rd
+            Lake Worth, FL 33467</p>
+          <p>Phone: (561) 660-8650</p>
+          <p>Email: support@pandmpharmacy.com</p>
         </div>
 
         <div className="footer-column">
@@ -46,9 +47,9 @@ function FooterComponent() {
           </ul>
         </div>
       </footer>
-      <div className="copyright">
+      {/* <div className="copyright">
         © {new Date().getFullYear()} P & M Pharmacy. All rights reserved.
-      </div>
+      </div> */}
     </>
   );
 }
