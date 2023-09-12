@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../src/PMLOGO.png";
 import "./TopServices.css";
 
 function TopServices() {
