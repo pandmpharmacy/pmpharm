@@ -7,8 +7,8 @@
 }
 
 .header_wrapper {
-  position: fixed;
-  top: 01;
+  position: sticky; /* Change from fixed to sticky */
+  top: 0; /* Stick to the top of the viewport */
   left: 0;
   right: 0;
   display: flex;
@@ -16,11 +16,13 @@
   align-items: center;
   padding: 10px;
   background-color: #fff;
-  /* flex-direction: column; */
-  z-index: 1000; /* Make sure it appears above other content */
+  z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.header_with_shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .logo {
   max-width: 100px;

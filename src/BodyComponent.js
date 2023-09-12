@@ -1,6 +1,7 @@
 import React from "react";
 import "./BodyComponent.css";
 import logo from "../src/PMLOGO.png";
+import TopServices from "./TopServices";
 
 function BodyComponent() {
   const specialties = [
@@ -15,20 +16,26 @@ function BodyComponent() {
 
   return (
     <div className="body-wrapper">
-
-
       <div className="body-container">
-        <img src={logo} alt="" className="featured_image" />
-        <h1>Welcome to P & M Pharmacy for all your medication needs</h1>
-        <h2 id="alert">The Most Trusted Compounding Pharmacy in West Palm Beach.</h2>
-        <h3>
-          P&M Pharmacy is a full service Greenacres Pharmacy / Drug Store. We
-          serve Lake Worth, Wellington, Atlantis, Greenacres, Boynton Beach, West
-          Palm Beach, Lantana and all surrounding areas in Florida.
-        </h3>
+        <div className="featured_box">
+          <img src={logo} alt="" className="featured_image" />
+        </div>
+        <div className="featured_box" >
+          <h1>Welcome to P & M Pharmacy for all your medication needs</h1>
+        </div>
+        <div className="featured_box" >
+          <h2 id="alert">The Most Trusted Compounding Pharmacy in West Palm Beach.</h2>
+          <h3>
+            P&M Pharmacy is a full service Greenacres Pharmacy / Drug Store. We
+            serve Lake Worth, Wellington, Atlantis, Greenacres, Boynton Beach, West
+            Palm Beach, Lantana and all surrounding areas in Florida.
+          </h3>
+        </div>
       </div>
+      <TopServices />
+
       <div className="body-speacialtiy">
-        <h1>Our Compounding Specialty</h1>
+        <h1>Our Compounding Specialties</h1>
         <div className="body_boxes">
           {specialties.map((specialty, index) => (
             <div className="body_box" key={index}>

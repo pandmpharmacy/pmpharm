@@ -8,12 +8,26 @@
   color: #616C4E;
   border-color: #616C4E;
   padding: 30px;
-  box-shadow: 0 4px 8px rgba(35, 118, 59, 0.3);
+  /* box-shadow: 0 4px 8px rgba(35, 118, 59, 0.3); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Create three equal-width columns */
+  gap: 20px;
+  /* Add some space between columns */
 
 }
-.featured_image{
+
+.featured_image {
   width: 500px;
 }
+
+.featured_box {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(35, 118, 59, 0.3);
+  background-color: rgba(254, 255, 255, 0.981);
+
+}
+
 .body-container h1 {
   font-size: 40px;
 }
@@ -35,7 +49,10 @@
   max-width: 1450px;
   margin-left: auto;
   margin-right: auto;
+
 }
+
+
 
 .body-speacialtiy {
   text-align: center;
@@ -66,6 +83,13 @@
   /* opacity: 0.5; */
   border-radius: 10px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .body-container {
+    grid-template-columns: 1fr;
+    /* Display one column for small screens */
+  }
 }
 
 .body_box h4 {
