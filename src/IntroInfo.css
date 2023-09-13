@@ -26,11 +26,13 @@
   display: block;
 }
 
-.service-box:hover {
-  transform: scale(1.15); /* This doubles the size */
-  /* If you want the image to grow from the center */
+/* .service-box:hover {
+  transform: scale(1.15);  This doubles the size 
+   If you want the image to grow from the center 
   transform-origin: center;
-} 
+}  */
+
+
 .box_image1 {
   font-size: 50px;
 }

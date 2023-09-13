@@ -40,7 +40,8 @@ function BodyComponent() {
           <img src={logo} alt="" className="featured_image" />
         </div>
       </div>
-
+      
+      <h5>At P&M Pharmacy, we believe in putting your health and well-being first, and our online platform is designed with your convenience in mind.</h5>
       <TopServices />
       <IntroInfo />
 
