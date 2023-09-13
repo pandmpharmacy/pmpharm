@@ -1,6 +1,6 @@
 import React from "react";
 import "./TopServices.css";
-import logo from "../src/PMLOGO.png";
+/*import logo from "../src/PMLOGO.png"; */
 
 function TopServices() {
   return (
@@ -14,22 +14,22 @@ function TopServices() {
       </div>
       <div>
         <div className="service-box">
-          <img src={logo} alt="" className="box_image" />
-          <h4>Retail Pharmacy</h4>
+        <h1 className="box_image1">&#x1FAD9;</h1>
+          <h4>Compounding Services</h4>
           {/* <button className="box_button">More</button> */}
         </div>
       </div>
       <div>
         <div className="service-box">
-          <img src={logo} alt="" className="box_image" />
-          <h4>Retail Pharmacy</h4>
+        <h1 className="box_image1">&#x1F415;</h1>
+          <h4>Pet Pharmacy</h4>
           {/* <button className="box_button">More</button> */}
         </div>
       </div>
       <div>
         <div className="service-box">
-          <img src={logo} alt="" className="box_image" />
-          <h4>Retail Pharmacy</h4>
+        <h1 className="box_image1">&#x1FA7C;</h1>
+          <h4>Medical Equipment</h4>
           {/* <button className="box_button">More</button> */}
         </div>
       </div>
