@@ -2,6 +2,7 @@ import React from "react";
 import "./BodyComponent.css";
 import logo from "../src/PMLOGO.png";
 import TopServices from "./TopServices";
+import IntroInfo from "./IntroInfo";
 
 function BodyComponent() {
   const specialties = [
@@ -39,7 +40,11 @@ function BodyComponent() {
           <img src={logo} alt="" className="featured_image" />
         </div>
       </div>
+
       <TopServices />
+      <IntroInfo />
+
+
 
       <div className="body-speacialtiy">
         <h1>Our Compounding Specialties</h1>

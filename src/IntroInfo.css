@@ -1,0 +1,36 @@
+.service-box {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(35, 118, 59, 0.3);
+  background-color: rgba(254, 255, 255, 0.981);
+  font-weight: bold;
+  text-align: center;
+  color: #616c4e;
+  border-color: #616c4e;
+  padding: 30px;
+}
+
+.service-container {
+  margin: 50px auto;
+  /* Center the container horizontally and add top margin */
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create four equal-width columns */
+  gap: 20px; /* Add some space between columns */
+}
+.service-box {
+  cursor: pointer;
+  transition: transform 0.6s ease;
+  /* width: 100px; */
+  /* height: 100px; */
+  margin: 10px;
+  display: block;
+}
+
+.service-box:hover {
+  transform: scale(1.15); /* This doubles the size */
+  /* If you want the image to grow from the center */
+  transform-origin: center;
+} 
+.box_image1 {
+  font-size: 50px;
+}
