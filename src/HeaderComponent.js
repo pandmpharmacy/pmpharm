@@ -4,7 +4,11 @@ import "./HeaderComponent.css";
 
 function HeaderComponent() {
   const navigationItems = [
-    "Products",
+    "Retail Pharmacy",
+    "Compounding Humans",
+    "Compounding Pets",
+    "Immunization",
+    "Medical Equipment",
     "About",
     "Contact Us",
     // ... Add more navigation items as needed

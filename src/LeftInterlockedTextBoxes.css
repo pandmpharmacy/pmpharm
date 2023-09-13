@@ -1,0 +1,31 @@
+.interlocked-container {
+    display: flex;
+    justify-content: space-between; /* Distribute the boxes to the left and right */
+    align-items: center;
+    height: 300px;
+  }
+  
+  .box {
+    flex: 1; /* Let the boxes expand to fill the available space */
+    height: 150px;
+    background-color: #fff; /* Set background color to white */
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 16px;
+  }
+  
+  .box1 {
+    margin-right: -50px; /* Push box 1 to the left by 50px */
+  }
+  
+  .box2 {
+    margin-top: 100px; /* Drop box 2 by 100px */
+    z-index: 2; /* Place it above box 1 */
+  }
+  
+  .box p {
+    color: #000; /* Set text color to black */
+    margin: 0;
+    padding: 0;
+  }
+  

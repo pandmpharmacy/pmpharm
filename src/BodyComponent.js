@@ -3,6 +3,9 @@ import "./BodyComponent.css";
 import logo from "../src/PMLOGO.png";
 import TopServices from "./TopServices";
 import IntroInfo from "./IntroInfo";
+import LeftInterlockedTextBoxes from './LeftInterlockedTextBoxes';
+/*import RightInterlockedTextBoxes from "./RightInterlockedTextBoxes"; */
+/* import RightInterlockedTextBoxes from "./RightInterlockedTextBoxes"; */
 
 function BodyComponent() {
   const specialties = [
@@ -41,11 +44,11 @@ function BodyComponent() {
         </div>
       </div>
       
-      <h5>At P&M Pharmacy, we believe in putting your health and well-being first, and our online platform is designed with your convenience in mind.</h5>
       <TopServices />
+      <h5>At P&M Pharmacy, we believe in putting your health and well-being first, and our online platform is designed with your convenience in mind.</h5>
+
       <IntroInfo />
-
-
+      <LeftInterlockedTextBoxes />
 
       <div className="body-speacialtiy">
         <h1>Our Compounding Specialties</h1>
@@ -62,5 +65,4 @@ function BodyComponent() {
     </div>
   );
 }
-
 export default BodyComponent;
