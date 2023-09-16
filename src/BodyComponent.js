@@ -1,67 +1,34 @@
 import React from "react";
 import "./BodyComponent.css";
-import logo from "../src/PMLOGO.png";
 import TopServices from "./TopServices";
 import IntroInfo from "./IntroInfo";
-import LeftInterlockedTextBoxes from './LeftInterlockedTextBoxes';
-/*import RightInterlockedTextBoxes from "./RightInterlockedTextBoxes"; */
-/* import RightInterlockedTextBoxes from "./RightInterlockedTextBoxes"; */
-
+import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";
+import RightInterlockedTextBoxes from "./RightInterlockedTextBoxes";
+import Featured from "./Featured";
+import Speciality from "./Speciality";
 function BodyComponent() {
-  const specialties = [
-    "Dermatology",
-    "Vets/Pets",
-    "Podiatry",
-    "Pediatrics",
-    "Sports Medicine",
-    "Wound Care",
-    "Hormone Replacement",
-  ];
+  
+  const first_intro =
+    "At P&M Pharmacy, we believe in putting your health and well-being first, and our online platform is designed with your convenience in mind.";
+  const second_intro =
+    "Whether you're looking for prescription medications, over-the-counter remedies, or expert health advice, you've come to the right place.";
+  const third_intro =
+    "Our team of experienced pharmacists and healthcare professionals is here to support you on your journey to better health.";
+  const fourth_intro =
+    "We look forward to serving you with the same dedication and care that has made us a community favorite.";
 
   return (
     <div className="body-wrapper">
       <div className="body-container">
-        <div className="featured_box">
-          <img src={logo} alt="" className="featured_image" />
-        </div>
-        <div id="featured_text" className="featured_box">
-          <h1>Welcome to P & M Pharmacy for all your medication needs.</h1>
-          <h3 id="alert">
-            The Most Trusted Compounding Pharmacy in West Palm Beach.
-          </h3>
-          <p>
-            P&M Pharmacy is a full service Greenacres Pharmacy / Drug Store. We
-            serve Lake Worth, Wellington, Atlantis, Greenacres, Boynton Beach,
-            West Palm Beach, Lantana and all surrounding areas in Florida.
-          </p>
-          <h3>
-            Contact <br></br> 561-660-8650
-          </h3>
-        </div>
-
-        <div className="featured_box">
-          <img src={logo} alt="" className="featured_image" />
-        </div>
+        <Featured />
       </div>
-      
+      <LeftInterlockedTextBoxes message={first_intro} />
       <TopServices />
-      <h5>At P&M Pharmacy, we believe in putting your health and well-being first, and our online platform is designed with your convenience in mind.</h5>
-
+      <RightInterlockedTextBoxes message={second_intro} />
       <IntroInfo />
-      <LeftInterlockedTextBoxes />
-
-      <div className="body-speacialtiy">
-        <h1>Our Compounding Specialties</h1>
-        <div className="body_boxes">
-          {specialties.map((specialty, index) => (
-            <div className="body_box" key={index}>
-              <h4>{specialty}</h4>
-              <img src={logo} alt={`${specialty}`} className="box_image" />
-              <button className="box_button">More</button>
-            </div>
-          ))}
-        </div>
-      </div>
+      <LeftInterlockedTextBoxes message={third_intro} />
+      <Speciality />
+      <RightInterlockedTextBoxes message={fourth_intro} />
     </div>
   );
 }

@@ -3,17 +3,15 @@ import BodyComponent from "./BodyComponent";
 import FooterComponent from "./FooterComponent";
 import HeaderComponent from "./HeaderComponent";
 import LeftInterlockedTextBoxes from './LeftInterlockedTextBoxes';
-import RightInterlockedTextBoxes from './LeftInterlockedTextBoxes';
+import RightInterlockedTextBoxes from './RightInterlockedTextBoxes';
 
 
 function App() {
-  return (
+return (
     <div className="App">
       <HeaderComponent />
       <BodyComponent />
       <FooterComponent />
-      <LeftInterlockedTextBoxes />
-      <RightInterlockedTextBoxes />
     </div>
   );
 }

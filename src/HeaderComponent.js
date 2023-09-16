@@ -73,6 +73,7 @@ function HeaderComponent() {
           </ul>
         </nav>
       </header>
+      
     </div>
   );
 }
