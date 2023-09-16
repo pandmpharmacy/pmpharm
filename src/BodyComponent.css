@@ -34,10 +34,13 @@
 .body-speacialtiy {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .body-speacialtiy h1 {
   color: #616c4e;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .body-container {
