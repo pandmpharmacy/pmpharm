@@ -1,4 +1,9 @@
 /* Global Styles */
+.contact-link {
+  color: #fdfcfc; /* Set your desired color here */
+  text-decoration: none; /* Remove underline */
+}
+
 .footer-container {
   background-color: #a90b0b;
   color: #fff;
