@@ -56,13 +56,15 @@ function HeaderComponent() {
             {/* Integrate the HamburgerMenu component */}
             <HamburgerMenu isOpen={showMobileMenu} toggleMenu={toggleMobileMenu} />
           </div>
-          <ul className={`nav-list ${showMobileMenu ? "show" : ""}`}>
-            {navigationItems.map((navItem, index) => (
-              <li className="nav-item" key={index}>
-                {navItem}
-              </li>
-            ))}
-          </ul>
+          {showMobileMenu ? (
+            <ul className="nav-list">
+              {navigationItems.map((navItem, index) => (
+                <li className="nav-item" key={index}>
+                  {navItem}
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </nav>
       </header>
     </div>
