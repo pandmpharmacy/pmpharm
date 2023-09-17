@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../src/PMLOGO.png";
 import "./HeaderComponent.css";
-import HamburgerMenu from './HamburgerMenu'; // Import the HamburgerMenu component
 
 function HeaderComponent() {
   const navigationItems = [
@@ -51,10 +50,7 @@ function HeaderComponent() {
       </div>
       <header className="header-container">
         <nav className="nav-section">
-          {/* Hamburger menu for mobile */}
           <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
-            {/* Integrate the HamburgerMenu component */}
-            <HamburgerMenu isOpen={showMobileMenu} toggleMenu={toggleMobileMenu} />
           </div>
           {showMobileMenu ? (
             <ul className="nav-list">
