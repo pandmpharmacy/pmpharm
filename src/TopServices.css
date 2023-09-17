@@ -1,30 +1,45 @@
+/* Base styles for mobile devices */
 .service-box {
   border-radius: 10px;
   background-color: rgba(254, 255, 255, 0.981);
-  border: 2px solid #eeeeeeb5 ;
+  border: 2px solid #eeeeeeb5;
   font-weight: bold;
   text-align: center;
   color: #616c4e;
-  padding: 30px;
+  padding: 20px; /* Reduced padding for mobile */
 }
 
 .service-container {
-  margin: 50px auto;
-  /* Center the container horizontally and add top margin */
+  margin: 20px auto; /* Reduced margin for mobile */
   border-radius: 10px;
   display: grid;
-  border-width: 1px;
-
-  grid-template-columns: repeat(4, 1fr); /* Create four equal-width columns */
-  gap: 20px; /* Add some space between columns */
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 10px; /* Reduced gap for mobile */
 }
 
-
+/* Hover effect for mobile */
 .service-box:hover {
-  /* transform: scale(1.15); /* This doubles the size */
-  /* If you want the image to grow from the center */
   box-shadow: 0 4px 8px rgba(107, 109, 107, 0.746);
 }
+
 .box_image1 {
-  font-size: 50px;
+  font-size: 30px; /* Adjusted font size for mobile */
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  /* Adjust styles for screens with a minimum width of 768px */
+  .service-box {
+    padding: 30px; /* Restore padding for larger screens */
+  }
+
+  .service-container {
+    grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    margin: 50px auto; /* Restore margin for larger screens */
+    gap: 20px; /* Restore gap for larger screens */
+  }
+
+  .box_image1 {
+    font-size: 50px; /* Restore font size for larger screens */
+  }
 }

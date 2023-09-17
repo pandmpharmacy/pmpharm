@@ -1,54 +1,61 @@
+/* Base styles for mobile devices */
 .featured_container {
   font-weight: bold;
   text-align: center;
-  margin: 50px auto;
-  /* Center the container horizontally and add top margin */
-
+  margin: 20px auto; /* Reduced margin for mobile */
   border-radius: 10px;
   color: #616c4e;
   border-color: #616c4e;
-  padding: 30px;
-  /* box-shadow: 0 4px 8px rgba(35, 118, 59, 0.3); */
+  padding: 20px; /* Reduced padding for mobile */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Create three equal-width columns */
-  gap: 20px;
-  /* Add some space between columns */
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 10px; /* Reduced gap for mobile */
 }
-.featured_header{
+
+.featured_header {
   background: #616c4e;
   margin-top: 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 10px;
-  color: #ffff;
-
+  color: #fff; /* Corrected color value for white text */
 }
-.featured_footer{
+
+.featured_footer {
   background: #616c4e;
   margin-bottom: 0px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 10px;
-  color: #ffff;
+  color: #fff; /* Corrected color value for white text */
 }
+
 #featured_text p {
   font-family: 'Poppins', sans-serif;
-
 }
+
 .featured_box img {
-  width: 250px;
-}
-#featured_text {
+  max-width: 100%; /* Ensure images are responsive */
 }
 
-.featured_image {
-  width: 350px;
-}
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  /* Adjust styles for screens with a minimum width of 768px */
+  .featured_container {
+    padding: 30px; /* Restore padding for larger screens */
+    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    margin: 50px auto; /* Restore margin for larger screens */
+    gap: 20px; /* Restore gap for larger screens */
+  }
 
-.featured_box {
-  border-radius: 10px;
-  /* box-shadow: 0 4px 8px rgba(35, 118, 59, 0.3); */
-  border: 2px solid #eeeeeeb5;
-  background-color: rgba(254, 255, 255, 0.981);
+  .featured_box {
+    border-radius: 10px;
+    border: 2px solid #eeeeeeb5;
+    background-color: rgba(254, 255, 255, 0.981);
+    /* Restore box-shadow if needed */
+  }
+
+  .featured_image {
+    width: 350px; /* Adjusted width for larger screens */
+  }
 }
