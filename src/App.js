@@ -5,6 +5,10 @@ import BodyComponent from "./BodyComponent";
 import Compounding from "./Compounding";
 import FooterComponent from "./FooterComponent";
 import HeaderComponent from "./HeaderComponent";
+import RetailPharm from './RetailPharm';
+import PetPharm from './PetPharm';
+import HumanCompounding from './HumanCompounding';
+import PetCompunding from './PetCompunding';
 
 function App() {
   return (
@@ -15,11 +19,11 @@ function App() {
         {/* Routes go here */}
         <Routes>
           <Route path="/" element={<BodyComponent />} />
-
-          {/* SO WHEN YOU CREATE A NEW FILE YOU CAN PLACE THIS HERE IN BETWEEN THE <ROUTES></ROUTES> AND attach the path to it 
-          so for here if you go localhost:3000/compounding.  */}
-          
           <Route path="/compounding" element={<Compounding />} />
+          <Route path="/retail" element={<RetailPharm />} />
+          <Route path="/pet" element={<PetPharm />} />
+          <Route path="/retail-compounding" element={<HumanCompounding />} />
+          <Route path="/pet-compounding" element={<PetCompunding />} />
         </Routes>
         
         <FooterComponent />
