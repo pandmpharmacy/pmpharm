@@ -1,7 +1,6 @@
 import React from "react";
 import "./BodyComponent.css";
 import TopServices from "./TopServices";
-import IntroInfo from "./IntroInfo";
 import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";
 import RightInterlockedTextBoxes from "./RightInterlockedTextBoxes";
 import Featured from "./Featured";
@@ -25,7 +24,6 @@ function BodyComponent() {
       <TopServices />
       <LeftInterlockedTextBoxes message={first_intro} />
       <RightInterlockedTextBoxes message={second_intro} />
-      <IntroInfo />
       <LeftInterlockedTextBoxes message={third_intro} />
       <Speciality />
       <RightInterlockedTextBoxes message={fourth_intro} />
