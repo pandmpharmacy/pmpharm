@@ -1,0 +1,104 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Define styles for the body container */
+.body-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Header styles */
+.body-container h1 {
+    font-size: 2rem; /* Adjust font size for mobile */
+}
+
+/* Alert styles */
+#alert {
+    color: rgba(184, 3, 1, 0.7);
+}
+
+/* Container for the main content */
+.body-wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Specialty section styles */
+.body-specialty {
+    text-align: center;
+    margin: 20px 0 50px; /* Use shorthand margin property */
+}
+
+.body-specialty h1 {
+    color: #616c4e;
+    font-size: 2.25rem; /* Increase font size for emphasis */
+}
+
+/* Boxes section styles */
+.body-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.body-box {
+    flex: 0 0 100%; /* One box per row on all screens */
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #eee;
+    background-color: rgba(254, 255, 255, 0.98);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Box hover effect */
+@media (hover: hover) {
+    .body-box:hover {
+        box-shadow: 0 4px 8px rgba(107, 109, 107, 0.746);
+    }
+}
+
+.body-box h4 {
+    color: #616c4e;
+}
+
+.box_image {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+}
+
+.box_button {
+    background-color: rgba(184, 3, 1, 0.7);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box_button:hover {
+    background-color: #616c4e;
+}
+
+/* Media Query for screens larger than 768px */
+@media (min-width: 769px) {
+    .body-box {
+        flex: 0 0 calc(33.3333% - 20px); /* Three boxes per row on larger screens */
+    }
+}

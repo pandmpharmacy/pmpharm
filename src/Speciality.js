@@ -6,20 +6,15 @@ function Speciality() {
   const specialties = [
     "Dermatology",
     "Vets/Pets",
-    "Podiatry",
-    "Pediatrics",
-    "Sports Medicine",
-    "Wound Care",
-    "Hormone Replacement",
+    "Hormone Replacement Therapy",
   ];
   return (
     <div>
-      {" "}
-      <div className="body-speacialtiy">
+      <div className="body-specialty"> {/* Correct the class name here */}
         <h1>Our Compounding Specialties</h1>
-        <div className="body_boxes">
+        <div className="body-boxes"> {/* Correct the class name here */}
           {specialties.map((specialty, index) => (
-            <div className="body_box" key={index}>
+            <div className="body-box" key={index}> {/* Correct the class name here */}
               <h4>{specialty}</h4>
               <img src={logo} alt={`${specialty}`} className="box_image" />
               <button className="box_button">More</button>

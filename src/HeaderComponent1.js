@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../src/PMLOGO.png";
 import "./HeaderComponent.css";
-import HamburgerMenu from './HamburgerMenu'; // Import the HamburgerMenu component
 
 function HeaderComponent() {
   const navigationItems = [
@@ -15,11 +14,11 @@ function HeaderComponent() {
     // ... Add more navigation items as needed
   ];
 
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setShowMobileMenu(!showMobileMenu);
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
   };
 
   useEffect(() => {
@@ -51,20 +50,30 @@ function HeaderComponent() {
       </div>
       <header className="header-container">
         <nav className="nav-section">
-          {/* Hamburger menu for mobile */}
-          <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
-            {/* Integrate the HamburgerMenu component */}
-            <HamburgerMenu isOpen={showMobileMenu} toggleMenu={toggleMobileMenu} />
-          </div>
-          <ul className={`nav-list ${showMobileMenu ? "show" : ""}`}>
+          <ul className="nav-list">
             {navigationItems.map((navItem, index) => (
               <li className="nav-item" key={index}>
                 {navItem}
               </li>
             ))}
+            {/* Toggle button for the dropdown */}
+            <li
+              className={`nav-item more-button ${showDropdown ? "active" : ""}`}
+              onClick={toggleDropdown}
+            >
+              More
+              <ul className={`dropdown ${showDropdown ? "show" : ""}`}>
+                {navigationItems.map((navItem, index) => (
+                  <li className="dropdown-item" key={index}>
+                    {navItem}
+                  </li>
+                ))}
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
+      
     </div>
   );
 }

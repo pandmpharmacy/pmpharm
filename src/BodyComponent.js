@@ -22,8 +22,8 @@ function BodyComponent() {
       <div className="body-container">
         <Featured />
       </div>
-      <LeftInterlockedTextBoxes message={first_intro} />
       <TopServices />
+      <LeftInterlockedTextBoxes message={first_intro} />
       <RightInterlockedTextBoxes message={second_intro} />
       <IntroInfo />
       <LeftInterlockedTextBoxes message={third_intro} />

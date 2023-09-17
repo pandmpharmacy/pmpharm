@@ -1,83 +1,89 @@
-.body-container {
-
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
 }
 
+/* Define global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333; /* Default text color */
+  background-color: #fff; /* Default background color */
+}
 
+/* Define styles for the body container */
+.body-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Header styles */
 .body-container h1 {
   font-size: 30px;
-  font-family: 'Poppins', sans-serif;
-
 }
 
 .body-container h2 {
   font-size: 28px;
-  font-family: 'Poppins', sans-serif;
-
 }
 
 .body-container h3 {
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-
 }
 
+/* Alert styles */
 #alert {
   color: rgba(184, 3, 1, 0.7);
 }
 
+/* Container for the main content */
 .body-wrapper {
   max-width: 1350px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some spacing around the content */
 }
 
-.body-speacialtiy {
+/* Specialty section styles */
+.body-specialty {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 50px;
 }
 
-.body-speacialtiy h1 {
+.body-specialty h1 {
   color: #616c4e;
-  font-family: 'Poppins', sans-serif;
-
+  font-size: 36px; /* Increase font size for emphasis */
 }
 
-.body-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.body_boxes {
+/* Boxes section styles */
+.body-boxes {
   display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
   justify-content: space-around;
-  /* flex-wrap: wrap; */
 }
 
-.body_box {
-  width: 200px;
+.body-box {
+  flex: 0 0 calc(33.3333% - 20px); /* Adjust the width based on the number of columns you want */
+  max-width: 300px; /* Limit the maximum width of each box */
   padding: 20px;
   margin: 10px;
-  border: 2px solid #eeeeeeb5 ;
+  border: 2px solid #eeeeeeb5;
   background-color: rgba(254, 255, 255, 0.981);
-  /* opacity: 0.5; */
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
+  transition: box-shadow 0.3s ease; /* Smooth box-shadow transition on hover */
 }
-.body_box:hover {
+
+.body-box:hover {
   box-shadow: 0 4px 8px rgba(107, 109, 107, 0.746);
-
 }
 
-@media (max-width: 768px) {
-  .body-container {
-    grid-template-columns: 1fr;
-    /* Display one column for small screens */
-  }
-}
-
-.body_box h4 {
+.body-box h4 {
   color: #616c4e;
 }
 
@@ -100,4 +106,33 @@
 
 .box_button:hover {
   background-color: #616c4e;
+}
+
+/* Media Query for screens smaller than 768px (Mobile) */
+@media (max-width: 768px) {
+  .body-box {
+    flex: 0 0 calc(50% - 20px); /* Two boxes per row on smaller screens */
+  }
+
+  .body-specialty h1 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjust the font size for headings on smaller screens */
+  .body-container h1,
+  .body-container h2,
+  .body-container h3 {
+    font-size: 24px;
+  }
+  
+  /* Reduce padding and margin for better spacing on smaller screens */
+  .body-container {
+    margin-top: 10px;
+  }
+
+  /* Adjust spacing in the boxes section */
+  .body-box {
+    padding: 10px;
+    margin: 5px;
+  }
 }
