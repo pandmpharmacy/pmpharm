@@ -4,7 +4,7 @@ import LandingHeader from "./LandingHeader";
 function HumanCompounding() {
   return (
     <div>
-      <LandingHeader title={"HumanCompounding"} />
+      <LandingHeader title={"Human Compounding"} />
     </div>
   );
 }
