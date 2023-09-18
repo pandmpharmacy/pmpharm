@@ -9,16 +9,9 @@ import HumanCompounding from "./HumanCompounding";
 function Compounding() {
   const navigate = useNavigate();
   const [showDermatology, setShowDermatology] = useState(false);
-  const [showHormoneReplacement, setShowHormoneReplacement] = useState(false);
 
   const toggleDermatology = () => {
     setShowDermatology(!showDermatology);
-    setShowHormoneReplacement(false); // Close the Hormone Replacement section
-  };
-
-  const toggleHormoneReplacement = () => {
-    setShowHormoneReplacement(!showHormoneReplacement);
-    setShowDermatology(false); // Close the Dermatology section
   };
 
   return (
@@ -33,10 +26,9 @@ function Compounding() {
       <LeftInterlockedTextBoxes title="Your Compounding Experts" message="Decades of Experience for Your Medication Needs." />
       <RightInterlockedTextBoxes title="Medication Personalization" message="Tailoring Dosage Forms to Match Your Preferences." />
       <LeftInterlockedTextBoxes title="Exclusion of Unnecessary Ingredients" message="Medications Prepared with Your Allergies and Preferences in Mind." />
-      <div>
+      <button onClick={() => navigate("/")}>Go to Home</button>
+      <div onClick={toggleDermatology}>
         <HumanCompounding />
-        <button onClick={toggleDermatology}>Dermatology Compounding</button>
-        <button onClick={toggleHormoneReplacement}>Hormone Replacement Therapy</button>
         {showDermatology && (
           <>
             <LandingHeader title={"Dermatology Compounding"} />
@@ -51,21 +43,6 @@ function Compounding() {
             <LeftInterlockedTextBoxes title="Enhancing Skin Care" message="Customized Solutions for Skin Damage, Wrinkles, and Infections." />
           </>
         )}
-        {showHormoneReplacement && (
-          <>
-            <LandingHeader title={"Hormone Replacement Therapy"} />
-            <LeftInterlockedTextBoxes title="Elevate Your Health with Hormone Replacement Therapy" message="Palm Beach County's Trusted Source for High-Quality Hormone Replacement Therapy." />
-            <RightInterlockedTextBoxes title="Understanding the Power of Hormones" message="Unlocking the Key to Balancing Bodily Functions and Well-Being." />
-            <LeftInterlockedTextBoxes title="Types of Hormones We Address" message="Estrogens, Progesterone, Testosterone, and More: Optimizing Your Hormonal Health." />
-            <RightInterlockedTextBoxes title="Recognizing Hormone Imbalance" message="Empowering Men and Women to Address Hormonal Imbalances and Their Effects." />
-            <LeftInterlockedTextBoxes title="Taking Control of Your Hormonal Health" message="Hormone Replacement Therapy: Your Path to a Balanced Life." />
-            <RightInterlockedTextBoxes title="Customized Hormone Therapy at Your Fingertips" message="P&M Pharmacy's Compounding Expertise for Precise Hormone Dosages." />
-            <LeftInterlockedTextBoxes title="Benefits of Bioidentical Hormone Replacement Therapy" message="Improving Energy, Mood, and Overall Well-Being with BHRT." />
-            <RightInterlockedTextBoxes title="Act Now for Hormonal Balance" message="Don't Let Hormone Imbalance Dictate Your Life - Explore Hormone Replacement Therapy." />
-            <LeftInterlockedTextBoxes title="Personalized Hormone Therapy Options" message="Tailored Capsules, Creams, and Troche for Your Hormone Replacement Needs." />
-            <RightInterlockedTextBoxes title="Enhancing Quality of Life with HRT" message="Relief from Menopausal Symptoms and Andropause Through Hormone Replacement Therapy." />
-          </>
-        )}
       </div>
       <div onClick={() => navigate("/pet-compounding")}>
         <PetCompunding />
@@ -73,6 +50,5 @@ function Compounding() {
     </div>
   );
 }
-
 
 export default Compounding;

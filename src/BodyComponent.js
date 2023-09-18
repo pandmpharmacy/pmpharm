@@ -22,11 +22,11 @@ function BodyComponent() {
         <Featured />
       </div>
       <TopServices />
-      <LeftInterlockedTextBoxes title="First Title" message={first_intro} />
-      <RightInterlockedTextBoxes title="Second Title" message={second_intro} />
-      <LeftInterlockedTextBoxes title="Third Title" message={third_intro} />
+      <LeftInterlockedTextBoxes message={first_intro} />
+      <RightInterlockedTextBoxes message={second_intro} />
+      <LeftInterlockedTextBoxes message={third_intro} />
       <Speciality />
-      <RightInterlockedTextBoxes title="Fourth Title" message={fourth_intro} />
+      <RightInterlockedTextBoxes message={fourth_intro} />
     </div>
   );
 }
