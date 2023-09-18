@@ -43,10 +43,15 @@ function HeaderComponent() {
   // Define the CSS class for the header based on hasScrolled
   const headerClass = `header_wrapper ${hasScrolled ? "with-shadow" : ""}`;
 
+  // Define the homepage URL
+  const homepageUrl = "/"; // Replace with your actual homepage URL
+
   return (
     <div className={headerClass}>
       <div className="logo_div">
-        <img src={logo} alt="logo" className="logo" />
+        <a href={homepageUrl}> {/* Add this anchor tag */}
+          <img src={logo} alt="logo" className="logo" />
+        </a>
       </div>
       <header className="header-container">
         <nav className="nav-section">
