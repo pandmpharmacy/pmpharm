@@ -1,10 +1,11 @@
 import React from "react";
-import "./LeftInterlockedTextBoxes.css"; // Import your CSS file
+import "./LeftInterlockedTextBoxes.css";
 
-function LeftInterlockedTextBoxes({ message }) {
+function LeftInterlockedTextBoxes({ title, message }) {
   return (
     <div className="interlocked-container">
       <div className="left-box box1">
+        <h2 className="box-title">{title}</h2> {/* Add the "box-title" class */}
         <p>{message}</p>
       </div>
     </div>

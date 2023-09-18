@@ -1,16 +1,26 @@
+/* Styules for smaller screens (mobile first) */
+
 .interlocked-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .right-box {
-  flex: 1; /* Let the boxes expand to fill the available space */
-  /* height: 150px; */
-  background-color: #fff; /* Set background color to white */
-  /* border: 1px solid #333; */
+  background-color: #fff;
   border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .box2 {
   text-align: right;
+}
+
+.box-title { /* Add styles for the title */
+  color: #333; /* Change the title text color */
+  font-size: 30px; /* Adjust font size for smaller screens */
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .box2 {
@@ -22,8 +32,34 @@
   color: #616C4E; /* Set text color to black */
   margin: 0;
   padding: 0;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 2;
   font-family: 'Poppins', sans-serif;
+}
+
+/* Media query for larger screens (e.g., tablets and above) */
+
+@media (min-width: 768px) {
+  .interlocked-container {
+    flex-direction: row;
+  }
+
+  .right-box {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .box2 {
+    text-align: right;
+  }
+
+  .box-title { /* Adjust styles for the title on larger screens */
+    font-size: 40px;
+  }
+
+  .right-box p {
+    font-size: 28px;
+    line-height: 2;
+  }
 }
