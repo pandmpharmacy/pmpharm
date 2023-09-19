@@ -31,9 +31,13 @@
 }
 
 #featured_text p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
+#featured_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* Specify link color */
 .featured_footer a {
   color: inherit; /* Inherit the original link color */
