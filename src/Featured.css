@@ -34,6 +34,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Specify link color */
+.featured_footer a {
+  color: inherit; /* Inherit the original link color */
+  text-decoration: none; /*remove underline */
+}
+
 .featured_box img {
   max-width: 100%; /* Ensure images are responsive */
 }
@@ -43,7 +49,7 @@
   /* Adjust styles for screens with a minimum width of 768px */
   .featured_container {
     padding: 30px; /* Restore padding for larger screens */
-    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    grid-template-columns: 30% 40% 30%; /* 40% for the logo boxes, 60% for the center box */
     margin: 50px auto; /* Restore margin for larger screens */
     gap: 20px; /* Restore gap for larger screens */
   }
@@ -56,6 +62,6 @@
   }
 
   .featured_image {
-    width: 350px; /* Adjusted width for larger screens */
+    width: 100%; /* Make the images take up 100% of their container */
   }
 }

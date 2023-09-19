@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Compounding.css"
 import { useNavigate } from "react-router-dom";
 import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";
 import RightInterlockedTextBoxes from "./RightInterlockedTextBoxes";
