@@ -1,11 +1,16 @@
 import React from "react";
-import logo from "../src/PMLOGO.png";
+import logoWebp from "../src/logo.webp";
+import logoPng from "../src/PMLOGO.png";
 import "./Featured.css";
+
 function Featured() {
   return (
     <div className="featured_container">
       <div className="featured_box">
-        <img src={logo} alt="" className="featured_image" />
+        <picture>
+          <source srcSet={logoWebp} type="image/webp" />
+          <img src={logoPng} alt="" className="featured_image" />
+        </picture>
       </div>
       <div id="featured_text" className="featured_box">
         <h1 className="featured_header">
@@ -24,7 +29,10 @@ function Featured() {
         </h3>
       </div>
       <div className="featured_box">
-        <img src={logo} alt="" className="featured_image" />
+        <picture>
+          <source srcSet={logoWebp} type="image/webp" />
+          <img src={logoPng} alt="" className="featured_image" />
+        </picture>
       </div>
     </div>
   );

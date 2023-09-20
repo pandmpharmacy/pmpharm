@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../src/PMLOGO.png";
+import logo from "../src/logo.webp";
 import "./HeaderComponent.css";
 import HamburgerMenu from './HamburgerMenu'; // Import the HamburgerMenu component
 
