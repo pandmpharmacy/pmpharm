@@ -7,6 +7,7 @@
   text-align: center;
   color: #616c4e;
   padding: 20px; /* Reduced padding for mobile */
+  cursor: pointer; /* Add cursor property to change to pointer on hover */
 }
 
 .service-container {

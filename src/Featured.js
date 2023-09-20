@@ -20,7 +20,8 @@ function Featured() {
           West Palm Beach, Lantana and all surrounding areas in Florida.
         </p>
         <h3 className="featured_footer">
-          Contact <br></br> 561-660-8650
+          Contact <br />
+          <a href="tel:561-660-8650">561-660-8650</a>
         </h3>
       </div>
       <div className="featured_box">

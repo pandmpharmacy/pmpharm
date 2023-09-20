@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../src/PMLOGO.png";
 import "./HeaderComponent.css";
-import HamburgerMenu from './HamburgerMenu'; // Import the HamburgerMenu component
 
 function HeaderComponent() {
   const navigationItems = [
@@ -44,17 +43,19 @@ function HeaderComponent() {
   // Define the CSS class for the header based on hasScrolled
   const headerClass = `header_wrapper ${hasScrolled ? "with-shadow" : ""}`;
 
+  // Define the homepage URL
+  const homepageUrl = "/"; // Replace with your actual homepage URL
+
   return (
     <div className={headerClass}>
       <div className="logo_div">
-        <img src={logo} alt="logo" className="logo" />
+        <a href={homepageUrl}> {/* Add this anchor tag */}
+          <img src={logo} alt="logo" className="logo" />
+        </a>
       </div>
       <header className="header-container">
         <nav className="nav-section">
-          {/* Hamburger menu for mobile */}
           <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
-            {/* Integrate the HamburgerMenu component */}
-            <HamburgerMenu isOpen={showMobileMenu} toggleMenu={toggleMobileMenu} />
           </div>
           {showMobileMenu ? (
             <ul className="nav-list">
