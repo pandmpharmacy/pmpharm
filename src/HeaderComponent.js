@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../src/logo.webp";
 import "./HeaderComponent.css";
+import logoWebp from "../src/logo.webp";
 
 function HeaderComponent() {
   const navigationItems = [
@@ -50,7 +51,10 @@ function HeaderComponent() {
     <div className={headerClass}>
       <div className="logo_div">
         <a href={homepageUrl}> {/* Add this anchor tag */}
-          <img src={logo} alt="logo" className="logo" />
+          <picture>
+            <source srcSet={logoWebp} type="image/webp" />
+            <img src={logo} alt="logo" className="logo" />
+          </picture>
         </a>
       </div>
       <header className="header-container">

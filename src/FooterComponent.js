@@ -1,7 +1,7 @@
 import React from "react";
 import "./FooterComponent.css";
-import logo from "../src/PMLOGO.png";
-
+import logoPng from "../src/PMLOGO.png";
+import logoWebp from "../src/logo.webp"
 const navigationItems = [
   "Retail Pharmacy",
   "Compounding Pharmacy",
@@ -21,7 +21,10 @@ function FooterComponent() {
     <>
       <footer className="footer-container">
         <div className="footer-column">
-          <img src={logo} alt="logo" className="footer-logo" />
+          <picture>
+          <source srcSet={logoWebp} type="image/webp" />
+          <img src={logoPng} alt="" className="footer-logo" />
+        </picture>
         </div>
 
         <div className="footer-column">
