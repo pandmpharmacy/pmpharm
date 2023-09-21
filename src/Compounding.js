@@ -15,43 +15,43 @@ const Compounding = () => {
     // Content for Box 4
     const box4Content = isBox4Expanded
         ? "New text when expanded."
-        : "Discover Why We're Lake Worth's Leading Specialty Compounding Pharmacy.";
+        : "Some content for the fourth small box";
 
     return (
         <>
             {/* Top Title Box */}
             <div className="compounding top">
                 <div className="child large">
-                    <h1>Welcome to P&M Pharmacy</h1>
-                    <h2>Your Trusted Source for Compounded Medications and Personalized Care.</h2>
+                    <h4>Title</h4>
+                    <p>Some content for the top box.</p>
                 </div>
             </div>
 
             {/* Bottom Boxes - Instance 1 */}
             <div className="compounding bottom">
                 <div className="child small">
-                    <h3>Custom Compounded Prescriptions</h3>
-                    <p>Tailored Medications to Suit Your Unique Needs.</p>
+                    <h4>Box 1</h4>
+                    <p>Some content for the first small box.</p>
                 </div>
                 <div className="spacer"></div> {/* Spacer with 10px width */}
                 <div className="child small">
-                    <h3>Quality Compounding Services</h3>
-                    <p>Experience Precision and Consistency in Every Prescription.</p>
+                    <h4>Box 2</h4>
+                    <p>Some content for the second small box.</p>
                 </div>
             </div>
 
             {/* Bottom Boxes - Instance 2 */}
             <div className="compounding bottom">
                 <div className="child small">
-                    <h3>Safe and Effective Compounding</h3>
-                    <p>Your Health and Safety Are Our Top Priority</p>
+                    <h4>Box 3</h4>
+                    <p>Some content for the third small box.</p>
                 </div>
                 <div className={`spacer`}></div>
                 <div
                     className={`child small ${isBox4Expanded ? 'expanded' : ''}`}
                     onClick={toggleBox4Expansion}
                 >
-                    <h3>P&M Pharmacy Difference</h3>
+                    <h4>Box 4</h4>
                     <p>{box4Content}</p>
                     <div className="expand-button">
                         {isBox4Expanded ? (
@@ -66,29 +66,41 @@ const Compounding = () => {
             {/* Bottom Boxes - Instance 3 */}
             <div className="compounding bottom">
                 <div className="child small">
-                    <h3>Same Day Service</h3>
-                    <p>Get Your Compounded Prescriptions Faster and Easier.</p>
+                    <h4>Box 5</h4>
+                    <p>Some content for the fifth small box.</p>
                 </div>
                 <div className="spacer"></div>
                 <div className="child small">
-                    <h3>Your Compounding Experts</h3>
-                    <p>Decades of Experience for Your Medication Needs.</p>
+                    <h4>Box 6</h4>
+                    <p>Some content for the sixth small box.</p>
                 </div>
             </div>
 
             {/* Bottom Boxes - Instance 4 */}
             <div className="compounding bottom">
                 <div className="child small">
-                    <h3>Medication Personalization</h3>
-                    <p>Tailoring Dosage Forms to Match Your Preferences.</p>
+                    <h4>Box 7</h4>
+                    <p>Some content for the seventh small box.</p>
                 </div>
                 <div className="spacer"></div>
                 <div className="child small">
-                    <h3>Exclusion of Unnecessary Ingredients</h3>
-                    <p>Medications Prepared with Your Allergies and Preferences in Mind.</p>
+                    <h4>Box 8</h4>
+                    <p>Some content for the eighth small box.</p>
                 </div>
             </div>
 
+            {/* Bottom Boxes - Instance 5 */}
+            <div className="compounding bottom">
+                <div className="child small">
+                    <h4>Box 9</h4>
+                    <p>Some content for the ninth small box.</p>
+                </div>
+                <div className="spacer"></div>
+                <div className="child small">
+                    <h4>Box 10</h4>
+                    <p>Some content for the tenth small box.</p>
+                </div>
+            </div>
         </>
     );
 };
