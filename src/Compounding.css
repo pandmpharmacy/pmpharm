@@ -3,33 +3,93 @@
     display: flex;
     flex-direction: column; /* Mobile-first: Start with a column layout */
     background-color: #eee;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(107, 109, 107, 0.746);
 }
 
-/* Child div styles */
-.child {
-    width: 100%; /* Mobile-first: Full width for mobile devices */
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 20px;
+/* Top Title Box */
+.compounding.top {
+    flex: 1; /* Take up the entire height of the container */
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(107, 109, 107, 0.746);
-    margin: 10px; /* Use shorthand for margins */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Bottom Boxes */
+.compounding.bottom {
+    /* No specific styles for mobile (they will stack vertically) */
+}
+
+/* Large Box (75%) */
+.child.large {
+    flex: 1; /* Full width for mobile devices */
+    padding: 20px;
+}
+
+/* Small Box (25%) */
+.child.small {
+    flex: 1; /* Full width for mobile devices */
+    padding: 20px; /* Reduced padding for a gap */
+    background-color: #fff;
+    border-radius: 20px; /* Add rounded corners */
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, height 0.3s; /* Add transitions for color and height changes */
+}
+
+/* Small Box (25%) when expanded */
+.child.small.expanded {
+    background-color: #8BC34A; /* Change to green when expanded */
+    height: 120px; /* Increase height when expanded */
+}
+
+/* Spacer */
+.spacer {
+    width: 0; /* Set width to 0 to create a gap */
+}
+
+/* Icon button for expanding/collapsing content */
+.child.small .expand-button button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 10px;
 }
 
 /* Media query for tablet view */
 @media screen and (min-width: 601px) {
-    .compounding {
-        flex-direction: row; /* For tablets and larger screens, switch to a row layout */
+    /* Bottom Boxes: Switch to a row layout for tablets */
+    .compounding.bottom {
+        flex-direction: row;
     }
 
-    .child {
-        width: 70%; /* Adjust child width for tablets */
+    /* Large Box (75%): Adjust width for tablets */
+    .child.large {
+        flex: 3;
+    }
+
+    /* Small Box (25%): Adjust width for tablets */
+    .child.small {
+        flex: 1;
+    }
+
+    /* Spacer: No spacing needed for tablets */
+    .spacer {
+        width: auto;
     }
 }
 
 /* Media query for desktop view */
 @media screen and (min-width: 841px) {
-    .child {
-        width: 50%; /* Adjust child width for desktops */
+    /* Large Box (75%): Adjust width for desktops */
+    .child.large {
+        flex: 3;
+    }
+
+    /* Small Box (25%): Adjust width for desktops */
+    .child.small {
+        flex: 1;
     }
 }
