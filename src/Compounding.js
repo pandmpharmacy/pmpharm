@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './Compounding.css'; // Import your CSS file
-import logoWebp from "../src/logo.webp";
-import logoPng from "../src/PMLOGO.png";
 
 const Compounding = () => {
     // State to track whether Box 4 in the second instance is expanded

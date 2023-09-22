@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";
+/*import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";*/
 import LandingHeader from "./LandingHeader";
 import "./RetailPharm.css"; // Import a CSS file for styling (create this file)
 
 function RetailPharm() {
-  const navigate = useNavigate();
+  /*onst navigate = useNavigate();*/
 
   // Define an array to generate multiple instances of paired boxes
   const pairedBoxData = [
