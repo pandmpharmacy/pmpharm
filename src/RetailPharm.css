@@ -1,0 +1,132 @@
+/* RetailPharm.css */
+/* Mobile-first styles */
+
+.retail-pharm-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .title-box {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .pair-boxes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* For mobile by default, boxes will stack */
+    grid-template-areas: 
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5";
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* For larger screens (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    .pair-boxes {
+      grid-template-columns: repeat(10, 1fr); /* Three columns to achieve your structure */
+      grid-template-areas: 
+        "box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+        "box2 box2 box2 box3 box3 box3 box3 box3 box3 box3"
+        "box4 box4 box4 box4 box4 box4 box4 box5 box5 box5 ";
+    }
+  }
+  
+  /* For larger screens (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    .pair-boxes {
+      grid-template-columns: 1 70% 30% 30% 70%; /* Custom column sizes for your boxes */
+    }
+  
+    .single-box {
+      grid-column: span 3; /* Box 1 will span 3 columns (all) */
+    }
+  
+    .large-box {
+      grid-column: span 2; /* 2 column span for 70% width */
+    }
+  
+    .small-box {
+      grid-column: span 1; /* 1 column span for 30% width */
+    }
+  }
+  
+  
+  /* Style for each paired box */
+  
+  /* Default for mobile (boxes stacked) */
+.paired-box {
+    display: grid;
+    grid-template-columns: 1fr; /* one box per row */
+    gap: 20px; /* space between the stacked boxes */
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* For larger screens (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    .paired-box {
+      grid-template-columns: 1fr 1fr; /* boxes side by side */
+    }
+  }
+  
