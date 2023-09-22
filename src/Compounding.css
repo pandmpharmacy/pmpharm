@@ -1,95 +1,148 @@
-/* Compounding container styles */
-.compounding {
-    display: flex;
-    flex-direction: column; /* Mobile-first: Start with a column layout */
-    background-color: #eee;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(107, 109, 107, 0.746);
-}
+/* RetailPharm.css */
+/* Mobile-first styles */
 
-/* Top Title Box */
-.compounding.top {
-    flex: 1; /* Take up the entire height of the container */
-    background-color: #fff;
+.compounding-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .compounding-title-box {
+    background-color: #c01313;
+    color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-/* Bottom Boxes */
-.compounding.bottom {
-    /* No specific styles for mobile (they will stack vertically) */
-}
-
-/* Large Box (75%) */
-.child.large {
-    flex: 1; /* Full width for mobile devices */
-    padding: 20px;
-}
-
-/* Small Box (25%) */
-.child.small {
-    flex: 1; /* Full width for mobile devices */
-    padding: 20px; /* Reduced padding for a gap */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .compounding-pair-boxes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* For mobile by default, boxes will stack */
+    grid-template-areas: 
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7"
+      "box8"
+      "box9"
+      "box10"
+      "box11"
+      "box12"
+      "box13"
+      "box14"
+      "box15"
+      "box16";
+  }
+  
+  .box {
     background-color: #fff;
-    border-radius: 20px; /* Add rounded corners */
-    display: flex;
-    flex-direction: column;
-    transition: background-color 0.3s, height 0.3s; /* Add transitions for color and height changes */
-}
-
-/* Small Box (25%) when expanded */
-.child.small.expanded {
-    background-color: #8BC34A; /* Change to green when expanded */
-    height: 120px; /* Increase height when expanded */
-}
-
-/* Spacer */
-.spacer {
-    width: 0; /* Set width to 0 to create a gap */
-}
-
-/* Icon button for expanding/collapsing content */
-.child.small .expand-button button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-    margin-top: 10px;
-}
-
-/* Media query for tablet view */
-@media screen and (min-width: 601px) {
-    /* Bottom Boxes: Switch to a row layout for tablets */
-    .compounding.bottom {
-        flex-direction: row;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* For larger screens (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    .compounding-pair-boxes {
+      grid-template-columns: repeat(10, 1fr); /* Three columns to achieve your structure */
+      grid-template-areas: 
+        "box1 box1 box1 box1 box1 box1 box1 box2 box2 box2"
+        "box3 box3 box3 box4 box4 box4 box4 box4 box4 box4"
+        "box5 box5 box5 box5 box5 box6 box6 box6 box6 box6"
+        "box7 box7 box7 box7 box7 box8 box8 box8 box8 box8"
+        "box9 box9 box9 box9 box9 box9 box10 box10 box10 box10"
+        "box11 box11 box11 box11 box11 box12 box12 box12 box12 box12"
+        "box13 box13 box13 box13 box13 box14 box14 box14 box14 box14"
+        "box15 box15 box15 box15 box15 box16 box16 box16 box16 box16";
     }
-
-    /* Large Box (75%): Adjust width for tablets */
-    .child.large {
-        flex: 3;
+  }
+  
+  /* For larger screens (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    .compounding-pair-boxes {
+      grid-template-columns: 1 70% 30% 30% 70%; /* Custom column sizes for your boxes */
     }
-
-    /* Small Box (25%): Adjust width for tablets */
-    .child.small {
-        flex: 1;
+  
+    .single-box {
+      grid-column: span 3; /* Box 1 will span 3 columns (all) */
     }
-
-    /* Spacer: No spacing needed for tablets */
-    .spacer {
-        width: auto;
+  
+    .large-box {
+      grid-column: span 2; /* 2 column span for 70% width */
     }
-}
-
-/* Media query for desktop view */
-@media screen and (min-width: 841px) {
-    /* Large Box (75%): Adjust width for desktops */
-    .child.large {
-        flex: 3;
+  
+    .small-box {
+      grid-column: span 1; /* 1 column span for 30% width */
     }
-
-    /* Small Box (25%): Adjust width for desktops */
-    .child.small {
-        flex: 1;
+  }
+  
+  
+  /* Style for each paired box */
+  
+  /* Default for mobile (boxes stacked) */
+.paired-box {
+    display: grid;
+    grid-template-columns: 1fr; /* one box per row */
+    gap: 20px; /* space between the stacked boxes */
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* For larger screens (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    .compounding-paired-box {
+      grid-template-columns: 1fr 1fr; /* boxes side by side */
     }
-}
+  }
+  
