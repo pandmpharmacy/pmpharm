@@ -11,53 +11,78 @@ function RetailPharm() {
   const pairedBoxData = [
     {
       imageSrc: "image1.jpg", // Replace with actual image URLs
-      title: "Box 1 Title",
-      text: "Box 1 Description",
+      title: "Free Delivery",
+      text: "We offer convenient and free delivery services within a 3-mile radius of our pharmacy to ensure you receive your medications at your doorstep.",
     },
     {
       imageSrc: "image2.jpg", // Replace with actual image URLs
-      title: "Box 2 Title",
-      text: "Box 2 Description",
+      title: "Retail Prescriptions (quick and easy",
+      text: "Experience hassle-free parking and have your prescriptions filled in just 5-10 minutes for your convenience.",
     },
     {
       imageSrc: "image3.jpg",
-      title: "Box 3 Title",
-      text: "Box 3 Description",
+      title: "Compounded Prescriptions (customized medications)",
+      text: "Our expert pharmacists can tailor your medications to your unique needs through compounded prescriptions.n",
     },
     {
       imageSrc: "image4.jpg",
-      title: "Box 4 Title",
-      text: "Box 4 Description",
+      title: "Therapy Adherence",
+      text: "Our services include counseling and support to help you adhere to your prescribed therapy regimens effectively.",
     },
     {
       imageSrc: "image5.jpg",
-      title: "Box 5 Title",
-      text: "Box 5 Description",
+      title: "Medication Synchronization (reduce hospitalization)",
+      text: "Medication synchronization reduces the risk of hospitalization and the need for frequent pharmacy visits by aligning your medication refills.",
     },
     {
       imageSrc: "image6.jpg",
-      title: "Box 6 Title",
-      text: "Box 6 Description",
+      title: "Diabetic Supplies",
+      text: "Find a comprehensive range of diabetic supplies to manage your diabetes effectively.",
     },
     {
       imageSrc: "image7.jpg",
-      title: "Box 7 Title",
-      text: "Box 7 Description",
+      title: "Orthopedic Supplies",
+      text: "We offer a variety of orthopedic supplies to aid in your comfort and recovery.",
     },
     {
       imageSrc: "image8.jpg",
-      title: "Box 8 Title",
-      text: "Box 8 Description",
+      title: "Ostomy and Urinary Supplies",
+      text: "We provide a selection of ostomy and urinary supplies to support your specific healthcare needs.",
     },
     {
       imageSrc: "image9.jpg",
-      title: "Box 9 Title",
-      text: "Box 9 Description",
+      title: "Nebulizers",
+      text: "Explore our nebulizer options for respiratory treatments in the comfort of your home.",
     },
     {
       imageSrc: "image10.jpg",
-      title: "Box 10 Title",
-      text: "Box 10 Description",
+      title: "Wound Care Supplies",
+      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
+    },
+    {
+      imageSrc: "image11.jpg",
+      title: "Wound Care Supplies",
+      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
+    },
+    {
+      imageSrc: "image12.jpg",
+      title: "Wound Care Supplies",
+      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
+    },
+    {
+      imageSrc: "image13.jpg",
+      title: "Wound Care Supplies",
+      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
+    },
+    {
+      imageSrc: "image14.jpg",
+      title: "Wound Care Supplies",
+      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
+    },
+    {
+      imageSrc: "image15.jpg",
+      title: "Wound Care Supplies",
+      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
     }
     // Add more data for additional boxes if needed
   ];
@@ -118,6 +143,31 @@ function RetailPharm() {
           <img src={pairedBoxData[9].imageSrc} alt="Box 10" />
           <h2>{pairedBoxData[9].title}</h2>
           <p>{pairedBoxData[9].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box11" }}>
+          <img src={pairedBoxData[10].imageSrc} alt="Box 11" />
+          <h2>{pairedBoxData[10].title}</h2>
+          <p>{pairedBoxData[10].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box12" }}>
+          <img src={pairedBoxData[11].imageSrc} alt="Box 12" />
+          <h2>{pairedBoxData[11].title}</h2>
+          <p>{pairedBoxData[11].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box13" }}>
+          <img src={pairedBoxData[12].imageSrc} alt="Box 13" />
+          <h2>{pairedBoxData[12].title}</h2>
+          <p>{pairedBoxData[12].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box14" }}>
+          <img src={pairedBoxData[13].imageSrc} alt="Box 14" />
+          <h2>{pairedBoxData[13].title}</h2>
+          <p>{pairedBoxData[13].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box15" }}>
+          <img src={pairedBoxData[14].imageSrc} alt="Box 15" />
+          <h2>{pairedBoxData[14].title}</h2>
+          <p>{pairedBoxData[14].text}</p>
         </div>
       </div>
     </div>
