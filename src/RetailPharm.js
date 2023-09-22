@@ -66,23 +66,28 @@ function RetailPharm() {
     },
     {
       imageSrc: "image12.jpg",
-      title: "Wound Care Supplies",
-      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
+      title: "Support Stockings",
+      text: "Discover support stockings to improve circulation and alleviate discomfort.",
     },
     {
       imageSrc: "image13.jpg",
-      title: "Wound Care Supplies",
-      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
+      title: "Daily Living Aids",
+      text: "We offer a range of daily living aids to enhance your independence and quality of life.",
     },
     {
       imageSrc: "image14.jpg",
-      title: "Wound Care Supplies",
-      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
+      title: "Incontinence Supplies",
+      text: "Find incontinence supplies to ensure comfort and confidence.",
     },
     {
       imageSrc: "image15.jpg",
-      title: "Wound Care Supplies",
-      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
+      title: "Foot Care",
+      text: "Explore our foot care products to maintain healthy and comfortable feet.",
+    },
+    {
+      imageSrc: "image16.jpg",
+      title: "OTC (Vitamins, Skincare, Cough and Cold, etc",
+      text: "Our pharmacy carries a diverse selection of over-the-counter products, including vitamins, skincare, and cough and cold remedies, for your health and wellness needs.",
     }
     // Add more data for additional boxes if needed
   ];
@@ -168,6 +173,11 @@ function RetailPharm() {
           <img src={pairedBoxData[14].imageSrc} alt="Box 15" />
           <h2>{pairedBoxData[14].title}</h2>
           <p>{pairedBoxData[14].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box16" }}>
+          <img src={pairedBoxData[15].imageSrc} alt="Box 16" />
+          <h2>{pairedBoxData[15].title}</h2>
+          <p>{pairedBoxData[15].text}</p>
         </div>
       </div>
     </div>
