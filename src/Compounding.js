@@ -11,13 +11,13 @@ function Compounding() {
   const pairedBoxData = [
     {
       imageSrc: "image1.jpg", // Replace with actual image URLs
-      title: "Compounding Free Deliveryy",
-      text: "We offer convenient and free delivery services within a 3-mile radius of our pharmacy to ensure you receive your medications at your doorstep.",
+      title: "Customized Medications Tailored to Your Needs",
+      text: "At P&M Pharmacy, we're not just a pharmacy; we're your trusted compounding specialists serving Lake Worth, FL, and beyond. We understand that each patient is unique, and so are their medication needs. That's why we specialize in compounding personalized prescriptions, ensuring you receive the treatment that suits you best.",
     },
     {
       imageSrc: "image2.jpg", // Replace with actual image URLs
-      title: "Retail Prescriptions (quick and easy",
-      text: "Experience hassle-free parking and have your prescriptions filled in just 5-10 minutes for your convenience.",
+      title: "Insurance Coverage for Compounding Prescriptions",
+      text: "Wondering if your insurance covers compounded prescriptions? It varies depending on your insurance plan. While very few insurance companies reimburse compounded prescriptions directly, patients may often seek reimbursement by submitting claim forms.",
     },
     {
       imageSrc: "image3.jpg",
@@ -26,8 +26,8 @@ function Compounding() {
     },
     {
       imageSrc: "image4.jpg",
-      title: "Therapy Adherence",
-      text: "Our services include counseling and support to help you adhere to your prescribed therapy regimens effectively.",
+      title: "Versatility in Compounded Prescriptions",
+      text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments. Our delivery vehicles include: Creams, gels, and ointments"
     },
     {
       imageSrc: "image5.jpg",
@@ -97,6 +97,178 @@ function Compounding() {
       <div className="compounding-title-box">
         <LandingHeader title={"Compounding Pharmacy"} />
         <p>Compounding Short message goes here.</p>
+      </div>
+      <div className="compounding-pair-boxes">
+        <div className="box single-box" style={{ gridArea: "box1" }}>
+          <img src={pairedBoxData[0].imageSrc} alt="Box 1" />
+          <h2>{pairedBoxData[0].title}</h2>
+          <p>{pairedBoxData[0].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box2" }}>
+          <img src={pairedBoxData[1].imageSrc} alt="Box 2" />
+          <h2>{pairedBoxData[1].title}</h2>
+          <p>{pairedBoxData[1].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box3" }}>
+          <img src={pairedBoxData[2].imageSrc} alt="Box 3" />
+          <h2>{pairedBoxData[2].title}</h2>
+          <p>{pairedBoxData[2].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box4" }}>
+          <img src={pairedBoxData[3].imageSrc} alt="Box 4" />
+          <h2>{pairedBoxData[3].title}</h2>
+          <p>{pairedBoxData[3].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box5" }}>
+          <img src={pairedBoxData[4].imageSrc} alt="Box 5" />
+          <h2>{pairedBoxData[4].title}</h2>
+          <p>{pairedBoxData[4].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box6" }}>
+          <img src={pairedBoxData[5].imageSrc} alt="Box 6" />
+          <h2>{pairedBoxData[5].title}</h2>
+          <p>{pairedBoxData[5].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box7" }}>
+          <img src={pairedBoxData[6].imageSrc} alt="Box 7" />
+          <h2>{pairedBoxData[6].title}</h2>
+          <p>{pairedBoxData[6].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box8" }}>
+          <img src={pairedBoxData[7].imageSrc} alt="Box 8" />
+          <h2>{pairedBoxData[7].title}</h2>
+          <p>{pairedBoxData[7].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box9" }}>
+          <img src={pairedBoxData[8].imageSrc} alt="Box 9" />
+          <h2>{pairedBoxData[8].title}</h2>
+          <p>{pairedBoxData[8].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box10" }}>
+          <img src={pairedBoxData[9].imageSrc} alt="Box 10" />
+          <h2>{pairedBoxData[9].title}</h2>
+          <p>{pairedBoxData[9].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box11" }}>
+          <img src={pairedBoxData[10].imageSrc} alt="Box 11" />
+          <h2>{pairedBoxData[10].title}</h2>
+          <p>{pairedBoxData[10].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box12" }}>
+          <img src={pairedBoxData[11].imageSrc} alt="Box 12" />
+          <h2>{pairedBoxData[11].title}</h2>
+          <p>{pairedBoxData[11].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box13" }}>
+          <img src={pairedBoxData[12].imageSrc} alt="Box 13" />
+          <h2>{pairedBoxData[12].title}</h2>
+          <p>{pairedBoxData[12].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box14" }}>
+          <img src={pairedBoxData[13].imageSrc} alt="Box 14" />
+          <h2>{pairedBoxData[13].title}</h2>
+          <p>{pairedBoxData[13].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box15" }}>
+          <img src={pairedBoxData[14].imageSrc} alt="Box 15" />
+          <h2>{pairedBoxData[14].title}</h2>
+          <p>{pairedBoxData[14].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box16" }}>
+          <img src={pairedBoxData[15].imageSrc} alt="Box 16" />
+          <h2>{pairedBoxData[15].title}</h2>
+          <p>{pairedBoxData[15].text}</p>
+        </div>
+      </div>
+      <div className="compounding-title-box">
+        <LandingHeader title={"Pet Compounding"} />
+        <p>Pet Compounding Short message goes here.</p>
+      </div>
+      <div className="compounding-pair-boxes">
+        <div className="box single-box" style={{ gridArea: "box1" }}>
+          <img src={pairedBoxData[0].imageSrc} alt="Box 1" />
+          <h2>{pairedBoxData[0].title}</h2>
+          <p>{pairedBoxData[0].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box2" }}>
+          <img src={pairedBoxData[1].imageSrc} alt="Box 2" />
+          <h2>{pairedBoxData[1].title}</h2>
+          <p>{pairedBoxData[1].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box3" }}>
+          <img src={pairedBoxData[2].imageSrc} alt="Box 3" />
+          <h2>{pairedBoxData[2].title}</h2>
+          <p>{pairedBoxData[2].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box4" }}>
+          <img src={pairedBoxData[3].imageSrc} alt="Box 4" />
+          <h2>{pairedBoxData[3].title}</h2>
+          <p>{pairedBoxData[3].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box5" }}>
+          <img src={pairedBoxData[4].imageSrc} alt="Box 5" />
+          <h2>{pairedBoxData[4].title}</h2>
+          <p>{pairedBoxData[4].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box6" }}>
+          <img src={pairedBoxData[5].imageSrc} alt="Box 6" />
+          <h2>{pairedBoxData[5].title}</h2>
+          <p>{pairedBoxData[5].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box7" }}>
+          <img src={pairedBoxData[6].imageSrc} alt="Box 7" />
+          <h2>{pairedBoxData[6].title}</h2>
+          <p>{pairedBoxData[6].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box8" }}>
+          <img src={pairedBoxData[7].imageSrc} alt="Box 8" />
+          <h2>{pairedBoxData[7].title}</h2>
+          <p>{pairedBoxData[7].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box9" }}>
+          <img src={pairedBoxData[8].imageSrc} alt="Box 9" />
+          <h2>{pairedBoxData[8].title}</h2>
+          <p>{pairedBoxData[8].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box10" }}>
+          <img src={pairedBoxData[9].imageSrc} alt="Box 10" />
+          <h2>{pairedBoxData[9].title}</h2>
+          <p>{pairedBoxData[9].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box11" }}>
+          <img src={pairedBoxData[10].imageSrc} alt="Box 11" />
+          <h2>{pairedBoxData[10].title}</h2>
+          <p>{pairedBoxData[10].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box12" }}>
+          <img src={pairedBoxData[11].imageSrc} alt="Box 12" />
+          <h2>{pairedBoxData[11].title}</h2>
+          <p>{pairedBoxData[11].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box13" }}>
+          <img src={pairedBoxData[12].imageSrc} alt="Box 13" />
+          <h2>{pairedBoxData[12].title}</h2>
+          <p>{pairedBoxData[12].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box14" }}>
+          <img src={pairedBoxData[13].imageSrc} alt="Box 14" />
+          <h2>{pairedBoxData[13].title}</h2>
+          <p>{pairedBoxData[13].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box15" }}>
+          <img src={pairedBoxData[14].imageSrc} alt="Box 15" />
+          <h2>{pairedBoxData[14].title}</h2>
+          <p>{pairedBoxData[14].text}</p>
+        </div>
+        <div className="box" style={{ gridArea: "box16" }}>
+          <img src={pairedBoxData[15].imageSrc} alt="Box 16" />
+          <h2>{pairedBoxData[15].title}</h2>
+          <p>{pairedBoxData[15].text}</p>
+        </div>
+      </div>
+      <div className="compounding-title-box">
+        <LandingHeader title={"Human Compounding"} />
+        <p>Human Compounding Short message goes here.</p>
       </div>
       <div className="compounding-pair-boxes">
         <div className="box single-box" style={{ gridArea: "box1" }}>
