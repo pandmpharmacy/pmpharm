@@ -17,10 +17,10 @@ import PharmacistAndLadyWebp from "../src/PharmacistAndLady.webp";
 import PharmacistAndLadyJPG from "../src/PharmacistAndLady.jpg";
 import PillsInHandWebp from "../src/PillsInHand.webp";
 import PillsInHandJPG from "../src/PillsInHand.jpg";
-import VirusWebp from "../src/Virus.webp";
+/*import VirusWebp from "../src/Virus.webp";
 import VirusJPG from "../src/Virus.jpg";
 import PharmacistWithGelWebp from "../src/PharmacistWithGel.webp";
-import PharmacistWithGelJPG from "../src/PharmacistWithGel.jpg";
+import PharmacistWithGelJPG from "../src/PharmacistWithGel.jpg";*/
 
 /*import { useNavigate } from "react-router-dom";*/
 /*import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";*/
@@ -141,11 +141,6 @@ const PeoplepairedBoxData = [
     title: "Versatility in Compounded Prescriptions",
     text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments.",
     imageSrc: "image3.jpg", // Replace with actual image URLs
-  },
-  {
-    title: "Versatility in Compounded Prescriptions",
-    text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments. Our delivery vehicles include: Creams, gels, and ointments. Learn More",
-    imageSrc: "image4.jpg", // Replace with actual image URLs
   },
   {
     title: "Safety is Our Priority",
@@ -417,11 +412,6 @@ const PeoplepairedBoxData = [
           <h2>{PeoplepairedBoxData[14].title}</h2>
           <p>{PeoplepairedBoxData[14].text}</p>
           <img src={PeoplepairedBoxData[14].imageSrc} alt="Box 15" />
-        </div>
-        <div className="box" style={{ gridArea: "box16" }}>
-          <h2>{PeoplepairedBoxData[15].title}</h2>
-          <p>{PeoplepairedBoxData[15].text}</p>
-          <img src={PeoplepairedBoxData[15].imageSrc} alt="Box 16" />
         </div>
       </div>
     </div>
