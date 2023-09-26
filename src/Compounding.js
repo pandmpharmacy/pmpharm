@@ -1,4 +1,7 @@
 import React from "react";
+import LandingHeader from "./LandingHeader";
+import "./Compounding.css"; // Import a CSS file for styling (create this file)
+
 import SurprisedCatWebp from "../src/SurprisedCat.webp";
 import SurprisedCatJPG from "../src/SurprisedCat.jpg";
 import DogWomanWebp from "../src/DogWoman.webp";
@@ -24,8 +27,7 @@ import PharmacistWithGelJPG from "../src/PharmacistWithGel.jpg";*/
 
 /*import { useNavigate } from "react-router-dom";*/
 /*import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";*/
-import LandingHeader from "./LandingHeader";
-import "./Compounding.css"; // Import a CSS file for styling (create this file)
+
 
 function Compounding() {
   /*onst navigate = useNavigate();*/
