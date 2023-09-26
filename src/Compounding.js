@@ -17,10 +17,13 @@ import PharmacistAndLadyWebp from "../src/PharmacistAndLady.webp";
 import PharmacistAndLadyJPG from "../src/PharmacistAndLady.jpg";
 import PillsInHandWebp from "../src/PillsInHand.webp";
 import PillsInHandJPG from "../src/PillsInHand.jpg";
+import HandDropperWebp from "../src/HandDropper.webp";
+import HandDropperJPG from "../src/HandDropper.jpg";
 /*import VirusWebp from "../src/Virus.webp";
 import VirusJPG from "../src/Virus.jpg";
 import PharmacistWithGelWebp from "../src/PharmacistWithGel.webp";
 import PharmacistWithGelJPG from "../src/PharmacistWithGel.jpg"; */
+
 
 /*import { useNavigate } from "react-router-dom";*/
 /*import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";*/
@@ -143,11 +146,6 @@ const PeoplepairedBoxData = [
     imageSrc: "image3.jpg", // Replace with actual image URLs
   },
   {
-    title: "Versatility in Compounded Prescriptions",
-    text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments. Our delivery vehicles include: Creams, gels, and ointments. Learn More",
-    imageSrc: "image4.jpg", // Replace with actual image URLs
-  },
-  {
     title: "Safety is Our Priority",
     text: "We prioritize your safety. The Food and Drug Administration recognizes the importance of pharmacy compounding in providing crucial alternatives for patients requiring medications not commercially available or facing drug shortages. Safety measures include prescriptions written by licensed practitioners and compounding by licensed pharmacists, along with compliance with state pharmacy board regulations.",
     imageSrc: "image5.jpg", // Replace with actual image URLs
@@ -264,7 +262,10 @@ const PeoplepairedBoxData = [
         <div className="box" style={{ gridArea: "box8" }}>
           <h2>{pairedBoxData[7].title}</h2>
           <p>{pairedBoxData[7].text}</p>
-          <img src={pairedBoxData[7].imageSrc} alt="Box 8" />
+          <picture>
+            <source srcSet={HandDropperWebp} type="image/webp" />
+            <img src={HandDropperJPG} alt="" className="featured_image" />
+          </picture>
         </div>
         <div className="box" style={{ gridArea: "box9" }}>
           <h2>{pairedBoxData[8].title}</h2>
@@ -417,11 +418,6 @@ const PeoplepairedBoxData = [
           <h2>{PeoplepairedBoxData[14].title}</h2>
           <p>{PeoplepairedBoxData[14].text}</p>
           <img src={PeoplepairedBoxData[14].imageSrc} alt="Box 15" />
-        </div>
-        <div className="box" style={{ gridArea: "box16" }}>
-          <h2>{PeoplepairedBoxData[15].title}</h2>
-          <p>{PeoplepairedBoxData[15].text}</p>
-          <img src={PeoplepairedBoxData[15].imageSrc} alt="Box 16" />
         </div>
       </div>
     </div>
