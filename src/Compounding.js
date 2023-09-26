@@ -17,10 +17,10 @@ import PharmacistAndLadyWebp from "../src/PharmacistAndLady.webp";
 import PharmacistAndLadyJPG from "../src/PharmacistAndLady.jpg";
 import PillsInHandWebp from "../src/PillsInHand.webp";
 import PillsInHandJPG from "../src/PillsInHand.jpg";
-import VirusWebp from "../src/Virus.webp";
+/*import VirusWebp from "../src/Virus.webp";
 import VirusJPG from "../src/Virus.jpg";
 import PharmacistWithGelWebp from "../src/PharmacistWithGel.webp";
-import PharmacistWithGelJPG from "../src/PharmacistWithGel.jpg";
+import PharmacistWithGelJPG from "../src/PharmacistWithGel.jpg"; */
 
 /*import { useNavigate } from "react-router-dom";*/
 /*import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";*/
