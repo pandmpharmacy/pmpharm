@@ -13,7 +13,14 @@ import High5CatWebp from "../src/High5Cat.webp";
 import High5CatJPG from "../src/High5Cat.jpg";
 import DogSyringeWebp from "../src/DogSyringe.webp";
 import DogSyringeJPG from "../src/DogSyringe.jpg";
-
+import PharmacistAndLadyWebp from "../src/PharmacistAndLady.webp";
+import PharmacistAndLadyJPG from "../src/PharmacistAndLady.jpg";
+import PillsInHandWebp from "../src/PillsInHand.webp";
+import PillsInHandJPG from "../src/PillsInHand.jpg";
+import VirusWebp from "../src/Virus.webp";
+import VirusJPG from "../src/Virus.jpg";
+import PharmacistWithGelWebp from "../src/PharmacistWithGel.webp";
+import PharmacistWithGelJPG from "../src/PharmacistWithGel.jpg";
 
 /*import { useNavigate } from "react-router-dom";*/
 /*import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";*/
@@ -216,7 +223,10 @@ const PeoplepairedBoxData = [
         <div className="box single-box" style={{ gridArea: "box1" }}>
           <h2>{pairedBoxData[0].title}</h2>
           <p>{pairedBoxData[0].text}</p>
-          <img src={pairedBoxData[0].imageSrc} alt="Box 1" />
+          <picture>
+            <source srcSet={PharmacistAndLadyWebp} type="image/webp" />
+            <img src={PharmacistAndLadyJPG} alt="" className="featured_image" />
+          </picture>
         </div>
         <div className="box" style={{ gridArea: "box2" }}>
           <h2>{pairedBoxData[1].title}</h2>
@@ -246,7 +256,10 @@ const PeoplepairedBoxData = [
         <div className="box" style={{ gridArea: "box7" }}>
           <h2>{pairedBoxData[6].title}</h2>
           <p>{pairedBoxData[6].text}</p>
-          <img src={pairedBoxData[6].imageSrc} alt="Box 7" />
+          <picture>
+            <source srcSet={PillsInHandWebp} type="image/webp" />
+            <img src={PillsInHandJPG} alt="" className="featured_image" />
+          </picture>
         </div>
         <div className="box" style={{ gridArea: "box8" }}>
           <h2>{pairedBoxData[7].title}</h2>
