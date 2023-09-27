@@ -4,17 +4,17 @@ import "./Compounding.css";
 
 
 const imageMap = {
-    PharmacistAndLady: {
-        jpg: require("../src/images/PharmacistAndLady.jpg"),
-        webp: require("../src/images/PharmacistAndLady.webp"),
+    RetailDiabeticSupply: {
+        jpg: require("../src/images/RetailDiabeticSupply.jpg"),
+        webp: require("../src/images/RetailDiabeticSupply.webp"),
     },
-    SurprisedCat: {
-        jpg: require("../src/images/SurprisedCat.jpg"),
-        webp: require("../src/images/SurprisedCat.webp"),
+    RetailMedications: {
+        jpg: require("../src/images/RetailMedications.jpg"),
+        webp: require("../src/images/RetailMedications.webp"),
     },
-    DogWoman: {
-        jpg: require("../src/images/DogWoman.jpg"),
-        webp: require("../src/images/DogWoman.webp"),
+    RetailFreeDelivery: {
+        jpg: require("../src/images/RetailFreeDelivery.jpg"),
+        webp: require("../src/images/RetailFreeDelivery.webp"),
     },
     CatDog: {
         jpg: require("../src/images/CatDog.jpg"),
@@ -139,12 +139,13 @@ function Compounding() {
         {
           title: "Free Delivery",
           text: "We offer convenient and free delivery services within a 3-mile radius of our pharmacy to ensure you receive your medications at your doorstep.",
-          imageSrc: "image1.jpg", // Replace with actual image URLs
+          imageSrc: "RetailFreeDelivery",
         },
         {
           title: "Retail Prescriptions (quick and easy)",
           text: "Experience hassle-free parking and have your prescriptions filled in just 5-10 minutes for your convenience.",
-          imageSrc: "image2.jpg", // Replace with actual image URLs
+          imageSrc: "RetailMedications", // Replace with actual image URLs
+           
         },
         {
           title: "Compounded Prescriptions (customized medications)",
@@ -164,7 +165,7 @@ function Compounding() {
         {
           title: "Diabetic Supplies",
           text: "Find a comprehensive range of diabetic supplies to manage your diabetes effectively.",
-          imageSrc: "image6.jpg",
+          imageSrc: "RetailDiabeticSupply",
         },
         {
           title: "Orthopedic Supplies",
