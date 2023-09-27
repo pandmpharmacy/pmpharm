@@ -2,6 +2,7 @@ import React from "react";
 import LandingHeader from "./LandingHeader";
 import "./Compounding.css";
 
+
 const imageMap = {
     PharmacistAndLady: {
         jpg: require("../src/PharmacistAndLady.jpg"),
