@@ -1,6 +1,6 @@
 import React from "react";
 import "./IntroInfo.css";
-/*import logo from "../src/PMLOGO.png"; */
+/*import logo from "../src/images/PMLOGO.png"; */
 
 function IntroInfo() {
   return (

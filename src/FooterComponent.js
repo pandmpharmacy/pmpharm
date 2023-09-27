@@ -1,7 +1,7 @@
 import React from "react";
 import "./FooterComponent.css";
-import logoPng from "../src/PMLOGO.png";
-import logoWebp from "../src/logo.webp"
+import logoPng from "../src/images/PMLOGO.png";
+import logoWebp from "../src/images/logo.webp"
 const navigationItems = [
   "Retail Pharmacy",
   "Compounding Pharmacy",

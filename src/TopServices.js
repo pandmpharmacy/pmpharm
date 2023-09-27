@@ -2,7 +2,7 @@ import React from "react";
 import "./TopServices.css";
 import { useNavigate } from 'react-router-dom';
 
-/*import logo from "../src/PMLOGO.png"; */
+/*import logo from "../src/images/PMLOGO.png"; */
 
 function TopServices() {
   const navigate = useNavigate();

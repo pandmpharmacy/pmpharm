@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import logo from "../src/logo.webp";
+import logo from "../src/images/logo.webp";
 import "./HeaderComponent.css";
-import logoWebp from "../src/logo.webp";
+import logoWebp from "../src/images/logo.webp";
 
 function HeaderComponent() {
   const navigationItems = [

@@ -5,72 +5,72 @@ import "./Compounding.css";
 
 const imageMap = {
     PharmacistAndLady: {
-        jpg: require("../src/PharmacistAndLady.jpg"),
-        webp: require("../src/PharmacistAndLady.webp"),
+        jpg: require("../src/images/PharmacistAndLady.jpg"),
+        webp: require("../src/images/PharmacistAndLady.webp"),
     },
     SurprisedCat: {
-        jpg: require("../src/SurprisedCat.jpg"),
-        webp: require("../src/SurprisedCat.webp"),
+        jpg: require("../src/images/SurprisedCat.jpg"),
+        webp: require("../src/images/SurprisedCat.webp"),
     },
     DogWoman: {
-        jpg: require("../src/DogWoman.jpg"),
-        webp: require("../src/DogWoman.webp"),
+        jpg: require("../src/images/DogWoman.jpg"),
+        webp: require("../src/images/DogWoman.webp"),
     },
     CatDog: {
-        jpg: require("../src/CatDog.jpg"),
-        webp: require("../src/CatDog.webp"),
+        jpg: require("../src/images/CatDog.jpg"),
+        webp: require("../src/images/CatDog.webp"),
     },
     SmallCatDog: {
-        jpg: require("../src/SmallCatDog.jpg"),
-        webp: require("../src/SmallCatDog.webp"),
+        jpg: require("../src/images/SmallCatDog.jpg"),
+        webp: require("../src/images/SmallCatDog.webp"),
     },
     DogMan: {
-        jpg: require("../src/DogMan.jpg"),
-        webp: require("../src/DogMan.webp"),
+        jpg: require("../src/images/DogMan.jpg"),
+        webp: require("../src/images/DogMan.webp"),
     },
     ManCat: {
-        jpg: require("../src/ManCat.jpg"),
-        webp: require("../src/ManCat.webp"),
+        jpg: require("../src/images/ManCat.jpg"),
+        webp: require("../src/images/ManCat.webp"),
     },
     High5Cat: {
-        jpg: require("../src/High5Cat.jpg"),
-        webp: require("../src/High5Cat.webp"),
+        jpg: require("../src/images/High5Cat.jpg"),
+        webp: require("../src/images/High5Cat.webp"),
     },
     DogSyringe: {
-        jpg: require("../src/DogSyringe.jpg"),
-        webp: require("../src/DogSyringe.webp"),
+        jpg: require("../src/images/DogSyringe.jpg"),
+        webp: require("../src/images/DogSyringe.webp"),
     },
     PillsInHand: {
-        jpg: require("../src/PillsInHand.jpg"),
-        webp: require("../src/PillsInHand.webp"),
+        jpg: require("../src/images/PillsInHand.jpg"),
+        webp: require("../src/images/PillsInHand.webp"),
     },
     ComputerStethoscope: {
-        jpg: require("../src/ComputerStethoscope.jpg"),
-        webp: require("../src/ComputerStethoscope.webp"),
+        jpg: require("../src/images/ComputerStethoscope.jpg"),
+        webp: require("../src/images/ComputerStethoscope.webp"),
     },
     HandCream: {
-        jpg: require("../src/HandCream.jpg"),
-        webp: require("../src/HandCream.webp"),
+        jpg: require("../src/images/HandCream.jpg"),
+        webp: require("../src/images/HandCream.webp"),
     },
     HandDropper: {
-        jpg: require("../src/HandDropper.jpg"),
-        webp: require("../src/HandDropper.webp"),
+        jpg: require("../src/images/HandDropper.jpg"),
+        webp: require("../src/images/HandDropper.webp"),
     },
     PharmacistWithGel: {
-        jpg: require("../src/PharmacistWithGel.jpg"),
-        webp: require("../src/PharmacistWithGel.webp"),
+        jpg: require("../src/images/PharmacistWithGel.jpg"),
+        webp: require("../src/images/PharmacistWithGel.webp"),
     },
     WomanWithChild: {
-        jpg: require("../src/WomanWithChild.jpg"),
-        webp: require("../src/WomanWithChild.webp"),
+        jpg: require("../src/images/WomanWithChild.jpg"),
+        webp: require("../src/images/WomanWithChild.webp"),
     },
     CompoundPills: {
-        jpg: require("../src/CompoundPills.jpeg"),
-        webp: require("../src/CompoundPills.webp"),
+        jpg: require("../src/images/CompoundPills.jpeg"),
+        webp: require("../src/images/CompoundPills.webp"),
     },
     PillMaking: {
-        jpg: require("../src/PillMaking.jpeg"),
-        webp: require("../src/PillMaking.webp"),
+        jpg: require("../src/images/PillMaking.jpeg"),
+        webp: require("../src/images/PillMaking.webp"),
     }
 
     // Add more images as needed
