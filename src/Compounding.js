@@ -19,6 +19,10 @@ const imageMap = {
         jpg: require("../src/CatDog.jpg"),
         webp: require("../src/CatDog.webp"),
     },
+    SmallCatDog: {
+        jpg: require("../src/SmallCatDog.jpg"),
+        webp: require("../src/SmallCatDog.webp"),
+    },
     DogMan: {
         jpg: require("../src/DogMan.jpg"),
         webp: require("../src/DogMan.webp"),
@@ -58,6 +62,14 @@ const imageMap = {
     WomanWithChild: {
         jpg: require("../src/WomanWithChild.jpg"),
         webp: require("../src/WomanWithChild.webp"),
+    },
+    CompoundPills: {
+        jpg: require("../src/CompoundPills.jpg"),
+        webp: require("../src/CompoundPills.webp"),
+    },
+    PillMaking: {
+        jpg: require("../src/PillMaking.jpg"),
+        webp: require("../src/PillMaking.webp"),
     }
 
     // Add more images as needed
@@ -117,12 +129,11 @@ function Compounding() {
         {
             title: "Customized Dosage Forms",
             text: "We have decades of experience in compounding and can create customized dosage forms to suit your preferences and needs. Whether you need a transdermal gel, topical spray, or cosmetically appealing cream, we have you covered.",
-            imageSrc: "image8.jpg", // Replace with actual image URLs
+            imageSrc: "WomanWithChild", // Replace with actual image URLs
         },
         {
             title: "Change, Combine, or Exclude Ingredients",
             text: "We can modify your medications in various ways, including changing the dosage form, altering the route of administration, creating combination preparations, and excluding specific ingredients to accommodate your unique circumstances.",
-            imageSrc: "WomanWithChild", // Replace with actual image URLs
         }
         // Add more objects for additional boxes if needed
     ];
@@ -146,22 +157,22 @@ function Compounding() {
         {
             title: "Customized Size, Strength, and Dosage",
             text: "Many commercial animal medications come in limited sizes and strengths, which may not be suitable for every pet. As your local pet pharmacy, P&M Pharmacy formulates medications that are just right in terms of size, strength, and dose for your pet. We offer medications in various forms, including oral, transdermal, and more. For instance, P&M Pharmacy creates medicated chewable treats, ear drops, liquid concentrates, and other user-friendly options tailored to your animal's needs.",
-            
+            imageSrc: "SmallCatDog",
         },
         {
             title: "Transdermal Medication for Comfort",
             text: "P&M Pharmacy provides a wide range of medications compatible with transdermal bases. This delivery method is particularly beneficial for animals with conditions like hypertension or cardiovascular illness, as it minimizes stress. It also simplifies the medication process for pet owners who no longer have to struggle with medicating their animals. Additionally, we offer topical medications for localized inflammation or infection, ensuring your pet's comfort.",
-            
+            imageSrc: "High5Cat",
         },
         {
             title: "When Medications Are Unavailable",
             text: "In situations where specific medications become unavailable, pet owners often face challenges. Whether due to discontinued manufacturing or unavailability of veterinary formulations, the search for pet prescriptions near me can be frustrating. At P&M Pharmacy, we bridge this gap by compounding personalized dosage forms using pharmaceutical-grade ingredients, ensuring your pet receives the necessary treatment.",
-            imageSrc: "High5Cat", // Replace with actual image URLs
+            imageSrc: "ManCat", // Replace with actual image URLs
         },
         {
             title: "Combination Medications for Comprehensive Care",
             text: "Sometimes, treating multiple symptoms requires combining several medications. Dealing with separate containers can be costly and inconvenient. That's where P&M Pharmacy excels. We compound essential concentrations of compatible medications into a single, easy-to-use formulation. To simplify administration further, we offer various dosage forms, including medicated treats containing multiple drugs.",
-            imageSrc: "ManCat", // Replace with actual image URLs
+            imageSrc: "DogSyringe", // Replace with actual image URLs
         },
         {
             title: "Trust P&M Pharmacy for all your pet's compounding needs. Contact us today to ensure your furry family members receive the personalized care they deserve. Your pets' well-being is our priority!",
@@ -173,13 +184,13 @@ function Compounding() {
 
     const PeoplepairedBoxData = [
         {
-            title: "Customized Medications Tailored to Your Needs",
-            text: "At P&M Pharmacy, we're not just a pharmacy; we're your trusted compounding specialists serving Lake Worth, FL, and beyond. We understand that each patient is unique, and so are their medication needs. That's why we specialize in compounding personalized prescriptions, ensuring you receive the treatment that suits you best.",
+            title: "Customized Skin Care for Your Unique Needs",
+            text: "Welcome to P&M Pharmacy, your premier dermatology compounding pharmacy serving Wellington, Greenacres, and Lake Worth. We are committed to providing the highest quality care for all your dermatologic needs. Our skilled compounding pharmacists utilize cutting-edge technology and techniques to create compounded medications in a variety of forms, including cosmetically appealing creams, topical sprays, powders, and customized oral dosage forms such as flavored troches or lozenges. We also offer preparations for various routes of administration, ensuring convenience and improved adherence.",
             // imageSrc: "PharmacistAndLady", // You can omit the imageSrc if an image is not needed for this box
         },
         {
-            title: "Insurance Coverage for Compounding Prescriptions",
-            text: "Wondering if your insurance covers compounded prescriptions? It varies depending on your insurance plan. While very few insurance companies reimburse compounded prescriptions directly, patients may often seek reimbursement by submitting claim forms.",
+            title: "Comprehensive Dermatology Solutions",
+            text: "At P&M Pharmacy, your trusted dermatology specialty pharmacy, our compounding pharmacists collaborate with your healthcare providers to prepare customized medications for a wide range of dermatological conditions, including:",
             imageSrc: "image2.jpg", // Replace with actual image URLs
         },
         {
