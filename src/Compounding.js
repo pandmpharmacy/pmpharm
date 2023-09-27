@@ -257,14 +257,9 @@ function Compounding() {
 
             {/* People Compounding Section */}
             <div className="compoundingPeople-title-box">
-                <LandingHeader title={"People Compounding Pharmacy"} />
+                <LandingHeader title={"Dermatology Compounding"} />
                 <p>Human Compounding Short message goes here.</p>
             </div>
-            {/* Left-aligned text area with subheading */}
-                <div className="left-aligned-text">
-                    <h3>Dermatology</h3>
-                </div>
-                {/* End of left-aligned text area */}
             <div className="compounding-pair-boxes">{renderBoxes(PeopleDermpairedBoxData)}</div>
             {/* Left-aligned text area with subheading */}
                 <div className="left-aligned-text">
