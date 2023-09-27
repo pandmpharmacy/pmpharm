@@ -35,7 +35,7 @@
   }
 
   .service-container {
-    grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    grid-template-columns: repeat(5, 1fr); /* Four columns for larger screens */
     margin: 50px auto; /* Restore margin for larger screens */
     gap: 20px; /* Restore gap for larger screens */
   }
