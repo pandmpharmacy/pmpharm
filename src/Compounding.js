@@ -280,9 +280,9 @@ function Compounding() {
             title: "Benefits of Bioidentical Hormone Replacement Therapy (BHRT)",
             text: "BHRT offers a range of beenfits. Learn more: ",
             imageSrc: "image6.jpg", // Replace with actual image URLs
-            border_hex: "#222",
+            border_hex: "#eee",
             learnMore: [
-                { 1: "sentence 1" }, { 2: "second 2" }
+                { 1: "Improved energy levels" }, { 2: "Enhanced physiological well-being and mood" }, { 3: "Reduced hot flashes" }, { 4: "Improved sex drive" }, { 5: "Relief from vaginal dryness" }, { 6: "Enhanced erectile function" }, { 7: "Reduced riskof osteoperosis" }, { 8: "Effective management of menopausal symptoms" }
             ]
 
             // Replace with actual image URLs
