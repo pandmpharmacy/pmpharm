@@ -64,11 +64,11 @@ const imageMap = {
         webp: require("../src/WomanWithChild.webp"),
     },
     CompoundPills: {
-        jpg: require("../src/CompoundPills.jpg"),
+        jpg: require("../src/CompoundPills.jpeg"),
         webp: require("../src/CompoundPills.webp"),
     },
     PillMaking: {
-        jpg: require("../src/PillMaking.jpg"),
+        jpg: require("../src/PillMaking.jpeg"),
         webp: require("../src/PillMaking.webp"),
     }
 
@@ -119,7 +119,7 @@ function Compounding() {
         {
             title: "What Sets P&M Pharmacy Apart",
             text: "Why choose P&M Pharmacy over other specialty compounding pharmacies? Learn More",
-            /*imageSrc: "PharmacistWithGel", // Replace with actual image URLs*/
+            imageSrc: "CompoundPills",
         },
         {
             title: "Your Trusted Compounding Pharmacy",
@@ -134,6 +134,7 @@ function Compounding() {
         {
             title: "Change, Combine, or Exclude Ingredients",
             text: "We can modify your medications in various ways, including changing the dosage form, altering the route of administration, creating combination preparations, and excluding specific ingredients to accommodate your unique circumstances.",
+            imageSrc: "PillMaking",
         }
         // Add more objects for additional boxes if needed
     ];
@@ -182,7 +183,7 @@ function Compounding() {
         // Add more objects for additional boxes if needed
     ];
 
-    const PeoplepairedBoxData = [
+    const PeopleDermpairedBoxData = [
         {
             title: "Customized Skin Care for Your Unique Needs",
             text: "Welcome to P&M Pharmacy, your premier dermatology compounding pharmacy serving Wellington, Greenacres, and Lake Worth. We are committed to providing the highest quality care for all your dermatologic needs. Our skilled compounding pharmacists utilize cutting-edge technology and techniques to create compounded medications in a variety of forms, including cosmetically appealing creams, topical sprays, powders, and customized oral dosage forms such as flavored troches or lozenges. We also offer preparations for various routes of administration, ensuring convenience and improved adherence.",
@@ -194,71 +195,48 @@ function Compounding() {
             imageSrc: "image2.jpg", // Replace with actual image URLs
         },
         {
-            title: "Versatility in Compounded Prescriptions",
-            text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments.",
+            title: "Examples of Compounded Medications",
+            text: "As a dermatology compounding pharmacy, we offer a diverse range of compounded medications to address various dermatological disorders. While the list below provides examples, please note that we can create custom formulations tailored to your therapy needs. Our offerings include:",
             imageSrc: "image3.jpg", // Replace with actual image URLs
         },
         {
-            title: "Safety is Our Priority",
-            text: "We prioritize your safety. The Food and Drug Administration recognizes the importance of pharmacy compounding in providing crucial alternatives for patients requiring medications not commercially available or facing drug shortages. Safety measures include prescriptions written by licensed practitioners and compounding by licensed pharmacists, along with compliance with state pharmacy board regulations.",
+            title: "Trust P&M Pharmacy for all your dermatological needs. Contact us today to discover how our customized skin care solutions can benefit you. Your skin's health and well-being are our top priorities!",
+        }
+        
+        // Add more objects for additional boxes if needed
+    ];
+
+    const PeopleHRTpairedBoxData = [
+        {
+            title: "Your Path to Hormonal Balance Starts Here",
+            text: "At P&M Pharmacy, we offer the best pricing for Hormone Replacement Therapy (HRT) that Palm Beach County trusts. We are committed to providing high-quality HRT solutions to help you achieve hormonal balance and improve your overall well-being.",
+            // imageSrc: "PharmacistAndLady", // You can omit the imageSrc if an image is not needed for this box
+        },
+        {
+            title: "Understanding Hormones",
+            text: "Hormones are the body's regulatory messengers, influencing essential functions such as mood, metabolism, reproduction, and hunger. When hormones are in balance, our bodies function optimally.",
+            imageSrc: "image2.jpg", // Replace with actual image URLs
+        },
+        {
+            title: "Types of Hormones We Address",
+            text: "Our HRT services cover a range of hormones, Learn More. Estrogens (Estrone, Estradiol, Estriol), Progesterone, Testosterone, DHEA (dehydroepiandrosterone, Bi-Est (Estriol + Estradiol), considered as one ingredient)",
+            imageSrc: "image3.jpg", // Replace with actual image URLs
+        },
+        {
+            title: "Do You Struggle with Hormone Imbalance?",
+            text: "Hormonal imbalances can affect individuals of any age, leading to various symptoms. Women often experience imbalances during menopause, which can result in disruptive symptoms such as hot flashes, weight gain, mood swings, and more. Men may face hormonal imbalances during Andropause, marked by symptoms like low libido, fatigue, and mood changes.",
             imageSrc: "image5.jpg", // Replace with actual image URLs
         },
         {
-            title: "What Sets P&M Pharmacy Apart",
-            text: "Why choose P&M Pharmacy over other specialty compounding pharmacies? Learn More",
+            title: "Taking Action for Hormonal Health",
+            text: "Don't let hormonal imbalances disrupt your life. At P&M Pharmacy, we offer Hormone Replacement Therapy (HRT) as a solution to restore balance. Whether you're seeking female hormone replacement therapy or hormone replacement therapy for males, you've come to the right place. As an HRT compounding pharmacy, P&M Pharmacy goes the extra mile. We can compound your hormone therapy in various forms, including capsules, creams, and troches, providing precise dosages tailored to your needs.",
             imageSrc: "image6.jpg", // Replace with actual image URLs
         },
         {
-            title: "Your Trusted Compounding Pharmacy",
-            text: "Discover the difference at P&M Pharmacy. Whether you require Hormone Replacement Therapy (HRT), Veterinary Compounding, Dermatology, Sports Medicine, Podiatry, Wound Care, Pediatrics, or any other personalized medication, we're here to meet your needs.",
-            imageSrc: "image7.jpg", // Replace with actual image URLs
-        },
-        {
-            title: "Customized Dosage Forms",
-            text: "We have decades of experience in compounding and can create customized dosage forms to suit your preferences and needs. Whether you need a transdermal gel, topical spray, or cosmetically appealing cream, we have you covered.",
-            imageSrc: "image8.jpg", // Replace with actual image URLs
-        },
-        {
-            title: "Change, Combine, or Exclude Ingredients",
-            text: "We can modify your medications in various ways, including changing the dosage form, altering the route of administration, creating combination preparations, and excluding specific ingredients to accommodate your unique circumstances.",
-            imageSrc: "image9.jpg", // Replace with actual image URLs
-        },
-        {
-            title: "Wound Care Supplies",
-            text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
-            imageSrc: "image10.jpg", // Replace with actual image URLs
-        },
-        {
-            title: "Wound Care Supplies",
-            text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
-            imageSrc: "image11.jpg", // Replace with actual image URLs
-        },
-        {
-            title: "Support Stockings",
-            text: "Discover support stockings to improve circulation and alleviate discomfort.",
-            imageSrc: "image12.jpg", // Replace with actual image URLs
-        },
-        {
-            title: "Daily Living Aids",
-            text: "We offer a range of daily living aids to enhance your independence and quality of life.",
-            imageSrc: "image13.jpg", // Replace with actual image URLs
-        },
-        {
-            title: "Incontinence Supplies",
-            text: "Find incontinence supplies to ensure comfort and confidence.",
-            imageSrc: "image14.jpg", // Replace with actual image URLs
-        },
-        {
-            title: "Foot Care",
-            text: "Explore our foot care products to maintain healthy and comfortable feet.",
-            imageSrc: "image15.jpg", // Replace with actual image URLs
-        },
-        {
-            title: "OTC (Vitamins, Skincare, Cough and Cold, etc",
-            text: "Our pharmacy carries a diverse selection of over-the-counter products, including vitamins, skincare, and cough and cold remedies, for your health and wellness needs.",
-            imageSrc: "imaged6.jpg", // Replace with actual image URLs
+            title: "Benefits of Bioidentical Hormone Replacement Therapy (BHRT)",
+            text: "BHRT offers a range of beenfits. Learn more: ",
+            imageSrc: "image6.jpg", // Replace with actual image URLs
         }
-        // Add more objects for additional boxes if needed
     ];
 
     return (
@@ -277,12 +255,22 @@ function Compounding() {
             </div>
             <div className="compounding-pair-boxes">{renderBoxes(PetpairedBoxData)}</div>
 
-            {/* Human Compounding Section */}
+            {/* People Compounding Section */}
             <div className="compoundingPeople-title-box">
-                <LandingHeader title={"Human Compounding Pharmacy"} />
+                <LandingHeader title={"People Compounding Pharmacy"} />
                 <p>Human Compounding Short message goes here.</p>
             </div>
-            <div className="compounding-pair-boxes">{renderBoxes(PeoplepairedBoxData)}</div>
+            {/* Left-aligned text area with subheading */}
+                <div className="left-aligned-text">
+                    <h3>Dermatology</h3>
+                </div>
+                {/* End of left-aligned text area */}
+            <div className="compounding-pair-boxes">{renderBoxes(PeopleDermpairedBoxData)}</div>
+            {/* Left-aligned text area with subheading */}
+                <div className="left-aligned-text">
+                    <h3>Hormone Replacement Therapy</h3>
+                </div>
+            <div className="compounding-pair-boxes">{renderBoxes(PeopleHRTpairedBoxData)}</div>
         </div>
     );
 }
