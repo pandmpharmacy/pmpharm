@@ -17,72 +17,152 @@ import PharmacistAndLadyWebp from "../src/PharmacistAndLady.webp";
 import PharmacistAndLadyJPG from "../src/PharmacistAndLady.jpg";
 import PillsInHandWebp from "../src/PillsInHand.webp";
 import PillsInHandJPG from "../src/PillsInHand.jpg";
-import HandDropperWebp from "../src/HandDropper.webp";
-import HandDropperJPG from "../src/HandDropper.jpg";
-/*import VirusWebp from "../src/Virus.webp";
+import VirusWebp from "../src/Virus.webp";
 import VirusJPG from "../src/Virus.jpg";
 import PharmacistWithGelWebp from "../src/PharmacistWithGel.webp";
-import PharmacistWithGelJPG from "../src/PharmacistWithGel.jpg"; */
-
+import PharmacistWithGelJPG from "../src/PharmacistWithGel.jpg";
 
 /*import { useNavigate } from "react-router-dom";*/
 /*import LeftInterlockedTextBoxes from "./LeftInterlockedTextBoxes";*/
 import LandingHeader from "./LandingHeader";
-import "./Compounding.css"; // Import a CSS file for styling (create this file)
+import "./Compounding.css";
+
+const imageMap = {
+    PharmacistAndLady: {
+        jpg: require("../src/PharmacistAndLady.jpg"),
+        webp: require("../src/PharmacistAndLady.webp"),
+    },
+    SurprisedCat: {
+        jpg: require("../src/SurprisedCat.jpg"),
+        webp: require("../src/SurprisedCat.webp"),
+    },
+    DogWoman: {
+        jpg: require("../src/DogWoman.jpg"),
+        webp: require("../src/DogWoman.webp"),
+    },
+    CatDog: {
+        jpg: require("../src/CatDog.jpg"),
+        webp: require("../src/CatDog.webp"),
+    },
+    SmallCatDog: {
+        jpg: require("../src/SmallCatDog.jpg"),
+        webp: require("../src/SmallCatDog.webp"),
+    },
+    DogMan: {
+        jpg: require("../src/DogMan.jpg"),
+        webp: require("../src/DogMan.webp"),
+    },
+    ManCat: {
+        jpg: require("../src/ManCat.jpg"),
+        webp: require("../src/ManCat.webp"),
+    },
+    High5Cat: {
+        jpg: require("../src/High5Cat.jpg"),
+        webp: require("../src/High5Cat.webp"),
+    },
+    DogSyringe: {
+        jpg: require("../src/DogSyringe.jpg"),
+        webp: require("../src/DogSyringe.webp"),
+    },
+    PillsInHand: {
+        jpg: require("../src/PillsInHand.jpg"),
+        webp: require("../src/PillsInHand.webp"),
+    },
+    ComputerStethoscope: {
+        jpg: require("../src/ComputerStethoscope.jpg"),
+        webp: require("../src/ComputerStethoscope.webp"),
+    },
+    HandCream: {
+        jpg: require("../src/HandCream.jpg"),
+        webp: require("../src/HandCream.webp"),
+    },
+    HandDropper: {
+        jpg: require("../src/HandDropper.jpg"),
+        webp: require("../src/HandDropper.webp"),
+    },
+    PharmacistWithGel: {
+        jpg: require("../src/PharmacistWithGel.jpg"),
+        webp: require("../src/PharmacistWithGel.webp"),
+    },
+    WomanWithChild: {
+        jpg: require("../src/WomanWithChild.jpg"),
+        webp: require("../src/WomanWithChild.webp"),
+    },
+    CompoundPills: {
+        jpg: require("../src/CompoundPills.jpeg"),
+        webp: require("../src/CompoundPills.webp"),
+    },
+    PillMaking: {
+        jpg: require("../src/PillMaking.jpeg"),
+        webp: require("../src/PillMaking.webp"),
+    }
+
+    // Add more images as needed
+};
+
 
 function Compounding() {
-  /*onst navigate = useNavigate();*/
+    const renderBoxes = (data) => {
+        return data.map((item, index) => (
+            <div className="box" key={index} style={{ gridArea: `box${index + 1}` }}>
+                <h2>{item.title}</h2>
+                <p>{item.text}</p>
+                {item.imageSrc && ( // Check if imageSrc is present
+                    <picture>
+                        <source srcSet={imageMap[item.imageSrc]?.webp} type="image/webp" />
+                        <img src={imageMap[item.imageSrc]?.jpg} alt={`Box ${index + 1}`} className="featured_image" />
+                    </picture>
+                )}
+            </div>
+        ));
+    };
 
-  // Define an array to generate multiple instances of  Compounding paired boxes
-const pairedBoxData = [
-  {
-    title: "Customized Medications Tailored to Your Needs",
-    text: "At P&M Pharmacy, we're not just a pharmacy; we're your trusted compounding specialists serving Lake Worth, FL, and beyond. We understand that each patient is unique, and so are their medication needs. That's why we specialize in compounding personalized prescriptions, ensuring you receive the treatment that suits you best.",
-    imageSrc: "image1.jpg", // Replace with actual image URLs
-  },
-  {
-    title: "Insurance Coverage for Compounding Prescriptions",
-    text: "Wondering if your insurance covers compounded prescriptions? It varies depending on your insurance plan. While very few insurance companies reimburse compounded prescriptions directly, patients may often seek reimbursement by submitting claim forms.",
-    imageSrc: "image2.jpg", // Replace with actual image URLs
-  },
-  {
-    title: "Versatility in Compounded Prescriptions",
-    text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments.",
-    imageSrc: "image3.jpg", // Replace with actual image URLs
-  },
-  {
-    title: "Versatility in Compounded Prescriptions",
-    text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments. Our delivery vehicles include: Creams, gels, and ointments. Learn More",
-    imageSrc: "image4.jpg", // Replace with actual image URLs
-  },
-  {
-    title: "Safety is Our Priority",
-    text: "We prioritize your safety. The Food and Drug Administration recognizes the importance of pharmacy compounding in providing crucial alternatives for patients requiring medications not commercially available or facing drug shortages. Safety measures include prescriptions written by licensed practitioners and compounding by licensed pharmacists, along with compliance with state pharmacy board regulations.",
-    imageSrc: "image5.jpg", // Replace with actual image URLs
-  },
-  {
-    title: "What Sets P&M Pharmacy Apart",
-    text: "Why choose P&M Pharmacy over other specialty compounding pharmacies? Learn More",
-    imageSrc: "image6.jpg", // Replace with actual image URLs
-  },
-  {
-    title: "Your Trusted Compounding Pharmacy",
-    text: "Discover the difference at P&M Pharmacy. Whether you require Hormone Replacement Therapy (HRT), Veterinary Compounding, Dermatology, Sports Medicine, Podiatry, Wound Care, Pediatrics, or any other personalized medication, we're here to meet your needs.",
-    imageSrc: "image7.jpg", // Replace with actual image URLs
-  },
-  {
-    title: "Customized Dosage Forms",
-    text: "We have decades of experience in compounding and can create customized dosage forms to suit your preferences and needs. Whether you need a transdermal gel, topical spray, or cosmetically appealing cream, we have you covered.",
-    imageSrc: "image8.jpg", // Replace with actual image URLs
-  },
-  {
-    title: "Change, Combine, or Exclude Ingredients",
-    text: "We can modify your medications in various ways, including changing the dosage form, altering the route of administration, creating combination preparations, and excluding specific ingredients to accommodate your unique circumstances.",
-    imageSrc: "image9.jpg", // Replace with actual image URLs
-  }
-  
-  // Add more data for additional boxes if needed
-];
+    // Rest of your code...
+
+
+    const pairedBoxData = [
+        {
+            title: "Customized Medications Tailored to Your Needs",
+            text: "At P&M Pharmacy, we're not just a pharmacy; we're your trusted compounding specialists serving Lake Worth, FL, and beyond. We understand that each patient is unique, and so are their medication needs. That's why we specialize in compounding personalized prescriptions, ensuring you receive the treatment that suits you best.",
+            imageSrc: "PharmacistAndLady", // Use the image key from the imageMap
+        },
+        {
+            title: "Insurance Coverage for Compounding Prescriptions",
+            text: "Wondering if your insurance covers compounded prescriptions? It varies depending on your insurance plan. While very few insurance companies reimburse compounded prescriptions directly, patients may often seek reimbursement by submitting claim forms.",
+            imageSrc: "ComputerStethoscope"
+        },
+        {
+            title: "Versatility in Compounded Prescriptions",
+            text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments.",
+            imageSrc: "HandCream", // Replace with actual image URLs
+        },
+        {
+            title: "Safety is Our Priority",
+            text: "We prioritize your safety. The Food and Drug Administration recognizes the importance of pharmacy compounding in providing crucial alternatives for patients requiring medications not commercially available or facing drug shortages. Safety measures include prescriptions written by licensed practitioners and compounding by licensed pharmacists, along with compliance with state pharmacy board regulations.",
+            imageSrc: "HandDropper", // Replace with actual image URLs
+        },
+        {
+            title: "What Sets P&M Pharmacy Apart",
+            text: "Why choose P&M Pharmacy over other specialty compounding pharmacies? Learn More",
+            imageSrc: "CompoundPills",
+        },
+        {
+            title: "Your Trusted Compounding Pharmacy",
+            text: "Discover the difference at P&M Pharmacy. Whether you require Hormone Replacement Therapy (HRT), Veterinary Compounding, Dermatology, Sports Medicine, Podiatry, Wound Care, Pediatrics, or any other personalized medication, we're here to meet your needs.",
+            imageSrc: "PharmacistWithGel" // Replace with actual image URLs
+        },
+        {
+            title: "Customized Dosage Forms",
+            text: "We have decades of experience in compounding and can create customized dosage forms to suit your preferences and needs. Whether you need a transdermal gel, topical spray, or cosmetically appealing cream, we have you covered.",
+            imageSrc: "WomanWithChild", // Replace with actual image URLs
+        },
+        {
+            title: "Change, Combine, or Exclude Ingredients",
+            text: "We can modify your medications in various ways, including changing the dosage form, altering the route of administration, creating combination preparations, and excluding specific ingredients to accommodate your unique circumstances.",
+            imageSrc: "PillMaking",
+        }
+        // Add more objects for additional boxes if needed
+    ];
 
 // You can use the pairedBoxData array in your application as needed.
 
@@ -144,6 +224,11 @@ const PeoplepairedBoxData = [
     title: "Versatility in Compounded Prescriptions",
     text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments.",
     imageSrc: "image3.jpg", // Replace with actual image URLs
+  },
+  {
+    title: "Versatility in Compounded Prescriptions",
+    text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments. Our delivery vehicles include: Creams, gels, and ointments. Learn More",
+    imageSrc: "image4.jpg", // Replace with actual image URLs
   },
   {
     title: "Safety is Our Priority",
@@ -262,10 +347,7 @@ const PeoplepairedBoxData = [
         <div className="box" style={{ gridArea: "box8" }}>
           <h2>{pairedBoxData[7].title}</h2>
           <p>{pairedBoxData[7].text}</p>
-          <picture>
-            <source srcSet={HandDropperWebp} type="image/webp" />
-            <img src={HandDropperJPG} alt="" className="featured_image" />
-          </picture>
+          <img src={pairedBoxData[7].imageSrc} alt="Box 8" />
         </div>
         <div className="box" style={{ gridArea: "box9" }}>
           <h2>{pairedBoxData[8].title}</h2>
@@ -418,6 +500,11 @@ const PeoplepairedBoxData = [
           <h2>{PeoplepairedBoxData[14].title}</h2>
           <p>{PeoplepairedBoxData[14].text}</p>
           <img src={PeoplepairedBoxData[14].imageSrc} alt="Box 15" />
+        </div>
+        <div className="box" style={{ gridArea: "box16" }}>
+          <h2>{PeoplepairedBoxData[15].title}</h2>
+          <p>{PeoplepairedBoxData[15].text}</p>
+          <img src={PeoplepairedBoxData[15].imageSrc} alt="Box 16" />
         </div>
       </div>
     </div>
