@@ -143,8 +143,8 @@ function Compounding() {
         },
         {
           title: "Retail Prescriptions (quick and easy)",
-          text: "Experience hassle-free parking and have your prescriptions filled in just 5-10 minutes for your convenience.",
-          imageSrc: "RetailMedications", // Replace with actual image URLs
+          text: "Experience hassle-free parking and have your prescriptions filled in just 5-10 minutes for your convenience. Give us a call transfer or refill your prescriptions at 210-660-8650",
+          imageSrc: "RetailMedications",
            
         },
         {
