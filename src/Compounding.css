@@ -2,118 +2,165 @@
 /* Mobile-first styles */
 
 .compounding-container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  gap: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.compounding-title-box {
-  background-color: #c01313;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.compoundingPet-title-box {
-  background-color: #3f1fc1;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.compoundingPeople-title-box {
-  background-color: #1db612;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.compounding-pair-boxes {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr; /* For mobile by default, boxes will stack */
-  grid-template-areas:
-    "box1"
-    "box2"
-    "box3"
-    "box4"
-    "box5"
-    "box6"
-    "box7"
-    "box8"
-    "box9"
-    "box10"
-    "box11"
-    "box12"
-    "box13"
-    "box14"
-    "box15"
-    "box16";
-}
-
-.box {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.box img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.box h2 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.box p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Styles for the left-aligned text area and subheading */
-.left-aligned-text {
-  text-align: left;
-  margin-top: 10px;
-}
-
-.left-aligned-text h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.left-aligned-text p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* For larger screens (e.g., tablets and desktops) */
-@media (min-width: 768px) {
-  .compounding-pair-boxes {
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-areas:
-      "box1 box1 box1 box1 box1 box2 box2 box2 box2 box2"
-      "box3 box3 box3 box3 box3 box3 box3 box4 box4 box4"
-      "box5 box5 box5 box5 box5 box6 box6 box6 box6 box6"
-      "box7 box7 box7 box7 box7 box7 box7 box8 box8 box8"
-      "box9 box9 box9 box9 box9 box10 box10 box10 box10 box10"
-      "box11 box11 box11 box11 box11 box11 box11 box12 box12 box12"
-      "box13 box13 box13 box13 box13 box14 box14 box14 box14 box14"
-      "box15 box15 box15 box15 box15 box15 box15 box16 box16 box16";
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
   }
-}
+  
+  .compounding-title-box {
+    background-color: #c01313;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .compoundingPet-title-box {
+    background-color: #3f1fc1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .compoundingPeople-title-box {
+    background-color: #1db612;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .compounding-pair-boxes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* For mobile by default, boxes will stack */
+    grid-template-areas: 
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7"
+      "box8"
+      "box9"
+      "box10"
+      "box11"
+      "box12"
+      "box13"
+      "box14"
+      "box15"
+      "box16";
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* For larger screens (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    .compounding-pair-boxes {
+      grid-template-columns: repeat(10, 1fr); /* Three columns to achieve your structure */
+      grid-template-areas: 
+        "box1 box1 box1 box1 box1 box2 box2 box2 box2 box2"
+        "box3 box3 box3 box3 box3 box3 box3 box4 box4 box4"
+        "box5 box5 box5 box5 box5 box6 box6 box6 box6 box6"
+        "box7 box7 box7 box7 box7 box7 box7 box8 box8 box8"
+        "box9 box9 box9 box9 box9 box10 box10 box10 box10 box10"
+        "box11 box11 box11 box11 box11 box11 box11 box12 box12 box12"
+        "box13 box13 box13 box13 box13 box14 box14 box14 box14 box14"
+        "box15 box15 box15 box15 box15 box15 box15 box16 box16 box16";
+    }
+  }
+  
+  /* For larger screens (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    .compounding-pair-boxes {
+      grid-template-columns: 1 70% 30% 30% 70%; /* Custom column sizes for your boxes */
+    }
+  
+    .single-box {
+      grid-column: span 3; /* Box 1 will span 3 columns (all) */
+    }
+  
+    .large-box {
+      grid-column: span 2; /* 2 column span for 70% width */
+    }
+  
+    .small-box {
+      grid-column: span 1; /* 1 column span for 30% width */
+    }
+  }
+  
+  
+  /* Style for each paired box */
+  
+  /* Default for mobile (boxes stacked) */
+.paired-box {
+    display: grid;
+    grid-template-columns: 1fr; /* one box per row */
+    gap: 20px; /* space between the stacked boxes */
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* For larger screens (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    .compounding-paired-box {
+      grid-template-columns: 1fr 1fr; /* boxes side by side */
+    }
+  }
+  
