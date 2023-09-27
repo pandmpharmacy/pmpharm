@@ -27,7 +27,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
 
-  .compoundingPeople-title-box {
+  .compoundingDerm-title-box {
     background-color: #1db612;
     color: #fff;
     padding: 20px;
@@ -36,6 +36,14 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
   
+  .compoundingHRT-title-box {
+    background-color: #1db612;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
  
   .compounding-pair-boxes {
     display: grid;
@@ -67,7 +75,15 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
   }
-  
+  /* Styles for the box when active */
+.active-box {
+  background-color: green !important;
+}
+
+/* Styles for the h2 tag when active */
+.active-title {
+  color: white !important;
+}
   .box img {
     max-width: 100%;
     height: auto;

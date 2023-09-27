@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import LandingHeader from "./LandingHeader";
 import "./Compounding.css";
 
@@ -78,18 +78,57 @@ const imageMap = {
 
 
 function Compounding() {
+    const [activeBox, setActiveBox] = useState(null);
+
+    const toggleBoxContent = (index) => {
+        if (activeBox === index) {
+            setActiveBox(null);
+        } else {
+            setActiveBox(index);
+        }
+    };
     const renderBoxes = (data) => {
+
         return data.map((item, index) => (
-            <div className="box" key={index} style={{ gridArea: `box${index + 1}` }}>
-                <h2>{item.title}</h2>
-                <p>{item.text}</p>
-                {item.imageSrc && ( // Check if imageSrc is present
-                    <picture>
-                        <source srcSet={imageMap[item.imageSrc]?.webp} type="image/webp" />
-                        <img src={imageMap[item.imageSrc]?.jpg} alt={`Box ${index + 1}`} className="featured_image" />
-                    </picture>
+            <div className="box"
+                key={index}
+                style={{
+                    gridArea: `box${index + 1}`,
+                    backgroundColor: activeBox === index && item.border_hex ? item.border_hex : 'initial'
+                }}>
+
+                <div
+
+                >
+                    <h2 className={activeBox === index ? 'active-title' : ''}>{item.title}</h2>
+
+                    {activeBox === index && item.learnMore ? (
+                        <ul>
+                            {item.learnMore.map((sentenceObj, idx) => (
+                                <li key={idx}>{Object.values(sentenceObj)[0]}</li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <>
+                            <p>{item.text}</p>
+                            {item.imageSrc && (
+                                <picture>
+                                    <source srcSet={imageMap[item.imageSrc]?.webp} type="image/webp" />
+                                    <img src={imageMap[item.imageSrc]?.jpg} alt={`Box ${index + 1}`} className="featured_image" />
+                                </picture>
+                            )}
+                        </>
+                    )}
+
+
+                </div>
+                {item.learnMore && (
+                    <button onClick={() => toggleBoxContent(index)}>
+                        {activeBox === index ? 'X' : '+'}
+                    </button>
                 )}
             </div>
+
         ));
     };
 
@@ -203,7 +242,7 @@ function Compounding() {
         {
             title: "Trust P&M Pharmacy for all your dermatological needs. Contact us today to discover how our customized skin care solutions can benefit you. Your skin's health and well-being are our top priorities!",
         }
-        
+
         // Add more objects for additional boxes if needed
     ];
 
@@ -227,6 +266,10 @@ function Compounding() {
             title: "Do You Struggle with Hormone Imbalance?",
             text: "Hormonal imbalances can affect individuals of any age, leading to various symptoms. Women often experience imbalances during menopause, which can result in disruptive symptoms such as hot flashes, weight gain, mood swings, and more. Men may face hormonal imbalances during Andropause, marked by symptoms like low libido, fatigue, and mood changes.",
             imageSrc: "image5.jpg", // Replace with actual image URLs
+            border_hex: "#eee",
+            learnMore: [
+                { 1: "sentence 1342" }, { 2: "second 22313242" }
+            ]
         },
         {
             title: "Taking Action for Hormonal Health",
@@ -237,6 +280,12 @@ function Compounding() {
             title: "Benefits of Bioidentical Hormone Replacement Therapy (BHRT)",
             text: "BHRT offers a range of beenfits. Learn more: ",
             imageSrc: "image6.jpg", // Replace with actual image URLs
+            border_hex: "#222",
+            learnMore: [
+                { 1: "sentence 1" }, { 2: "second 2" }
+            ]
+
+            // Replace with actual image URLs
         }
     ];
 
@@ -257,15 +306,15 @@ function Compounding() {
             <div className="compounding-pair-boxes">{renderBoxes(PetpairedBoxData)}</div>
 
             {/* People Compounding Section */}
-            <div className="compoundingPeople-title-box">
+            <div className="compoundingDerm-title-box">
                 <LandingHeader title={"Dermatology Compounding"} />
                 <p>Human Compounding Short message goes here.</p>
             </div>
             <div className="compounding-pair-boxes">{renderBoxes(PeopleDermpairedBoxData)}</div>
-            {/* Left-aligned text area with subheading */}
-                <div className="left-aligned-text">
-                    <h3>Hormone Replacement Therapy</h3>
-                </div>
+            <div className="compoundingHRT-title-box">
+                <LandingHeader title={"Hormone Replacement Therapy Compounding"} />
+                <p>HRT Compounding Short message goes here.</p>
+            </div>
             <div className="compounding-pair-boxes">{renderBoxes(PeopleHRTpairedBoxData)}</div>
         </div>
     );
