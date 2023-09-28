@@ -137,8 +137,8 @@ function Compounding() {
 
     const pairedBoxData = [
         {
-          title: "Free Delivery",
-          text: "We offer convenient and free delivery services within a 3-mile radius of our pharmacy to ensure you receive your medications at your doorstep.",
+          title: "Vaccines you need",
+          text: "At P&M Pharmacy, we carry vaccines like Flu, COVID-19, Shingles, pneumonia (pneumococcal), Hepatitis B and more",
           imageSrc: "image1.jpg", // Replace with actual image URLs
         },
         {
