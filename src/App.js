@@ -9,6 +9,7 @@ import RetailPharm from './RetailPharm';
 import PetPharm from './PetPharm';
 import Immunization from './Immunization';
 import PetCompunding from './PetCompunding';
+import Medical from './Medical';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/compounding" element={<Compounding />} />
           <Route path="/retail" element={<RetailPharm />} />
           <Route path="/pet" element={<PetPharm />} />
+          <Route path="/medical" element={<Medical />} />
           <Route path="/Immunization" element={<Immunization />} />
           <Route path="/pet-compounding" element={<PetCompunding />} />
         </Routes>

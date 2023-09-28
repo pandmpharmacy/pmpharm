@@ -1,0 +1,269 @@
+/* RetailPharm.css */
+/* Mobile-first styles */
+.medical_box {
+  height: 500px; /* or whatever fixed height you desire */
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.medical_box h2,
+ul,
+li {
+  z-index: 1;
+  position: relative;
+}
+.medical_box > button {
+  position: absolute;
+  top: 1; /* desired position *;
+  right:  /* desired position *;
+  z-index: 2; /* To ensure it's above other content */
+}
+.medical-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.medical-title-box {
+  background-color: #c01313;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.medicalPet-title-box {
+  background-color: #3f1fc1;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.medicalDerm-title-box {
+  background-color: #3f1fc1;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.medicalHRT-title-box {
+  background-color: #169f0d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.medical-pair-boxes {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr; /* For mobile by default, boxes will stack */
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box8"
+    "box9"
+    "box10"
+    "box11"
+    "box12"
+    "box13"
+    "box14"
+    "box15"
+    "box16";
+  max-width: 1350px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Styles for the box when active */
+.active-box {
+  background-color: green !important;
+}
+
+/* Styles for the h2 tag when active */
+.active-title {
+  color: white !important;
+}
+.medical_box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.medical_box h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.medical_box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* For larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+  .medical-pair-boxes {
+    grid-template-columns: repeat(10, 1fr); /* Three columns to achieve your structure */
+    grid-template-areas:
+      "box1 box1 box1 box1 box1 box2 box2 box2 box2 box2"
+      "box3 box3 box3 box3 box3 box3 box3 box4 box4 box4"
+      "box5 box5 box5 box5 box5 box6 box6 box6 box6 box6"
+      "box7 box7 box7 box7 box7 box7 box7 box8 box8 box8"
+      "box9 box9 box9 box9 box9 box10 box10 box10 box10 box10"
+      "box11 box11 box11 box11 box11 box11 box11 box12 box12 box12"
+      "box13 box13 box13 box13 box13 box14 box14 box14 box14 box14"
+      "box15 box15 box15 box15 box15 box15 box15 box16 box16 box16";
+  }
+}
+
+/* For larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+  .medical-pair-boxes {
+    grid-template-columns: 1 70% 30% 30% 70%; /* Custom column sizes for your boxes */
+  }
+
+  .single-box {
+    grid-column: span 3; /* Box 1 will span 3 columns (all) */
+  }
+
+  .large-box {
+    grid-column: span 2; /* 2 column span for 70% width */
+  }
+
+  .small-box {
+    grid-column: span 1; /* 1 column span for 30% width */
+  }
+}
+
+/* Style for each paired box */
+
+/* Default for mobile (boxes stacked) */
+.paired-box {
+  display: grid;
+  grid-template-columns: 1fr; /* one box per row */
+  gap: 40px; /* space between the stacked boxes */
+}
+
+.medical_box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.medical_box h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.medical_box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* For larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+  .medical-paired-box {
+    grid-template-columns: 1fr 1fr; /* boxes side by side */
+  }
+}
+/* Default button styling */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  width: 30px; /* adjust as necessary */
+  height: 30px; /* adjust as necessary */
+  overflow: hidden;
+}
+
+/* Styling the flipper that will contain both '+' and 'X' */
+button .flipper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s; /* adjust duration as necessary */
+}
+
+/* Styling the '+' and 'X' */
+button .front,
+button .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+button .front {
+  content: "+";
+  transform: rotateY(0deg);
+}
+
+button .back {
+  content: "X";
+  color: green;
+  transform: rotateY(180deg);
+}
+
+/* If active, rotate the flipper to show 'X' */
+button.active .flipper {
+  transform: rotateY(180deg);
+}
+button {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+button:active {
+  opacity: 1 !important; /* Ensures full opacity even when active */
+  transform: none !important; /* Removes any potential scaling or other transformations */
+  /* ... any other style resets you want to ensure on active state ... */
+}
+
+.medical_image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; /* This keeps the aspect ratio */
+  position: absolute; /* This takes it out of the document flow */
+  top: 0;
+  left: 0;
+  display: block;
+}
+.box-container {
+  position: relative; 
+}
+
+.title-container {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  z-index: 1; 
+  width: 100%; /* you might want to adjust the width and other styles to position correctly */
+  text-align: center; /* assuming you want to center the h2 */
+}

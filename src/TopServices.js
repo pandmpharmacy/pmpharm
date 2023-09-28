@@ -38,7 +38,7 @@ function TopServices() {
         </div>
       </div>
       <div>
-      <div  onClick={() => navigate('/pet')} className="service-box">
+      <div  onClick={() => navigate('/medical')} className="service-box">
         <h1 className="box_image1">&#x1FA7C;</h1>
           <h4>Medical Equipment</h4>
           {/* <button className="box_button">More</button> */}
