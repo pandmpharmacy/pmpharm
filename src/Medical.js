@@ -97,13 +97,14 @@ function Medical() {
       >
         <div>
           <h2
-            className={activeBox === index ? "active-title" : ""}
+            // className={activeBox === index ? "active-title" : ""}
             key={index}
             style={{
-              color: activeBox === index ? "#fff" : item.title_hex,marginBottom: "4%",
-              textAlign:'left',
+              color: item.title_hex,
+              marginBottom: "4%",
+              textAlign: "left",
               fontWeight: 900,
-              fontSize: '28px'
+              fontSize: "28px",
             }}
           >
             {item.title}
@@ -146,7 +147,7 @@ function Medical() {
               </ul>
             ) : (
               <>
-                {/* <p>{item.text}</p> */}
+                <p className="medical_text">{item.text}</p>
                 {/* {item.imageSrc && (
                 <picture>
                   <source
@@ -169,8 +170,10 @@ function Medical() {
               onClick={() => toggleBoxContent(index)}
               style={{
                 border: "none",
-                background: "none",
+                background: activeBox === index ? item.title_hex : "#fff",
+                borderRadius: 5,
                 color: activeBox === index ? "#fff" : item.title_hex,
+                fontSize: "16px",
               }}
             >
               {activeBox === index ? (

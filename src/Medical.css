@@ -8,6 +8,8 @@
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
+  position: relative;
+
 }
 .medical_box h2,
 ul,
@@ -17,9 +19,11 @@ li {
 }
 .medical_box > button {
   position: absolute;
-  top: 1; /* desired position *;
-  right:  /* desired position *;
-  z-index: 2; /* To ensure it's above other content */
+  bottom: 10px;  /* distance from the bottom */
+  left: 50%;     /* center horizontally */
+  /* transform: translateX(-50%); / * shift back by half the width of the button for perfect centering */ 
+  z-index: 2;    /* To ensure it's above other content */
+  
 }
 .medical-container {
   display: grid;
@@ -113,11 +117,6 @@ li {
   margin-bottom: 10px;
 }
 
-.medical_box p {
-  font-size: 1rem;
-  color: #666;
-}
-
 /* For larger screens (e.g., tablets and desktops) */
 @media (min-width: 768px) {
   .medical-pair-boxes {
@@ -168,16 +167,25 @@ li {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-
+.medical_text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* horizontal, vertical, blur, color */
+  backdrop-filter: blur(2px);  /* This will blur the content behind the element */
+  padding: 10px;  /* Added padding for visual appeal */
+}
+.medical_box li {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* horizontal, vertical, blur, color */
+  text-align: left;
+}
 .medical_box h2 {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 10px;
-}
-
-.medical_box p {
-  font-size: 1rem;
-  color: #666;
 }
 
 /* For larger screens (e.g., tablets and desktops) */
@@ -256,14 +264,14 @@ button:active {
   display: block;
 }
 .box-container {
-  position: relative; 
+  position: relative;
 }
 
 .title-container {
   position: absolute;
-  top: 0; 
-  left: 0; 
-  z-index: 1; 
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 100%; /* you might want to adjust the width and other styles to position correctly */
   text-align: center; /* assuming you want to center the h2 */
 }
