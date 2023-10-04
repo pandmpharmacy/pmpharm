@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Boxes from "./Boxes";
 import LandingHeader from "./LandingHeader";
 import "./Compounding.css";
 
@@ -228,7 +229,7 @@ function Compounding() {
                 <LandingHeader title={"Immunization"} />
                 <p>Immunization Short message goes here.</p>
             </div>
-            <div className="compounding-pair-boxes">{renderBoxes(pairedBoxData)}</div>
+            <Boxes imageMap={imageMap} data={pairedBoxData} />
         </div>
     );
 }
