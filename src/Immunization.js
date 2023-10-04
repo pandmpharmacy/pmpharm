@@ -88,50 +88,6 @@ function Compounding() {
             setActiveBox(index);
         }
     };
-    const renderBoxes = (data) => {
-
-        return data.map((item, index) => (
-            <div className="box"
-                key={index}
-                style={{
-                    gridArea: `box${index + 1}`,
-                    backgroundColor: activeBox === index && item.border_hex ? item.border_hex : 'initial'
-                }}>
-
-                <div
-
-                >
-                    <h2 className={activeBox === index ? 'active-title' : ''}>{item.title}</h2>
-
-                    {activeBox === index && item.learnMore ? (
-                        <ul>
-                            {item.learnMore.map((sentenceObj, idx) => (
-                                <li key={idx}>{Object.values(sentenceObj)[0]}</li>
-                            ))}
-                        </ul>
-                    ) : (
-                        <>
-                            <p>{item.text}</p>
-                            {item.imageSrc && (
-                                <picture>
-                                    <source srcSet={imageMap[item.imageSrc]?.webp} type="image/webp" />
-                                    <img src={imageMap[item.imageSrc]?.jpg} alt={`Box ${index + 1}`} className="featured_image" />
-                                </picture>
-                            )}
-                        </>
-                    )}
-
-
-                </div>
-                {item.learnMore && (
-                    <button onClick={() => toggleBoxContent(index)}>
-                        {activeBox === index ? 'X' : '+'}
-                    </button>
-                )}
-            </div>
-
-        ));
-    };
 
     // Rest of your code...
 
