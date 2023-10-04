@@ -81,13 +81,13 @@ const imageMap = {
 function Compounding() {
     const [activeBox, setActiveBox] = useState(null);
 
-    const toggleBoxContent = (index) => {
+    /*const toggleBoxContent = (index) => {
         if (activeBox === index) {
             setActiveBox(null);
         } else {
             setActiveBox(index);
         }
-    };
+    };*/
 
     // Rest of your code...
 
