@@ -45,7 +45,7 @@ function Boxes({ data, imageMap }) {
                             className="medical_box"
                             style={{
                                 gridArea: `box${index + 1}`,
-                                backgroundImage: `url(${imageMap[item.imageSrc]?.jpg})`, // Conditional background image setting
+                                backgroundImage: `url(${imageMap[item.imageSrc]?.webp})`, // Conditional background image setting
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
