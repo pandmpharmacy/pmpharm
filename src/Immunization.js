@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Boxes from "./Boxes";
 import LandingHeader from "./LandingHeader";
 import "./Compounding.css";
@@ -79,7 +79,7 @@ const imageMap = {
 
 
 function Compounding() {
-    const [activeBox, setActiveBox] = useState(null);
+   // const [activeBox, setActiveBox] = useState(null);
 
     /*const toggleBoxContent = (index) => {
         if (activeBox === index) {

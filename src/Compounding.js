@@ -1,4 +1,5 @@
 import React from "react";
+import Boxes from "./Boxes";
 import LandingHeader from "./LandingHeader";
 import "./Compounding.css";
 
@@ -80,58 +81,7 @@ const imageMap = {
 function Compounding() {
     //const [activeBox, setActiveBox] = useState(null);
 
-    const toggleBoxContent = (index) => {
-        if (activeBox === index) {
-            setActiveBox(null);
-        } else {
-            setActiveBox(index);
-        }
-    };
-    const renderBoxes = (data) => {
-
-        return data.map((item, index) => (
-            <div className="box"
-                key={index}
-                style={{
-                    gridArea: `box${index + 1}`,
-                    backgroundColor: activeBox === index && item.border_hex ? item.border_hex : 'initial'
-                }}>
-
-                <div
-
-                >
-                    <h2 className={activeBox === index ? 'active-title' : ''}>{item.title}</h2>
-
-                    {activeBox === index && item.learnMore ? (
-                        <ul>
-                            {item.learnMore.map((sentenceObj, idx) => (
-                                <li key={idx}>{Object.values(sentenceObj)[0]}</li>
-                            ))}
-                        </ul>
-                    ) : (
-                        <>
-                            <p>{item.text}</p>
-                            {item.imageSrc && (
-                                <picture>
-                                    <source srcSet={imageMap[item.imageSrc]?.webp} type="image/webp" />
-                                    <img src={imageMap[item.imageSrc]?.jpg} alt={`Box ${index + 1}`} className="featured_image" />
-                                </picture>
-                            )}
-                        </>
-                    )}
-
-
-                </div>
-                {item.learnMore && (
-                    <button onClick={() => toggleBoxContent(index)}>
-                        {activeBox === index ? 'X' : '+'}
-                    </button>
-                )}
-            </div>
-
-        ));
-    };
-
+   
     // Rest of your code...
 
 
@@ -296,26 +246,24 @@ function Compounding() {
                 <LandingHeader title={"Compounding Pharmacy"} />
                 <p>Compounding Short message goes here.</p>
             </div>
-            <div className="compounding-pair-boxes">{renderBoxes(pairedBoxData)}</div>
-
+            <Boxes imageMap={imageMap} data={pairedBoxData} />
             {/* Pet Compounding Section */}
             <div className="compoundingPet-title-box">
                 <LandingHeader title={"Pet Compounding Pharmacy"} />
                 <p>Compounding Short message goes here.</p>
             </div>
-            <div className="compounding-pair-boxes">{renderBoxes(PetpairedBoxData)}</div>
-
+            <Boxes imageMap={imageMap} data={PetpairedBoxData} />
             {/* People Compounding Section */}
             <div className="compoundingDerm-title-box">
                 <LandingHeader title={"Dermatology Compounding"} />
                 <p>Human Compounding Short message goes here.</p>
             </div>
-            <div className="compounding-pair-boxes">{renderBoxes(PeopleDermpairedBoxData)}</div>
+            <Boxes imageMap={imageMap} data={PeopleDermpairedBoxData} />
             <div className="compoundingHRT-title-box">
                 <LandingHeader title={"Hormone Replacement Therapy Compounding"} />
                 <p>HRT Compounding Short message goes here.</p>
             </div>
-            <div className="compounding-pair-boxes">{renderBoxes(PeopleHRTpairedBoxData)}</div>
+            <Boxes imageMap={imageMap} data={PeopleHRTpairedBoxData} />
         </div>
     );
 }
