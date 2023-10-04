@@ -110,79 +110,58 @@ function Medical() {
             {item.title}
           </h2>
         </div>
-        <div
-          className="medical_box"
-          key={index}
-          style={{
-            gridArea: `box${index + 1}`,
-            backgroundImage:
-              activeBox === index
-                ? "none"
-                : `url(${imageMap[item.imageSrc]?.jpg})`, // Conditional background image setting
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundColor:
-              activeBox === index && item.border_hex
-                ? item.border_hex
-                : "initial",
-          }}
-        >
-          <div>
-            {/* <h2
-              className={activeBox === index ? "active-title" : ""}
-              key={index}
-              style={{
-                color: activeBox === index ? "#fff" : item.title_hex,
-              }}
-            >
-              {item.title}
-            </h2> */}
+        <div className="content_wrapper">
 
+          <div
+            className="medical_box"
+            key={index}
+            style={{
+              gridArea: `box${index + 1}`,
+              backgroundImage:
+                `url(${imageMap[item.imageSrc]?.jpg})`, // Conditional background image setting
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+             
+            }}
+          >
+
+
+          </div>
+          <div>
             {activeBox === index && item.learnMore ? (
               <ul>
                 {item.learnMore.map((sentenceObj, idx) => (
-                  <li key={idx}>{Object.values(sentenceObj)[0]}</li>
+                  <li id="learn_more" key={idx}>{Object.values(sentenceObj)[0]}</li>
                 ))}
               </ul>
             ) : (
               <>
                 <p className="medical_text">{item.text}</p>
-                {/* {item.imageSrc && (
-                <picture>
-                  <source
-                    srcSet={imageMap[item.imageSrc]?.webp}
-                    type="image/webp"
-                  />
-                  <img
-                    src={imageMap[item.imageSrc]?.jpg}
-                    alt={`Box ${index + 1}`}
-                    className="medical_image"
-                  />
-                </picture>
-              )} */}
+
               </>
             )}
+            {item.learnMore && (
+              <button
+                className={activeBox === index ? "active" : ""}
+                onClick={() => toggleBoxContent(index)}
+                style={{
+                  border: "none",
+                  background: activeBox === index ? item.title_hex : "#fff",
+                  borderRadius: 5,
+                  color: activeBox === index ? "#fff" : item.title_hex,
+                  fontSize: "26px",
+                  margin: '2%'
+                }}
+              >
+                {activeBox === index ? (
+                  <FontAwesomeIcon icon={faTimes} />
+                ) : (
+                  <FontAwesomeIcon icon={faPlus} />
+                )}
+              </button>
+            )}
           </div>
-          {item.learnMore && (
-            <button
-              className={activeBox === index ? "active" : ""}
-              onClick={() => toggleBoxContent(index)}
-              style={{
-                border: "none",
-                background: activeBox === index ? item.title_hex : "#fff",
-                borderRadius: 5,
-                color: activeBox === index ? "#fff" : item.title_hex,
-                fontSize: "16px",
-              }}
-            >
-              {activeBox === index ? (
-                <FontAwesomeIcon icon={faTimes} />
-              ) : (
-                <FontAwesomeIcon icon={faPlus} />
-              )}
-            </button>
-          )}
         </div>
       </div>
     ));
