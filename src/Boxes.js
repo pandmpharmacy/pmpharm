@@ -11,19 +11,21 @@ function LazyImage({ src, alt }) {
     const [isVisible, setIsVisible] = useState(false);
   
     useEffect(() => {
+      const currentContainerRef = containerRef.current; // Create a variable here
+  
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            observer.unobserve(containerRef.current);
+            observer.unobserve(currentContainerRef); // Use the variable for cleanup
           }
         });
       });
   
-      observer.observe(containerRef.current);
+      observer.observe(currentContainerRef);
   
       return () => {
-        observer.unobserve(containerRef.current);
+        observer.unobserve(currentContainerRef);
       };
     }, []);
   
@@ -42,6 +44,7 @@ function LazyImage({ src, alt }) {
       </div>
     );
   }
+  
   
 
 function Boxes({ data, imageMap }) {
