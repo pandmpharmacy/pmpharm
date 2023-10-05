@@ -1,7 +1,48 @@
-import React, { useState } from 'react'; // Import useState
+
+
+import React, { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Boxes.css";
+
+function LazyImage({ src, alt }) {
+    const containerRef = useRef(null);
+    const imgRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(containerRef.current);
+          }
+        });
+      });
+  
+      observer.observe(containerRef.current);
+  
+      return () => {
+        observer.unobserve(containerRef.current);
+      };
+    }, []);
+  
+    return (
+      <div
+        ref={containerRef}
+        className="medical_box"
+        style={{
+          backgroundImage: isVisible ? `url(${src})` : 'none',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        {isVisible && <img ref={imgRef} src={src} alt={alt} style={{ display: 'none' }} />}
+      </div>
+    );
+  }
+  
 
 function Boxes({ data, imageMap }) {
     const [activeBox, setActiveBox] = useState(null);
@@ -14,12 +55,10 @@ function Boxes({ data, imageMap }) {
         }
     };
 
-    // Remove the extra '}' here
     return (
         <div className="boxes-container">
             {data.map((item, index) => (
                 <div
-
                     key={index}
                     style={{
                         gridArea: `box${index + 1}`,
@@ -41,16 +80,7 @@ function Boxes({ data, imageMap }) {
                         </h2>
                     </div>
                     <div className="content_wrapper">
-                        <div
-                            className="medical_box"
-                            style={{
-                                gridArea: `box${index + 1}`,
-                                backgroundImage: `url(${imageMap[item.imageSrc]?.webp})`, // Conditional background image setting
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                backgroundRepeat: 'no-repeat',
-                            }}
-                        ></div>
+                        <LazyImage src={imageMap[item.imageSrc]?.webp} alt={item.title} />
                         <div>
                             {activeBox === index && item.learnMore ? (
                                 <ul>
@@ -92,5 +122,8 @@ function Boxes({ data, imageMap }) {
         </div>
     );
 }
+
+
+
 
 export default Boxes;
