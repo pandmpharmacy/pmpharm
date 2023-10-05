@@ -22,6 +22,7 @@
         "box16";
 }
 
+
 @media (min-width: 768px) {
     .boxes-container{
         grid-template-columns: repeat(10, 1fr);
@@ -38,7 +39,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 550px) {
     .boxes-container {
         grid-template-columns: 1 70% 30% 30% 70%;
         /* Custom column sizes for your boxes */
@@ -57,5 +58,22 @@
     .small-box {
         grid-column: span 1;
         /* 1 column span for 30% width */
+    }
+}
+
+
+@media (min-width: 2000px) {
+    .boxes-container{
+        grid-template-columns: repeat(3, 1fr);
+        /* Three columns to achieve your structure */
+        grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "box7 box8 box9"
+        "box10 box11 box12"
+        "box13 box14 box15"
+        "box16 box17 box18"
+        "box19 box20 box21"
+        "box22 box23 box24";
     }
 }
