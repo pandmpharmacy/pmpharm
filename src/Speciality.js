@@ -23,6 +23,9 @@ function Speciality() {
       case "Hormone Replacement Therapy":
         hash = "#compoundingHRT-title-box";
         break; // This one is fine
+      default:
+        hash = ""; // Or whatever default value you want to set
+        break;
     }
     navigate(`/compounding${hash}`);
   };
