@@ -52,7 +52,7 @@
   font-size: 16px;
   transition: font-size 0.6s ease;
   border-bottom: 1px solid transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-item:hover {
@@ -95,7 +95,9 @@
   .nav-section {
     flex-direction: column;
   }
-
+  .header_wrapper {
+    padding: 0px;
+  }
   .nav-list {
     display: none; /* Initially hide the navigation list */
     width: 100%;
@@ -122,4 +124,11 @@
     display: block; /* Show the more button on mobile */
     margin-top: 10px;
   }
+}
+.logo {
+  transition: max-width 0.3s linear;
+}
+
+.logo_div {
+  transition: margin-left 0.3s linear;
 }

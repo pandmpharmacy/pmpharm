@@ -7,6 +7,10 @@
     gap: 20px;
     padding: 20px;
     box-sizing: border-box;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   
   .compounding-title-box {
@@ -19,7 +23,7 @@
   }
 
   .compoundingPet-title-box {
-    background-color: #3f1fc1;
+    background-color: #E48514;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -28,7 +32,8 @@
   }
 
   .compoundingDerm-title-box {
-    background-color: #1db612;
+   
+    background-color: #3f1fc1;
     color: #fff;
     padding: 20px;
     text-align: center;

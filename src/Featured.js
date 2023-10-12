@@ -12,7 +12,7 @@ function Featured() {
           <img src={logoPng} alt="" className="featured_image" />
         </picture>
       </div>
-      <div id="featured_text" className="featured_box">
+      <div id="featured_text" className="">
         <h1 className="featured_header">
           Welcome to P & M Pharmacy for all your medication needs.
         </h1>

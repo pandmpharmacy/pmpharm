@@ -10,9 +10,12 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   position: relative;
-
 }
-
+.medical_container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .medical_box h2,
 ul,
 li {
@@ -20,7 +23,7 @@ li {
   position: relative;
 }
 
-.medical_box>button {
+.medical_box > button {
   position: absolute;
   bottom: 10px;
   /* distance from the bottom */
@@ -29,10 +32,7 @@ li {
   /* transform: translateX(-50%); / * shift back by half the width of the button for perfect centering */
   z-index: 2;
   /* To ensure it's above other content */
-
 }
-
-
 
 .medical-title-box {
   background-color: #c01313;
@@ -182,7 +182,6 @@ li {
 .content_wrapper {
   border: 1px solid #eee;
   border-radius: 20px;
-
 }
 
 .medical_text {
