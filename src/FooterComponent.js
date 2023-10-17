@@ -1,7 +1,7 @@
 import React from "react";
 import "./FooterComponent.css";
 import logoPng from "../src/images/PMLOGO.png";
-import logoWebp from "../src/images/logo.webp"
+import logoWebp from "../src/images/logo.webp";
 const navigationItems = [
   "Retail Pharmacy",
   "Compounding Pharmacy",
@@ -22,9 +22,9 @@ function FooterComponent() {
       <footer className="footer-container">
         <div className="footer-column">
           <picture>
-          <source srcSet={logoWebp} type="image/webp" />
-          <img src={logoPng} alt="" className="footer-logo" />
-        </picture>
+            <source srcSet={logoWebp} type="image/webp" />
+            <img src={logoPng} alt="" className="footer-logo" />
+          </picture>
         </div>
 
         <div className="footer-column">
@@ -42,6 +42,18 @@ function FooterComponent() {
               support@pandmpharmacy.com
             </a>
           </p>
+          <div className="footer_location">
+            <iframe
+              width="150"
+              height="113"
+              style={{ border: "0" }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyC1w8NSfjIMAuP6stl7MBooF7HhdkbT8fo&q=P%26M+Pharmacy,Greenacres+FL`}
+              title="Google Maps"
+            ></iframe>
+          </div>
         </div>
 
         <div className="footer-column">

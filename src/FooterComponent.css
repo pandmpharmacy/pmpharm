@@ -48,7 +48,7 @@ p {
 }
 
 .copyright {
-text-align: center;
+  text-align: center;
   padding: 20px;
   background: #616c4e;
   color: #fff;
@@ -92,4 +92,7 @@ text-align: center;
   .footer-logo {
     width: 120px;
   }
+}
+.footer_location {
+  margin: 1%;
 }

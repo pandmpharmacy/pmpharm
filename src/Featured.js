@@ -2,8 +2,10 @@ import React from "react";
 import logoWebp from "../src/images/logo.webp";
 import logoPng from "../src/images/PMLOGO.png";
 import "./Featured.css";
+import { useNavigate } from 'react-router-dom';
 
 function Featured() {
+  const navigate = useNavigate();
   return (
     <div className="featured_container">
       <div className="featured_box">
@@ -24,7 +26,7 @@ function Featured() {
           serve Lake Worth, Wellington, Atlantis, Greenacres, Boynton Beach,
           West Palm Beach, Lantana and all surrounding areas in Florida.
         </p>
-        <h3 className="featured_footer">
+        <h3 onClick={() => navigate('/contact-us')}  className="featured_footer">
           Contact <br />
           <a href="tel:561-660-8650">561-660-8650</a>
         </h3>

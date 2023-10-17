@@ -1,0 +1,74 @@
+/* Styles that apply to all devices */
+.contact_container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_maps {
+  display: block; /* Adjusted for mobile */
+  border: 2px solid #eee;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.contact_wrapper {
+  display: block;
+  margin-left: 5%; /* Adjusted for mobile */
+  margin-right: 5%; /* Adjusted for mobile */
+}
+
+.contact_wrapper h4,
+.contact_wrapper h3,
+.contact_wrapper a {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact_wrapper h3 {
+  margin-bottom: 12%;
+}
+
+.contact_wrapper a {
+  color: #a90b0b;
+  line-height: 1.5;
+  font-size: 1rem; /* Adjusted for mobile */
+}
+
+.contact_info {
+  border: 1px solid #ebb6b6;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 7%;
+}
+.contact_location iframe {
+  width: 250px;
+  height: 250px;
+}
+/* @media (min-wixdth: 769px) {} */
+/* Styles that apply to tablets and larger devices */
+@media (min-width: 769px) {
+  .contact_maps {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row;
+  }
+  .contact_location iframe {
+    width: 600px;
+    height: 450px;
+  }
+  .contact_wrapper a {
+    color: #a90b0b;
+    line-height: 1.5;
+    font-size: 1rem; /* Adjusted for mobile */
+  }
+  .contact_wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .contact_wrapper a {
+    font-size: 1.5rem; /* Reset to original size for tablets */
+  }
+}
