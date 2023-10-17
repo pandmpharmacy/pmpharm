@@ -9,69 +9,85 @@ const imageMap = {
     jpg: require("../src/images/PharmacistAndLady.jpg"),
     webp: require("../src/images/PharmacistAndLady.webp"),
   },
-  SurprisedCat: {
-    jpg: require("../src/images/SurprisedCat.jpg"),
-    webp: require("../src/images/SurprisedCat.webp"),
+  crutches: {
+    jpeg: require("../src/images/MedicalEquipmentImages/crutches.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/crutches.webp"),
   },
-  DogWoman: {
-    jpg: require("../src/images/DogWoman.jpg"),
-    webp: require("../src/images/DogWoman.webp"),
+  diabeticSupplies: {
+    jpeg: require("../src/images/MedicalEquipmentImages/diabeticSupplies.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/diabeticSupplies.webp"),
   },
-  CatDog: {
-    jpg: require("../src/images/CatDog.jpg"),
-    webp: require("../src/images/CatDog.webp"),
+  bedAdjuster: {
+    //jpeg: require("../src/images/MedicalEquipmentImages/bedAdjuster.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/bedAdjuster.webp"),
   },
-  SmallCatDog: {
-    jpg: require("../src/images/SmallCatDog.jpg"),
-    webp: require("../src/images/SmallCatDog.webp"),
+  boot: {
+    jpg: require("../src/images/MedicalEquipmentImages/boot.jpg"),
+    webp: require("../src/images/MedicalEquipmentImages/boot.webp"),
   },
-  DogMan: {
-    jpg: require("../src/images/DogMan.jpg"),
-    webp: require("../src/images/DogMan.webp"),
+  gaitBelt: {
+    //jpeg: require("../src/images/MedicalEquipmentImages/gaitBelt.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/gaitBelt.webp"),
   },
-  ManCat: {
-    jpg: require("../src/images/ManCat.jpg"),
-    webp: require("../src/images/ManCat.webp"),
+  grabBars: {
+    //jpeg: require("../src/images/MedicalEquipmentImages/grabBars.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/grabBars.webp"),
   },
-  High5Cat: {
-    jpg: require("../src/images/High5Cat.jpg"),
-    webp: require("../src/images/High5Cat.webp"),
+  nebulizers: {
+    jpeg: require("../src/images/MedicalEquipmentImages/nebulizers.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/nebulizers.webp"),
   },
-  DogSyringe: {
-    jpg: require("../src/images/DogSyringe.jpg"),
-    webp: require("../src/images/DogSyringe.webp"),
+  ostomySupplies: {
+    jpeg: require("../src/images/MedicalEquipmentImages/ostomySupplies.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/ostomySupplies.webp"),
   },
-  PillsInHand: {
-    jpg: require("../src/images/PillsInHand.jpg"),
-    webp: require("../src/images/PillsInHand.webp"),
+  // rasiedToiletSeat: {
+  //   //jpg: require("../src/images/MedicalEquipmentImages/rasiedToiletSeat.jpg"),
+  //   webp: require("../src/images/MedicalEquipmentImages/rasiedToiletSeat.webp"),
+  // },
+  reacher: {
+    jpeg: require("../src/images/MedicalEquipmentImages/reacher.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/reacher.webp"),
   },
-  ComputerStethoscope: {
-    jpg: require("../src/images/ComputerStethoscope.jpg"),
-    webp: require("../src/images/ComputerStethoscope.webp"),
+  scooter: {
+    jpeg: require("../src/images/MedicalEquipmentImages/scooter.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/scooter.webp"),
   },
-  HandCream: {
-    jpg: require("../src/images/HandCream.jpg"),
-    webp: require("../src/images/HandCream.webp"),
+  soles: {
+    jpeg: require("../src/images/MedicalEquipmentImages/soles.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/soles.webp"),
   },
-  HandDropper: {
-    jpg: require("../src/images/HandDropper.jpg"),
-    webp: require("../src/images/HandDropper.webp"),
+  stocking: {
+    jpeg: require("../src/images/MedicalEquipmentImages/stocking.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/stocking.webp"),
   },
-  PharmacistWithGel: {
-    jpg: require("../src/images/PharmacistWithGel.jpg"),
-    webp: require("../src/images/PharmacistWithGel.webp"),
+  theraputicShoes: {
+    jpeg: require("../src/images/MedicalEquipmentImages/theraputicShoes.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/theraputicShoes.webp"),
   },
-  WomanWithChild: {
-    jpg: require("../src/images/WomanWithChild.jpg"),
-    webp: require("../src/images/WomanWithChild.webp"),
+  transferBench: {
+    jpeg: require("../src/images/MedicalEquipmentImages/transferBench.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/transferBench.webp"),
   },
-  CompoundPills: {
-    jpg: require("../src/images/CompoundPills.jpeg"),
-    webp: require("../src/images/CompoundPills.webp"),
+  transportChair: {
+    jpeg: require("../src/images/MedicalEquipmentImages/transportChair.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/transportChair.webp"),
   },
-  PillMaking: {
-    jpg: require("../src/images/PillMaking.jpeg"),
-    webp: require("../src/images/PillMaking.webp"),
+  urinarySupplies: {
+    jpeg: require("../src/images/MedicalEquipmentImages/urinarySupplies.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/urinarySupplies.webp"),
+  },
+  walker: {
+    jpg: require("../src/images/MedicalEquipmentImages/walker.jpg"),
+    webp: require("../src/images/MedicalEquipmentImages/walker.webp"),
+  },
+  wheelchair: {
+    jpeg: require("../src/images/MedicalEquipmentImages/wheelchair.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/wheelchair.webp"),
+  },
+  woundcare: {
+    jpeg: require("../src/images/MedicalEquipmentImages/woundcare.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/woundcare.webp"),
   },
 
   // Add more images as needed
@@ -82,91 +98,180 @@ function Medical() {
 
   const pairedBoxData = [
     {
-      title: "Customized Medications Tailored to Your Needs",
-      text: "At P&M Pharmacy, we're not just a pharmacy; we're your trusted medical specialists serving Lake Worth, FL, and beyond. We understand that each patient is unique, and so are their medication needs. That's why we specialize in medical personalized prescriptions, ensuring you receive the treatment that suits you best.",
-      imageSrc: "PharmacistAndLady",
+      title: "Walkers",
+      text: "Mobility aid for stability and support during walking.",
       border_hex: "#c01313",
-      title_hex: "#c01313",
-      learnMore: [
-        { 1: "Improved energy levels" },
-        { 2: "Enhanced physiological well-being and mood" },
-        { 3: "Reduced hot flashes" },
-        { 4: "Improved sex drive" },
-        { 5: "Relief from vaginal dryness" },
-        { 6: "Enhanced erectile function" },
-        { 7: "Reduced riskof osteoperosis" },
-        { 8: "Effective management of menopausal symptoms" },
-      ],
-    },
-    {
-      title: "Insurance Coverage for medical Prescriptions",
-      text: "Wondering if your insurance covers compounded prescriptions? It varies depending on your insurance plan. While very few insurance companies reimburse compounded prescriptions directly, patients may often seek reimbursement by submitting claim forms.",
-      imageSrc: "ComputerStethoscope",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Rollators",
+      text: "Wheeled walkers with a seat and brakes for improved mobility and balance.",
       border_hex: "#c01313",
-      title_hex: "#c01313",
-      learnMore: [
-        { 1: "Improved energy levels" },
-        { 2: "Enhanced physiological well-being and mood" },
-        { 3: "Reduced hot flashes" },
-        { 4: "Improved sex drive" },
-        { 5: "Relief from vaginal dryness" },
-        { 6: "Enhanced erectile function" },
-        { 7: "Reduced riskof osteoperosis" },
-        { 8: "Effective management of menopausal symptoms" },
-      ],
-    },
-    {
-      title: "Versatility in Compounded Prescriptions",
-      text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments.",
-      imageSrc: "HandCream", // Replace with actual image URLs
+      title_hex: "#c01313"
+      },
+      {
+      title: "Transport chairs",
+      text: "Lightweight and portable chairs for easy patient transport.",
       border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Safety is Our Priority",
-      text: "We prioritize your safety. The Food and Drug Administration recognizes the importance of pharmacy medical in providing crucial alternatives for patients requiring medications not commercially available or facing drug shortages. Safety measures include prescriptions written by licensed practitioners and medical by licensed pharmacists, along with compliance with state pharmacy board regulations.",
-      imageSrc: "HandDropper", // Replace with actual image URLs
+      title_hex: "#c01313"
+      },
+      {
+      title: "Wheelchair",
+      text: "A device for people with mobility challenges to move independently.",
       border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "What Sets P&M Pharmacy Apart",
-      text: "Why choose P&M Pharmacy over other specialty medical pharmacies? Learn More",
-      imageSrc: "CompoundPills",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Scooters",
+      text: "Electric mobility devices designed for easy and comfortable travel.",
       border_hex: "#c01313",
-      title_hex: "#c01313",
-      learnMore: [
-        { 1: "Improved energy levels" },
-        { 2: "Enhanced physiological well-being and mood" },
-        { 3: "Reduced hot flashes" },
-        { 4: "Improved sex drive" },
-        { 5: "Relief from vaginal dryness" },
-        { 6: "Enhanced erectile function" },
-        { 7: "Reduced riskof osteoperosis" },
-        { 8: "Effective management of menopausal symptoms" },
-      ],
-    },
-    {
-      title: "Your Trusted medical Pharmacy",
-      text: "Discover the difference at P&M Pharmacy. Whether you require Hormone Replacement Therapy (HRT), Veterinary medical, Dermatology, Sports Medicine, Podiatry, Wound Care, Pediatrics, or any other personalized medication, we're here to meet your needs.",
-      imageSrc: "PharmacistWithGel", // Replace with actual image URLs
+      title_hex: "#c01313"
+      },
+      {
+      title: "Canes",
+      text: "Single-pointed aids providing balance and support during walking.",
       border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Customized Dosage Forms",
-      text: "We have decades of experience in medical and can create customized dosage forms to suit your preferences and needs. Whether you need a transdermal gel, topical spray, or cosmetically appealing cream, we have you covered.",
-      imageSrc: "WomanWithChild", // Replace with actual image URLs
+      title_hex: "#c01313"
+      },
+      {
+      title: "Crutches",
+      text: "Underarm or forearm devices used for weight-bearing assistance.",
       border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Change, Combine, or Exclude Ingredients",
-      text: "We can modify your medications in various ways, including changing the dosage form, altering the route of administration, creating combination preparations, and excluding specific ingredients to accommodate your unique circumstances.",
-      imageSrc: "PillMaking",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Transfer bench",
+      text: "Bench for safe transfers in and out of a bathtub or shower.",
       border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
+      title_hex: "#c01313"
+      },
+      {
+      title: "Reachers",
+      text: "Extended arm tools to help grab items out of reach.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Grab bars",
+      text: "Wall-mounted bars for enhanced stability in bathrooms and other areas.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Elevated toilet seats",
+      text: "Raised seats to ease toilet use for individuals with mobility issues.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Bath benches",
+      text: "Shower and bath seats for comfortable and secure bathing.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Sitz bath",
+      text: "Basin for sitz baths, useful for personal hygiene and soothing discomfort.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "3 in 1 commode",
+      text: "Versatile commode with adjustable features for ease of use.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Bed wedges",
+      text: "Wedge-shaped cushions for better sleep positioning and comfort.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Support stockings",
+      text: "Compression hosiery to aid circulation and reduce swelling.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Walker boots",
+      text: "Foot and ankle braces for injury recovery and support.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Gait belts",
+      text: "Belts used by caregivers to assist patients with walking.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Orthotic supports",
+      text: "Devices to provide extra support for knees, back, and ankles.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Maternity support",
+      text: "Garments designed to provide comfort and support during pregnancy.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Daily living aids",
+      text: "Various tools and devices to assist with daily tasks.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Wound care supplies",
+      text: "Products for cleaning and dressing wounds.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Ostomy supplies",
+      text: "Materials for individuals with colostomies or ileostomies.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Urinary supplies",
+      text: "Equipment for managing urinary incontinence.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Diabetic supplies",
+      text: "Products essential for managing diabetes.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Diabetic shoes",
+      text: "Footwear specially designed for individuals with diabetes.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Therapeutic shoes",
+      text: "Footwear designed for specific medical conditions.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Humidifiers",
+      text: "Devices for adding moisture to the air to improve breathing and comfort.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      },
+      {
+      title: "Nebulizers and nebulizer accessories",
+      text: "Equipment for delivering medication through inhalation.",
+      border_hex: "#c01313",
+      title_hex: "#c01313"
+      }
+    
     // Add more objects for additional boxes if needed
   ];
 
@@ -174,8 +279,8 @@ function Medical() {
     <div className="medical_container">
       {/* medical Section */}
       <div className="medical-title-box">
-        <LandingHeader title={"medical Pharmacy"} />
-        <p>medical Short message goes here.</p>
+        <LandingHeader title={"Medical Equipment"} />
+        <p>At P&M Pharmacy, we are dedicated to the safety and healthcare of all our customers. As a trusted medical supply store Lake Worth has, we offer numerous medical supplies that are well-suited for your needs.</p>
       </div>
       <Boxes imageMap={imageMap} data={pairedBoxData} />
     </div>
