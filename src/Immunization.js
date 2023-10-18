@@ -91,117 +91,52 @@ function Compounding() {
 
   const pairedBoxData = [
     {
-      title: "Vaccines you need",
-      text: "At P&M Pharmacy, we carry vaccines like Flu, COVID-19, Shingles, pneumonia (pneumococcal), Hepatitis B and more",
-      imageSrc: "image1.jpg", // Replace with actual image URLs
-      border_hex: "#c01313",
-      title_hex: "#c01313",
+      title: "Vaccination Services",
+      text: "Comprehensive vaccination programs for all ages.",
+      LearnMore: [
+        { 1: "Explore our vaccination services" }
+      ],
+      imageSrc: "VaccinationImage",
     },
     {
-      title: "Retail Prescriptions (quick and easy)",
-      text: "Experience hassle-free parking and have your prescriptions filled in just 5-10 minutes for your convenience.",
-      imageSrc: "image2.jpg", // Replace with actual image URLs
-      border_hex: "#c01313",
-      title_hex: "#c01313",
+      title: "Immunization Schedule",
+      text: "Stay on track with recommended immunization schedules.",
+      LearnMore: [
+        { 1: "Learn about our immunization schedules" }
+      ],
+      imageSrc: "ImmunizationScheduleImage",
     },
     {
-      title: "Compounded Prescriptions (customized medications)",
-      text: "Our expert pharmacists can tailor your medications to your unique needs through compounded prescriptions.n",
-      imageSrc: "image3.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
+      title: "Flu Shots",
+      text: "Annual flu vaccinations to keep you and your family protected.",
+      LearnMore: [
+        { 1: "Get your flu shot today" }
+      ],
+      imageSrc: "FluShotsImage",
     },
     {
-      title: "Therapy Adherence",
-      text: "Our services include counseling and support to help you adhere to your prescribed therapy regimens effectively.",
-      imageSrc: "image4.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
+      title: "Travel Vaccinations",
+      text: "Stay safe while traveling with necessary vaccinations.",
+      LearnMore: [
+        { 1: "Explore our travel vaccination services" }
+      ],
+      imageSrc: "TravelVaccinationsImage",
     },
     {
-      title: "Medication Synchronization (reduce hospitalization)",
-      text: "Medication synchronization reduces the risk of hospitalization and the need for frequent pharmacy visits by aligning your medication refills.",
-      imageSrc: "image5.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
+      title: "Childhood Immunizations",
+      text: "Protect your child's health with essential childhood vaccinations.",
+      LearnMore: [
+        { 1: "Learn about childhood immunizations" }
+      ],
+      imageSrc: "ChildhoodImmunizationsImage",
     },
     {
-      title: "Diabetic Supplies",
-      text: "Find a comprehensive range of diabetic supplies to manage your diabetes effectively.",
-      imageSrc: "image6.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Orthopedic Supplies",
-      text: "We offer a variety of orthopedic supplies to aid in your comfort and recovery.",
-      imageSrc: "image7.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Ostomy and Urinary Supplies",
-      text: "We provide a selection of ostomy and urinary supplies to support your specific healthcare needs.",
-      imageSrc: "image8.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Nebulizers",
-      text: "Explore our nebulizer options for respiratory treatments in the comfort of your home.",
-      imageSrc: "image9.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Wound Care Supplies",
-      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
-      imageSrc: "image10.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Wound Care Supplies",
-      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
-      imageSrc: "image11.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Support Stockings",
-      text: "Discover support stockings to improve circulation and alleviate discomfort.",
-      imageSrc: "image12.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-
-    {
-      title: "Daily Living Aids",
-      text: "We offer a range of daily living aids to enhance your independence and quality of life.",
-      imageSrc: "image13.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Incontinence Supplies",
-      text: "Find incontinence supplies to ensure comfort and confidence.",
-      imageSrc: "image14.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Foot Care",
-      text: "Explore our foot care products to maintain healthy and comfortable feet.",
-      imageSrc: "image15.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "OTC (Vitamins, Skincare, Cough and Cold, etc)",
-      text: "Our pharmacy carries a diverse selection of over-the-counter products, including vitamins, skincare, and cough and cold remedies, for your health and wellness needs.",
-      imageSrc: "image16.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
+      title: "Adult Immunizations",
+      text: "Keep yourself up-to-date with adult immunizations.",
+      LearnMore: [
+        { 1: "Explore adult immunization options" }
+      ],
+      imageSrc: "AdultImmunizationsImage",
     },
     // Add more data for additional boxes if needed
   ];
@@ -211,7 +146,7 @@ function Compounding() {
       {/* Compounding Section */}
       <div className="compounding-title-box">
         <LandingHeader title={"Immunization"} />
-        <p>Immunization Short message goes here.</p>
+        <p>Protecting Your Health, One Shot at a Time.</p>
       </div>
       <Boxes imageMap={imageMap} data={pairedBoxData} />
     </div>
