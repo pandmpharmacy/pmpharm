@@ -78,7 +78,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: right;
   }
   /* Styles for the box when active */
 .active-box {
@@ -157,7 +157,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: right;
   }
   
   .box img {

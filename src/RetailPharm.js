@@ -77,119 +77,94 @@ const imageMap = {
 };
 
 function Compounding() {
-  const pairedBoxData = [
-    {
-      title: "Free Delivery",
-      text: "We offer convenient and free delivery services within a 3-mile radius of our pharmacy to ensure you receive your medications at your doorstep.",
-      imageSrc: "RetailFreeDelivery",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Retail Prescriptions (quick and easy)",
-      text: "Experience hassle-free parking and have your prescriptions filled in just 5-10 minutes for your convenience. Give us a call transfer or refill your prescriptions at 210-660-8650",
-      imageSrc: "RetailMedications",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Compounded Prescriptions (customized medications)",
-      text: "Our expert pharmacists can tailor your medications to your unique needs through compounded prescriptions.n",
-      imageSrc: "image3.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Therapy Adherence",
-      text: "Our services include counseling and support to help you adhere to your prescribed therapy regimens effectively.",
-      imageSrc: "image4.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Medication Synchronization (reduce hospitalization)",
-      text: "Medication synchronization reduces the risk of hospitalization and the need for frequent pharmacy visits by aligning your medication refills.",
-      imageSrc: "image5.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Diabetic Supplies",
-      text: "Find a comprehensive range of diabetic supplies to manage your diabetes effectively.",
-      imageSrc: "RetailDiabeticSupply",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Orthopedic Supplies",
-      text: "We offer a variety of orthopedic supplies to aid in your comfort and recovery.",
-      imageSrc: "image7.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Ostomy and Urinary Supplies",
-      text: "We provide a selection of ostomy and urinary supplies to support your specific healthcare needs.",
-      imageSrc: "image8.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Nebulizers",
-      text: "Explore our nebulizer options for respiratory treatments in the comfort of your home.",
-      imageSrc: "image9.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Wound Care Supplies",
-      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
-      imageSrc: "image10.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Wound Care Supplies",
-      text: "We stock a wide range of wound care supplies to facilitate wound healing and recovery.",
-      imageSrc: "image11.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Support Stockings",
-      text: "Discover support stockings to improve circulation and alleviate discomfort.",
-      imageSrc: "image12.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Daily Living Aids",
-      text: "We offer a range of daily living aids to enhance your independence and quality of life.",
-      imageSrc: "image13.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Incontinence Supplies",
-      text: "Find incontinence supplies to ensure comfort and confidence.",
-      imageSrc: "image14.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "Foot Care",
-      text: "Explore our foot care products to maintain healthy and comfortable feet.",
-      imageSrc: "image15.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
-    {
-      title: "OTC (Vitamins, Skincare, Cough and Cold, etc)",
-      text: "Our pharmacy carries a diverse selection of over-the-counter products, including vitamins, skincare, and cough and cold remedies, for your health and wellness needs.",
-      imageSrc: "image16.jpg",
-      border_hex: "#c01313",
-      title_hex: "#c01313",
-    },
+    const pairedBoxData = [
+      {
+        title: "Free Delivery",
+        text: "Convenient, free delivery within 3 miles.",
+        imageSrc: "RetailFreeDelivery",
+      },
+      {
+        title: "Quick Retail Prescriptions",
+        text: "Prescriptions filled in 5-10 mins.",
+        LearnMore: "Call 210-660-8650 to transfer or refill.",
+        imageSrc: "RetailMedications",
+      },
+      {
+        title: "Customized Compounded Prescriptions",
+        text: "Tailored meds for unique needs.",
+        imageSrc: "image3.jpg",
+      },
+      {
+        title: "Therapy Adherence Support",
+        text: "Counseling to adhere to regimens.",
+        imageSrc: "image4.jpg",
+      },
+      {
+        title: "Medication Synchronization",
+        text: "Reduce hospitalization risk.",
+        LearnMore: "Align medication refills.",
+        imageSrc: "image5.jpg",
+      },
+      {
+        title: "Diabetic Supplies",
+        text: "Comprehensive diabetes management.",
+        imageSrc: "RetailDiabeticSupply",
+      },
+      {
+        title: "Orthopedic Supplies",
+        text: "Aid for comfort and recovery.",
+        imageSrc: "image7.jpg",
+      },
+      {
+        title: "Ostomy and Urinary Supplies",
+        text: "Support for healthcare needs.",
+        imageSrc: "image8.jpg",
+      },
+      {
+        title: "Nebulizers",
+        text: "Respiratory treatments at home.",
+        LearnMore: "Explore nebulizer options.",
+        imageSrc: "image9.jpg",
+      },
+      {
+        title: "Wound Care Supplies",
+        text: "Facilitate wound healing.",
+        LearnMore: "Wide range in stock.",
+        imageSrc: "image10.jpg",
+      },
+      {
+        title: "Support Stockings",
+        text: "Improve circulation, alleviate discomfort.",
+        LearnMore: "Discover support stockings.",
+        imageSrc: "image12.jpg",
+      },
+      {
+        title: "Daily Living Aids",
+        text: "Enhance independence and quality of life.",
+        LearnMore: [
+          { 1: "Explore our aids range"}
+        ],
+        imageSrc: "image13.jpg",
+      },
+      {
+        title: "Incontinence Supplies",
+        text: "Ensure comfort and confidence.",
+        LearnMore: "Find incontinence supplies.",
+        imageSrc: "image14.jpg",
+      },
+      {
+        title: "Foot Care Products",
+        text: "Maintain healthy, comfortable feet.",
+        LearnMore: "Explore our foot care range.",
+        imageSrc: "image15.jpg",
+      },
+      {
+        title: "OTC Products",
+        text: "Diverse OTC selection for health and wellness.",
+        LearnMore: "Vitamins, skincare, and more.",
+        imageSrc: "image16.jpg",
+      }
+  
     // Add more data for additional boxes if needed
   ];
 

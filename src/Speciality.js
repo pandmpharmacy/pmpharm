@@ -8,8 +8,8 @@ function Speciality() {
 
   const specialties = [
     "Dermatology",
-    "Vets/Pets",
-    "Hormone Replacement Therapy",
+    "Veterinarian",
+    "Hormone Replacement Therapy (HRT)",
   ];
   const handleSpecialtyClick = (specialty) => {
     let hash = "";

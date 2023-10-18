@@ -112,6 +112,7 @@ function Compounding() {
     }
   }, []);
 
+// Compounding Data  
   const pairedBoxData = [
     {
       title: "Customized Medications Tailored to Your Needs",
@@ -174,7 +175,7 @@ function Compounding() {
       learnMore: [
         { 1: "Transdermal Gel" },
         { 2: "Topical Spray" },
-        { 3: "Cosmetically appealing cream" },
+        { 3: "Cosmetically appealing creams" },
       ],
     },
     {
@@ -193,179 +194,137 @@ function Compounding() {
     // Add more objects for additional boxes if needed
   ];
 
+
   const PetpairedBoxData = [
     {
-      title: "Tailored Medications for Happy, Healthy Pets",
-      text: "At P&M Pharmacy, we're your go-to veterinary medical pharmacy in Palm Beach County. We understand that your pets are unique, and their medication needs can be as varied as their personalities. That's why we specialize in medical specialized medications designed to meet the exclusive requirements of each animal.",
-      imageSrc: "SurprisedCat", // Use the image key from the imageMap
+      title: "Tailored Pet Medications",
+      text: "Customized medications for your unique pets. Flavored options and personalized doses for happy, healthy pets.",
       border_hex: "#3f1fc1",
       title_hex: "#3f1fc1",
     },
     {
-      title: "Tailored Medications for Happy, Healthy Pets",
-      text: "At P&M Pharmacy, we're your go-to veterinary medical pharmacy in Palm Beach County. We understand that your pets are unique, and their medication needs can be as varied as their personalities. That's why we specialize in medical specialized medications designed to meet the exclusive requirements of each animal.",
+      title: "Ease of Medication",
+      text: "Administering pet meds made easy with our delicious flavors. From tuna to tutti frutti, your pet will love it!",
       imageSrc: "DogWoman", // Replace with actual image URLs
       border_hex: "#3f1fc1",
       title_hex: "#3f1fc1",
     },
     {
-      title: "Flavored Medications for Happy Pets",
-      text: "Administering medication to pets can be a challenge, especially when they're particular about flavors. At P&M Pharmacy, we're not just a pharmacy; we're a talented pet medical pharmacy. We craft flavored medications that are not only easy to give but also enjoyable for your specific pet. Our range of flavors includes everything from tuna for cats to tutti frutti for exotic pets!",
-      imageSrc: "CatDog", // Replace with actual image URLs
-      border_hex: "#3f1fc1",
-      title_hex: "#3f1fc1",
-      learnMore: [
-        { 1: "Improved energy levels" },
-        { 2: "Enhanced physiological well-being and mood" },
-        { 3: "Reduced hot flashes" },
-        { 4: "Improved sex drive" },
-        { 5: "Relief from vaginal dryness" },
-        { 6: "Enhanced erectile function" },
-        { 7: "Reduced riskof osteoperosis" },
-        { 8: "Effective management of menopausal symptoms" },
-      ],
-    },
-    {
-      title: "Customized Size, Strength, and Dosage",
-      text: "Many commercial animal medications come in limited sizes and strengths, which may not be suitable for every pet. As your local pet pharmacy, P&M Pharmacy formulates medications that are just right in terms of size, strength, and dose for your pet. We offer medications in various forms, including oral, transdermal, and more. For instance, P&M Pharmacy creates medicated chewable treats, ear drops, liquid concentrates, and other user-friendly options tailored to your animal's needs.",
-      imageSrc: "SmallCatDog",
+      title: "Perfect Pet Dosing",
+      text: "Tailored medications in the right size, strength, and form. Chewables, ear drops, and more for your pet's needs.",
       border_hex: "#3f1fc1",
       title_hex: "#3f1fc1",
     },
     {
-      title: "Transdermal Medication for Comfort",
-      text: "P&M Pharmacy provides a wide range of medications compatible with transdermal bases. This delivery method is particularly beneficial for animals with conditions like hypertension or cardiovascular illness, as it minimizes stress. It also simplifies the medication process for pet owners who no longer have to struggle with medicating their animals. Additionally, we offer topical medications for localized inflammation or infection, ensuring your pet's comfort.",
-      imageSrc: "High5Cat",
+      title: "Stress-Free Medication",
+      text: "Transdermal meds for pets with conditions like hypertension. No more medication struggles for pet owners.",
+      imageSrc: "High5Cat", // Replace with actual image URLs
       border_hex: "#3f1fc1",
       title_hex: "#3f1fc1",
     },
     {
-      title: "When Medications Are Unavailable",
-      text: "In situations where specific medications become unavailable, pet owners often face challenges. Whether due to discontinued manufacturing or unavailability of veterinary formulations, the search for pet prescriptions near me can be frustrating. At P&M Pharmacy, we bridge this gap by medical personalized dosage forms using pharmaceutical-grade ingredients, ensuring your pet receives the necessary treatment.",
+      title: "Reliable Pet Solutions",
+      text: "We bridge the gap when specific medications are unavailable. Personalized forms using pharmaceutical-grade ingredients.",
       imageSrc: "ManCat", // Replace with actual image URLs
       border_hex: "#3f1fc1",
       title_hex: "#3f1fc1",
-      learnMore: [
-        { 1: "Improved energy levels" },
-        { 2: "Enhanced physiological well-being and mood" },
-        { 3: "Reduced hot flashes" },
-        { 4: "Improved sex drive" },
-        { 5: "Relief from vaginal dryness" },
-        { 6: "Enhanced erectile function" },
-        { 7: "Reduced riskof osteoperosis" },
-        { 8: "Effective management of menopausal symptoms" },
-      ],
     },
     {
-      title: "Combination Medications for Comprehensive Care",
-      text: "Sometimes, treating multiple symptoms requires combining several medications. Dealing with separate containers can be costly and inconvenient. That's where P&M Pharmacy excels. We compound essential concentrations of compatible medications into a single, easy-to-use formulation. To simplify administration further, we offer various dosage forms, including medicated treats containing multiple drugs.",
+      title: "Comprehensive Pet Care",
+      text: "Combine multiple medications into a single, easy-to-use formulation. Medicated treats with multiple drugs for convenience.",
       imageSrc: "DogSyringe", // Replace with actual image URLs
       border_hex: "#3f1fc1",
       title_hex: "#3f1fc1",
     },
     {
-      title:
-        "Trust P&M Pharmacy for all your pet's medical needs. Contact us today to ensure your furry family members receive the personalized care they deserve. Your pets' well-being is our priority!",
-      text: "",
+      title: "Your Trusted Pet Pharmacy",
+      text: "Contact us for personalized pet care. Your pets' well-being is our top priority!",
       imageSrc: "DogMan", // Replace with actual image URLs
       border_hex: "#3f1fc1",
       title_hex: "#3f1fc1",
     },
     // Add more objects for additional boxes if needed
   ];
+  
 
-  const PeopleDermpairedBoxData = [
-    {
-      title: "Customized Skin Care for Your Unique Needs",
-      text: "Welcome to P&M Pharmacy, your premier dermatology medical pharmacy serving Wellington, Greenacres, and Lake Worth. We are committed to providing the highest quality care for all your dermatologic needs. Our skilled medical pharmacists utilize cutting-edge technology and techniques to create compounded medications in a variety of forms, including cosmetically appealing creams, topical sprays, powders, and customized oral dosage forms such as flavored troches or lozenges. We also offer preparations for various routes of administration, ensuring convenience and improved adherence.",
-      // imageSrc: "PharmacistAndLady", // You can omit the imageSrc if an image is not needed for this box
-      border_hex: "#E48514",
-      title_hex: "#E48514",
-      learnMore: [
-        { 1: "Improved energy levels" },
-        { 2: "Enhanced physiological well-being and mood" },
-        { 3: "Reduced hot flashes" },
-        { 4: "Improved sex drive" },
-        { 5: "Relief from vaginal dryness" },
-        { 6: "Enhanced erectile function" },
-        { 7: "Reduced riskof osteoperosis" },
-        { 8: "Effective management of menopausal symptoms" },
-      ],
-    },
-    {
-      title: "Comprehensive Dermatology Solutions",
-      text: "At P&M Pharmacy, your trusted dermatology specialty pharmacy, our medical pharmacists collaborate with your healthcare providers to prepare customized medications for a wide range of dermatological conditions, including:",
-      imageSrc: "image2.jpg", // Replace with actual image URLs
-      border_hex: "#E48514",
-      title_hex: "#E48514",
-    },
-    {
-      title: "Examples of Compounded Medications",
-      text: "As a dermatology medical pharmacy, we offer a diverse range of compounded medications to address various dermatological disorders. While the list below provides examples, please note that we can create custom formulations tailored to your therapy needs. Our offerings include:",
-      imageSrc: "image3.jpg", // Replace with actual image URLs
-      border_hex: "#E48514",
-      title_hex: "#E48514",
-      learnMore: [
-        { 1: "Improved energy levels" },
-        { 2: "Enhanced physiological well-being and mood" },
-        { 3: "Reduced hot flashes" },
-        { 4: "Improved sex drive" },
-        { 5: "Relief from vaginal dryness" },
-        { 6: "Enhanced erectile function" },
-        { 7: "Reduced riskof osteoperosis" },
-        { 8: "Effective management of menopausal symptoms" },
-      ],
-    },
-    {
-      title:
-        "Trust P&M Pharmacy for all your dermatological needs. Contact us today to discover how our customized skin care solutions can benefit you. Your skin's health and well-being are our top priorities!",
-      border_hex: "#E48514",
-      title_hex: "#E48514",
-    },
-
+// Dermatology Compounding Data  
+const PeopleDermpairedBoxData = [
+  {
+    title: "Custom Dermatology Solutions",
+    text: "Personalized skin care at P&M Pharmacy. Expert pharmacists offer tailored dermatological medications for your skin's health.",
+    learnMore: [
+      { 1: "We Address skin conditions" },
+      { 2: "Customize formulations for therapy" },
+      { 3: "Comprehensive solutions for your skin" },
+    ],
+    border_hex: "#E48514",
+    title_hex: "#E48514",
+  },
+  {
+    title: "Skin Conditions We Treat",
+    text: "We address eczema, acne, aging concerns, and more. Trust us for comprehensive dermatology solutions.",
+    border_hex: "#E48514",
+    title_hex: "#E48514",
+  },
+  {
+    title: "Compounded Medication Examples",
+    text: "Explore custom skincare and specialized dermatology solutions.",
+    learnMore: [
+      { 1: "Skincare creams" },
+      { 2: "Topical sprays and powders" },
+      { 3: "Oral Forms" },
+      { 4: "And many more"}
+    ],
+    border_hex: "#E48514",
+    title_hex: "#E48514",
+  },
+  {
+    title: "Experience Personalized Skin Care",
+    text: "Trust P&M Pharmacy for personalized skin care. Your skin's health is our priority!",
+    border_hex: "#E48514",
+    title_hex: "#E48514",
+  },
     // Add more objects for additional boxes if needed
   ];
 
   const PeopleHRTpairedBoxData = [
     {
-      title: "Your Path to Hormonal Balance Starts Here",
-      text: "At P&M Pharmacy, we offer the best pricing for Hormone Replacement Therapy (HRT) that Palm Beach County trusts. We are committed to providing high-quality HRT solutions to help you achieve hormonal balance and improve your overall well-being.",
+      title: "Hormonal Balance Solutions",
+      text: "Find affordable Hormone Replacement Therapy (HRT) at P&M Pharmacy. Achieve hormonal balance and well-being with trusted HRT services.",
       border_hex: "#169f0d",
       title_hex: "#169f0d",
-      // imageSrc: "PharmacistAndLady", // You can omit the imageSrc if an image is not needed for this box
     },
     {
       title: "Understanding Hormones",
-      text: "Hormones are the body's regulatory messengers, influencing essential functions such as mood, metabolism, reproduction, and hunger. When hormones are in balance, our bodies function optimally.",
+      text: "Hormones are vital for mood, metabolism, reproduction, and more. Balanced hormones mean optimal body function.",
       imageSrc: "image2.jpg", // Replace with actual image URLs
       border_hex: "#169f0d",
       title_hex: "#169f0d",
     },
     {
       title: "Types of Hormones We Address",
-      text: "Our HRT services cover a range of hormones, Learn More. Estrogens (Estrone, Estradiol, Estriol), Progesterone, Testosterone, DHEA (dehydroepiandrosterone, Bi-Est (Estriol + Estradiol), considered as one ingredient)",
+      text: "Our HRT services cover a range of hormones. Learn More: Estrogens, Progesterone, Testosterone, DHEA, Bi-Est (Estriol + Estradiol).",
       imageSrc: "image3.jpg", // Replace with actual image URLs
       border_hex: "#169f0d",
       title_hex: "#169f0d",
     },
     {
-      title: "Do You Struggle with Hormone Imbalance?",
-      text: "Hormonal imbalances can affect individuals of any age, leading to various symptoms. Women often experience imbalances during menopause, which can result in disruptive symptoms such as hot flashes, weight gain, mood swings, and more. Men may face hormonal imbalances during Andropause, marked by symptoms like low libido, fatigue, and mood changes.",
+      title: "Manage Hormone Imbalance",
+      text: "Hormonal imbalances affect people of all ages. Women may experience menopausal symptoms, while men face Andropause. We can help.",
       imageSrc: "image5.jpg", // Replace with actual image URLs
       border_hex: "#169f0d",
       title_hex: "#169f0d",
-      learnMore: [{ 1: "sentence 1342" }, { 2: "second 22313242" }],
     },
     {
-      title: "Taking Action for Hormonal Health",
-      text: "Don't let hormonal imbalances disrupt your life. At P&M Pharmacy, we offer Hormone Replacement Therapy (HRT) as a solution to restore balance. Whether you're seeking female hormone replacement therapy or hormone replacement therapy for males, you've come to the right place. As an HRT medical pharmacy, P&M Pharmacy goes the extra mile. We can compound your hormone therapy in various forms, including capsules, creams, and troches, providing precise dosages tailored to your needs.",
+      title: "Restore Hormonal Balance",
+      text: "Don't let imbalances disrupt your life. Our Hormone Replacement Therapy (HRT) can restore balance. We offer various forms and precise dosages tailored to your needs.",
       imageSrc: "image6.jpg", // Replace with actual image URLs
       border_hex: "#169f0d",
       title_hex: "#169f0d",
     },
     {
-      title: "Benefits of Bioidentical Hormone Replacement Therapy (BHRT)",
-      text: "BHRT offers a range of beenfits. Learn more: ",
+      title: "BHRT Benefits",
+      text: "Bioidentical Hormone Replacement Therapy offers a range of benefits. Learn More: improved energy, well-being, reduced symptoms, and more.",
       imageSrc: "image6.jpg", // Replace with actual image URLs
       border_hex: "#169f0d",
       title_hex: "#169f0d",
@@ -376,20 +335,20 @@ function Compounding() {
         { 4: "Improved sex drive" },
         { 5: "Relief from vaginal dryness" },
         { 6: "Enhanced erectile function" },
-        { 7: "Reduced riskof osteoperosis" },
-        { 8: "Effective management of menopausal symptoms" },
+        { 7: "Reduced risk of osteoporosis" },
+        { 8: "Effective menopausal symptom management" },
       ],
-
       // Replace with actual image URLs
     },
   ];
+  
 
   return (
     <div className="compounding-container">
       {/* Compounding Section */}
       <div className="compounding-title-box">
         <LandingHeader title={"Compounding Pharmacy"} />
-        <p>Compounding Short message goes here.</p>
+        <p>Customized medications for you.</p>
       </div>
       <Boxes imageMap={imageMap} data={pairedBoxData} />
       {/* Pet Compounding Section */}
@@ -400,7 +359,7 @@ function Compounding() {
       >
         <LandingHeader title={"Dermatology Compounding"} />
 
-        <p>Compounding Short message goes here.</p>
+        <p>Customized Skin Solutions</p>
       </div>
       <Boxes imageMap={imageMap} data={PeopleDermpairedBoxData} />
       {/* People Compounding Section */}
@@ -411,7 +370,7 @@ function Compounding() {
         ref={petRef}
       >
         <LandingHeader title={"Pet Compounding Pharmacy"} />
-        <p>Human Compounding Short message goes here.</p>
+        <p>Tailored Pet Medications</p>
       </div>
 
       <Boxes imageMap={imageMap} data={PetpairedBoxData} />
@@ -422,7 +381,7 @@ function Compounding() {
         ref={HRTReft}
       >
         <LandingHeader title={"Hormone Replacement Therapy Compounding"} />
-        <p>HRT Compounding Short message goes here.</p>
+        <p>Balanced Hormone Solutions</p>
       </div>
 
       <Boxes imageMap={imageMap} data={PeopleHRTpairedBoxData} />
