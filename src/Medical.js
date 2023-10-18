@@ -100,177 +100,206 @@ function Medical() {
     {
       title: "Walkers",
       text: "Mobility aid for stability and support during walking.",
+      imageSrc: "walker",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Rollators",
       text: "Wheeled walkers with a seat and brakes for improved mobility and balance.",
+      imageSrc: "rollator",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Transport chairs",
       text: "Lightweight and portable chairs for easy patient transport.",
+      imageSrc: "transportChair",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Wheelchair",
       text: "A device for people with mobility challenges to move independently.",
+      imageSrc: "wheelchair",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Scooters",
       text: "Electric mobility devices designed for easy and comfortable travel.",
+      imageSrc: "scooter",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Canes",
       text: "Single-pointed aids providing balance and support during walking.",
+      imageSrc: "cane",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Crutches",
       text: "Underarm or forearm devices used for weight-bearing assistance.",
+      imageSrc: "crutches",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Transfer bench",
       text: "Bench for safe transfers in and out of a bathtub or shower.",
+      imageSrc: "transferBench",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Reachers",
       text: "Extended arm tools to help grab items out of reach.",
+      imageSrc: "reacher",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Grab bars",
       text: "Wall-mounted bars for enhanced stability in bathrooms and other areas.",
+      imageSrc: "grabBars",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Elevated toilet seats",
       text: "Raised seats to ease toilet use for individuals with mobility issues.",
+      imageSrc: "raisedToiletSeat",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Bath benches",
       text: "Shower and bath seats for comfortable and secure bathing.",
+      imageSrc: "bath-benches",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Sitz bath",
       text: "Basin for sitz baths, useful for personal hygiene and soothing discomfort.",
+      imageSrc: "sitz-bath",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "3 in 1 commode",
       text: "Versatile commode with adjustable features for ease of use.",
+      imageSrc: "3-1Commode",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Bed wedges",
       text: "Wedge-shaped cushions for better sleep positioning and comfort.",
+      imageSrc: "bedAdjuster",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Support stockings",
       text: "Compression hosiery to aid circulation and reduce swelling.",
+      imageSrc: "stocking",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Walker boots",
       text: "Foot and ankle braces for injury recovery and support.",
+      imageSrc: "boot",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
-      title: "Gait belts",
+    },
+    {
+      title: "GaitBelt",
       text: "Belts used by caregivers to assist patients with walking.",
+      imageSrc: "gait-belts",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Orthotic supports",
       text: "Devices to provide extra support for knees, back, and ankles.",
+      imageSrc: "orthotic-supports",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Maternity support",
       text: "Garments designed to provide comfort and support during pregnancy.",
+      imageSrc: "pregnancyBelt",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Daily living aids",
       text: "Various tools and devices to assist with daily tasks.",
+      imageSrc: "daily-living-aids",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Wound care supplies",
       text: "Products for cleaning and dressing wounds.",
+      imageSrc: "woundcare",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Ostomy supplies",
       text: "Materials for individuals with colostomies or ileostomies.",
+      imageSrc: "ostomySupplies",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Urinary supplies",
       text: "Equipment for managing urinary incontinence.",
+      imageSrc: "urinarySupplies",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Diabetic supplies",
       text: "Products essential for managing diabetes.",
+      imageSrc: "diabeticSupplies",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Diabetic shoes",
       text: "Footwear specially designed for individuals with diabetes.",
+      imageSrc: "shoe",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Therapeutic shoes",
       text: "Footwear designed for specific medical conditions.",
+      imageSrc: "shoe",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Humidifiers",
       text: "Devices for adding moisture to the air to improve breathing and comfort.",
+      imageSrc: "humidifier",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      },
-      {
+    },
+    {
       title: "Nebulizers and nebulizer accessories",
       text: "Equipment for delivering medication through inhalation.",
+      imageSrc: "nebulizer",
       border_hex: "#c01313",
       title_hex: "#c01313"
-      }
+    }
     
     // Add more objects for additional boxes if needed
   ];
