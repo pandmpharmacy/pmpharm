@@ -97,6 +97,7 @@
   }
   .header_wrapper {
     padding: 0px;
+    position: relative;
   }
   .nav-list {
     display: none; /* Initially hide the navigation list */
@@ -123,6 +124,13 @@
   .more-button {
     display: block; /* Show the more button on mobile */
     margin-top: 10px;
+  }
+  .logo {
+    transition: none;
+  }
+
+  .logo_div {
+    transition: none;
   }
 }
 .logo {

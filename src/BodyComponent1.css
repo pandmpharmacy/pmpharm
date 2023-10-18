@@ -49,7 +49,7 @@ body {
   margin-bottom: 50px;
 }
 
-.body-specialty h1 {
+.body-specialty h2 {
   color: #616c4e;
   font-family: 'Poppins', sans-serif;
 }
@@ -104,6 +104,8 @@ body {
   padding: 5px 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 80px;
+
 }
 
 .box_button:hover {

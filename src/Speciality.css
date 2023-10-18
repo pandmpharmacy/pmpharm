@@ -40,9 +40,9 @@ body {
     margin: 20px 0 50px; /* Use shorthand margin property */
 }
 
-.body-specialty h1 {
+.body-specialty h2 {
     color: #616c4e;
-    font-size: 2.25rem; /* Increase font size for emphasis */
+    font-size: 1.5rem; /* Increase font size for emphasis */
 }
 
 /* Boxes section styles */

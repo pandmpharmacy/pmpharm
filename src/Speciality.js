@@ -32,7 +32,7 @@ function Speciality() {
   return (
     <div>
       <div className="body-specialty">
-        <h1>Our Compounding Specialties</h1>
+        <h2>Our Compounding Specialties</h2>
         <div className="body-boxes">
           {specialties.map((specialty, index) => (
             <div

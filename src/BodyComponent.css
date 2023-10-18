@@ -54,9 +54,9 @@ body {
   margin-bottom: 50px;
 }
 
-.body-specialty h1 {
+.body-specialty h2 {
   color: #616c4e;
-  font-size: 36px; /* Increase font size for emphasis */
+  font-size: 28px; /* Increase font size for emphasis */
 }
 
 /* Boxes section styles */
@@ -102,6 +102,7 @@ body {
   padding: 5px 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 80px;
 }
 
 .box_button:hover {
@@ -114,7 +115,7 @@ body {
     flex: 0 0 calc(50% - 20px); /* Two boxes per row on smaller screens */
   }
 
-  .body-specialty h1 {
+  .body-specialty h2 {
     font-size: 28px; /* Adjust font size for smaller screens */
   }
 
