@@ -115,69 +115,80 @@ function Compounding() {
   const pairedBoxData = [
     {
       title: "Customized Medications Tailored to Your Needs",
-      text: "At P&M Pharmacy in Lake Worth, FL, we specialize in compounding personalized prescriptions, understanding that every patient's medication needs are unique.",
+      text: "We personalize prescriptions to meet unique medication needs.",
       imageSrc: "PharmacistAndLady", // Use the image key from the imageMap,
       border_hex: "#c01313",
       title_hex: "#c01313",
-      learnMore: [
-        { 1: "Improved energy levels" },
-        { 2: "Enhanced physiological well-being and mood" },
-        { 3: "Reduced hot flashes" },
-        { 4: "Improved sex drive" },
-        { 5: "Relief from vaginal dryness" },
-        { 6: "Enhanced erectile function" },
-        { 7: "Reduced riskof osteoperosis" },
-        { 8: "Effective management of menopausal symptoms" },
-      ],
     },
     {
       title: "Insurance Coverage for Compounding Prescriptions",
-      text: "Wondering if your insurance covers compounded prescriptions? It varies depending on your insurance plan. While very few insurance companies reimburse compounded prescriptions directly, patients may often seek reimbursement by submitting claim forms.",
+      text: "Check your insurance coverage for compounded prescriptions",
       imageSrc: "ComputerStethoscope",
       border_hex: "#c01313",
       title_hex: "#c01313",
     },
     {
       title: "Versatility in Compounded Prescriptions",
-      text: "The versatility of compounded prescriptions is one of our strengths. We can compound almost any medication, meeting the specific requirements of patients who need customized treatments.",
+      text: "We excel in compounding almost any medication.",
       imageSrc: "HandCream", // Replace with actual image URLs
       border_hex: "#c01313",
       title_hex: "#c01313",
     },
     {
       title: "Safety is Our Priority",
-      text: "We prioritize your safety. The Food and Drug Administration recognizes the importance of pharmacy compounding in providing crucial alternatives for patients requiring medications not commercially available or facing drug shortages. Safety measures include prescriptions written by licensed practitioners and compounding by licensed pharmacists, along with compliance with state pharmacy board regulations.",
+      text: "Safety is our priority in compounding medications",
       imageSrc: "HandDropper", // Replace with actual image URLs
       border_hex: "#c01313",
       title_hex: "#c01313",
     },
     {
       title: "What Sets P&M Pharmacy Apart",
-      text: "Why choose P&M Pharmacy over other specialty compounding pharmacies? Learn More",
+      text:  "Discover what makes us stand out. Learn More.",
       imageSrc: "CompoundPills",
       border_hex: "#c01313",
       title_hex: "#c01313",
     },
     {
       title: "Your Trusted Compounding Pharmacy",
-      text: "Discover the difference at P&M Pharmacy. Whether you require Hormone Replacement Therapy (HRT), Veterinary Compounding, Dermatology, Sports Medicine, Podiatry, Wound Care, Pediatrics, or any other personalized medication, we're here to meet your needs.",
+      text: "Trust us for various personalized medications.",
       imageSrc: "PharmacistWithGel", // Replace with actual image URLs
       border_hex: "#c01313",
       title_hex: "#c01313",
+      learnMore: [
+        { 1: "Hormone Replacement Therapy (HRT)" },
+        { 2: "Veterinary Compounding" },
+        { 3: "Dermatology" },
+        { 4: "Sports medication" },
+        { 5: "podiatry" },
+        { 6: "Woundcare" },
+        { 7: "Pediatrics" },
+        { 8: "Any other personalized medication" },
+      ],
     },
     {
       title: "Customized Dosage Forms",
-      text: "We have decades of experience in compounding and can create customized dosage forms to suit your preferences and needs. Whether you need a transdermal gel, topical spray, or cosmetically appealing cream, we have you covered.",
+      text: "Customized dosage forms tailored to your needs.",
       imageSrc: "WomanWithChild", // Replace with actual image URLs
       border_hex: "#c01313",
       title_hex: "#c01313",
+      learnMore: [
+        { 1: "Transdermal Gel" },
+        { 2: "Topical Spray" },
+        { 3: "Cosmetically appealing cream" },
+      ],
     },
     {
       title: "Change, Combine, or Exclude Ingredients",
-      text: "We can modify your medications in various ways, including changing the dosage form, altering the route of administration, creating combination preparations, and excluding specific ingredients to accommodate your unique circumstances.",
+      text: "We adapt medications to suit your unique needs.",
       imageSrc: "PillMaking",
       border_hex: "#c01313",
       title_hex: "#c01313",
+      learnMore: [
+        { 1: "Changing the dosage form" },
+        { 2: "Altering the route of administration" },
+        { 3: "Creating combination preparations" },
+        { 4: "Excluding specific ingredients to accomodate your unique needs"}
+      ],
     },
     // Add more objects for additional boxes if needed
   ];
