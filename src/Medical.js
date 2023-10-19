@@ -210,7 +210,7 @@ function Medical() {
     },
     {
       title: "Sitz bath",
-      text: "Basin for sitz baths, useful for personal hygiene and soothing discomfort.",
+      text: "Basin for Sitz baths, useful for personal hygiene and soothing discomfort.",
       imageSrc: "sitzBath",
       border_hex: "#c01313",
       title_hex: "#c01313"

@@ -3,6 +3,7 @@ import React from "react";
 import "./Contact.css";
 function Contact() {
   return (
+    
     <div className="contact_container">
       <h1>Contact US</h1>
       <div className="contact_maps">
@@ -10,7 +11,8 @@ function Contact() {
           <h3>
             P&M Pharmacy is a full service Greenacres Pharmacy / Drug Store. We
             serve Lake Worth, Wellington, Atlantis, Greenacres, Boynton Beach,
-            West Palm Beach, Lantana and all surrounding areas in Florida.
+            West Palm Beach, Lantana and all surrounding areas in Florida. Visit
+            us today to see the P&M difference.
           </h3>
           <div className="contact_info">
             <h3>7753 Lake Worth Rd, Greenacres, FL 33467</h3>
