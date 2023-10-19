@@ -4,73 +4,20 @@ import LandingHeader from "./LandingHeader";
 import "./PetPharm.css";
 
 const imageMap = {
-  PharmacistAndLady: {
-    jpg: require("../src/images/PharmacistAndLady.jpg"),
-    webp: require("../src/images/PharmacistAndLady.webp"),
+  petMedications: {
+    webp: require("../src/images/PetPharmacyImages/petMedications.webp"),
   },
-  SurprisedCat: {
-    jpg: require("../src/images/SurprisedCat.jpg"),
-    webp: require("../src/images/SurprisedCat.webp"),
+  vetPartnerships: {
+    jpg: require("../src/images/PetPharmacyImages/vetPartnerships.jpg"),
+    webp: require("../src/images/PetPharmacyImages/vetPartnerships.webp"),
   },
-  DogWoman: {
-    jpg: require("../src/images/DogWoman.jpg"),
-    webp: require("../src/images/DogWoman.webp"),
+  petRefills: {
+    jpg: require("../src/images/PetPharmacyImages/coolDog.jpg"),
+    webp: require("../src/images/PetPharmacyImages/coolDog.webp"),
   },
-  CatDog: {
-    jpg: require("../src/images/CatDog.jpg"),
-    webp: require("../src/images/CatDog.webp"),
-  },
-  SmallCatDog: {
-    jpg: require("../src/images/SmallCatDog.jpg"),
-    webp: require("../src/images/SmallCatDog.webp"),
-  },
-  DogMan: {
-    jpg: require("../src/images/DogMan.jpg"),
-    webp: require("../src/images/DogMan.webp"),
-  },
-  ManCat: {
-    jpg: require("../src/images/ManCat.jpg"),
-    webp: require("../src/images/ManCat.webp"),
-  },
-  High5Cat: {
-    jpg: require("../src/images/High5Cat.jpg"),
-    webp: require("../src/images/High5Cat.webp"),
-  },
-  DogSyringe: {
-    jpg: require("../src/images/DogSyringe.jpg"),
-    webp: require("../src/images/DogSyringe.webp"),
-  },
-  PillsInHand: {
-    jpg: require("../src/images/PillsInHand.jpg"),
-    webp: require("../src/images/PillsInHand.webp"),
-  },
-  ComputerStethoscope: {
-    jpg: require("../src/images/ComputerStethoscope.jpg"),
-    webp: require("../src/images/ComputerStethoscope.webp"),
-  },
-  HandCream: {
-    jpg: require("../src/images/HandCream.jpg"),
-    webp: require("../src/images/HandCream.webp"),
-  },
-  HandDropper: {
-    jpg: require("../src/images/HandDropper.jpg"),
-    webp: require("../src/images/HandDropper.webp"),
-  },
-  PharmacistWithGel: {
-    jpg: require("../src/images/PharmacistWithGel.jpg"),
-    webp: require("../src/images/PharmacistWithGel.webp"),
-  },
-  WomanWithChild: {
-    jpg: require("../src/images/WomanWithChild.jpg"),
-    webp: require("../src/images/WomanWithChild.webp"),
-  },
-  CompoundPills: {
-    jpg: require("../src/images/CompoundPills.jpeg"),
-    webp: require("../src/images/CompoundPills.webp"),
-  },
-  PillMaking: {
-    jpg: require("../src/images/PillMaking.jpeg"),
-    webp: require("../src/images/PillMaking.webp"),
+  petSupplies: {
+    jpg: require("../src/images/PetPharmacyImages/kittenToy.jpg"),
+    webp: require("../src/images/PetPharmacyImages/kittenToy.webp"),
   },
 
   // Add more images as needed
@@ -80,21 +27,8 @@ const imageMap = {
 const pairedBoxData = [
   {
     title: "Pet Prescription Medications",
-    text: "We offer a wide range of pet prescription medications",
-    LearnMore: [
-      { 1: "Explore our famous pet prescription products" }
-    ],
-    imageSrc: "PetPrescriptionMedicationsImage",
-  },
-  {
-    title: "Pet Prescription Refills",
-    text: "Quick and easy prescription refills for your pet's health.",
-    imageSrc: "PetPrescriptionRefillsImage",
-  },
-  {
-    title: "Pet Care Supplies",
-    text: "Find everything you need to care for your pets, from food to accessories.",
-    imageSrc: "PetCareSuppliesImage",
+    text: "We offer a wide range of pet prescription medications such as Simparica, Revolution and Hill's Prescription Diet.",
+    imageSrc: "petMedications",
   },
   {
     title: "Vet Partnerships",
@@ -102,8 +36,20 @@ const pairedBoxData = [
     LearnMore: [
       { 1: "Learn about our vet partnerships" }
     ],
-    imageSrc: "VetPartnershipsImage",
+    imageSrc: "vetPartnerships",
   },
+  {
+    title: "Pet Care Supplies",
+    text: "Find everything you need to care for your pets, from food to accessories.",
+    imageSrc: "petSupplies",
+  },
+  {
+    title: "Pet Prescription Refills",
+    text: "Quick and easy prescription refills for your pet's health.",
+    imageSrc: "petRefills",
+  },
+  
+  
   // Add more data for additional boxes if needed
 ];
 
