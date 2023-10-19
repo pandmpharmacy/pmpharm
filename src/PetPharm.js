@@ -136,6 +136,7 @@ function Compounding() {
    
   }, []);
 
+  
   return (
     <div className="compounding-container">
       {/* Compounding Section */}
