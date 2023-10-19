@@ -32,7 +32,7 @@ const imageMap = {
   // Add more images as needed
 };
 
-function Compounding() {
+function Immunization() {
   // const [activeBox, setActiveBox] = useState(null);
 
   /*const toggleBoxContent = (index) => {
@@ -109,4 +109,4 @@ function Compounding() {
   );
 }
 
-export default Compounding;
+export default Immunization;

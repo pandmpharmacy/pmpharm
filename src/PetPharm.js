@@ -76,6 +76,37 @@ const imageMap = {
   // Add more images as needed
 };
 
+// Pet Retail Pharmacy Data  
+const pairedBoxData = [
+  {
+    title: "Pet Prescription Medications",
+    text: "We offer a wide range of pet prescription medications",
+    LearnMore: [
+      { 1: "Explore our famous pet prescription products" }
+    ],
+    imageSrc: "PetPrescriptionMedicationsImage",
+  },
+  {
+    title: "Pet Prescription Refills",
+    text: "Quick and easy prescription refills for your pet's health.",
+    imageSrc: "PetPrescriptionRefillsImage",
+  },
+  {
+    title: "Pet Care Supplies",
+    text: "Find everything you need to care for your pets, from food to accessories.",
+    imageSrc: "PetCareSuppliesImage",
+  },
+  {
+    title: "Vet Partnerships",
+    text: "We're partnering with local vet locations for your pet's healthcare needs.",
+    LearnMore: [
+      { 1: "Learn about our vet partnerships" }
+    ],
+    imageSrc: "VetPartnershipsImage",
+  },
+  // Add more data for additional boxes if needed
+];
+
 function Compounding() {
   const dermatologyRef = useRef(null);
   const petRef = useRef(null);
@@ -104,44 +135,6 @@ function Compounding() {
     }
    
   }, []);
-
-// Pet Retail Pharmacy Data  
-const pairedBoxData = [
-  {
-    title: "Pet Prescription Medications",
-    text: "We offer a wide range of famous pet prescription medications, including brands like 'Simparica', 'Revolution', and 'Hill's Prescription Diet'.",
-    LearnMore: [
-      { 1: "Explore our famous pet prescription products" }
-    ],
-    imageSrc: "PetPrescriptionMedicationsImage",
-  },
-  {
-    title: "Pet Prescription Refills",
-    text: "Quick and easy prescription refills for your pet's health.",
-    LearnMore: [
-      { 1: "Easily refill your pet's prescriptions" }
-    ],
-    imageSrc: "PetPrescriptionRefillsImage",
-  },
-  {
-    title: "Pet Care Supplies",
-    text: "Find everything you need to care for your pets, from food to accessories.",
-    LearnMore: [
-      { 1: "Discover our range of pet care supplies" }
-    ],
-    imageSrc: "PetCareSuppliesImage",
-  },
-  {
-    title: "Vet Partnerships",
-    text: "We're partnering with local vet locations for your pet's healthcare needs.",
-    LearnMore: [
-      { 1: "Learn about our vet partnerships" }
-    ],
-    imageSrc: "VetPartnershipsImage",
-  },
-  // Add more data for additional boxes if needed
-];
-
 
   return (
     <div className="compounding-container">
