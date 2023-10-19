@@ -5,9 +5,41 @@ import Boxes from "./Boxes";
 
 // IMAGES
 const imageMap = {
-  PharmacistAndLady: {
-    jpg: require("../src/images/PharmacistAndLady.jpg"),
-    webp: require("../src/images/PharmacistAndLady.webp"),
+  rollator: {
+    jpeg: require("../src/images/MedicalEquipmentImages/rollator.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/rollator.webp"),
+  },
+  shoe: {
+    jpeg: require("../src/images/MedicalEquipmentImages/shoe.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/shoe.webp"),
+  },
+  humidifier: {
+    jpeg: require("../src/images/MedicalEquipmentImages/humidifier.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/humidifier.webp"),
+  },
+  dailyLivingAids: {
+    jpg: require("../src/images/MedicalEquipmentImages/dailyLivingAids.jpg"),
+    webp: require("../src/images/MedicalEquipmentImages/dailyLivingAids.webp"),
+  },
+  pregnancyBelt: {
+    webp: require("../src/images/MedicalEquipmentImages/pregnancyBelt.webp"),
+  },
+  Commode: {
+    webp: require("../src/images/MedicalEquipmentImages/3-1Commode.webp"),
+  },
+  bathBench: {
+    jpeg: require("../src/images/MedicalEquipmentImages/bathBench.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/bathBench.webp"),
+  },
+  raisedToiletSeat: {
+    webp: require("../src/images/MedicalEquipmentImages/raisedToiletSeat.webp"),
+  },
+  sitzBath: {
+    jpg: require("../src/images/MedicalEquipmentImages/sitzBath.jpg"),
+    webp: require("../src/images/MedicalEquipmentImages/sitzBath.webp"),
+  },
+  cane: {
+    webp: require("../src/images/MedicalEquipmentImages/cane.webp"),
   },
   crutches: {
     jpeg: require("../src/images/MedicalEquipmentImages/crutches.jpeg"),
@@ -26,25 +58,20 @@ const imageMap = {
     webp: require("../src/images/MedicalEquipmentImages/boot.webp"),
   },
   gaitBelt: {
-    //jpeg: require("../src/images/MedicalEquipmentImages/gaitBelt.jpeg"),
     webp: require("../src/images/MedicalEquipmentImages/gaitBelt.webp"),
   },
   grabBars: {
     //jpeg: require("../src/images/MedicalEquipmentImages/grabBars.jpeg"),
     webp: require("../src/images/MedicalEquipmentImages/grabBars.webp"),
   },
-  nebulizers: {
-    jpeg: require("../src/images/MedicalEquipmentImages/nebulizers.jpeg"),
-    webp: require("../src/images/MedicalEquipmentImages/nebulizers.webp"),
+  nebulizer: {
+    jpeg: require("../src/images/MedicalEquipmentImages/nebulizer.jpeg"),
+    webp: require("../src/images/MedicalEquipmentImages/nebulizer.webp"),
   },
   ostomySupplies: {
     jpeg: require("../src/images/MedicalEquipmentImages/ostomySupplies.jpeg"),
     webp: require("../src/images/MedicalEquipmentImages/ostomySupplies.webp"),
   },
-  // rasiedToiletSeat: {
-  //   //jpg: require("../src/images/MedicalEquipmentImages/rasiedToiletSeat.jpg"),
-  //   webp: require("../src/images/MedicalEquipmentImages/rasiedToiletSeat.webp"),
-  // },
   reacher: {
     jpeg: require("../src/images/MedicalEquipmentImages/reacher.jpeg"),
     webp: require("../src/images/MedicalEquipmentImages/reacher.webp"),
@@ -177,21 +204,21 @@ function Medical() {
     {
       title: "Bath benches",
       text: "Shower and bath seats for comfortable and secure bathing.",
-      imageSrc: "bath-benches",
+      imageSrc: "bathBench",
       border_hex: "#c01313",
       title_hex: "#c01313"
     },
     {
       title: "Sitz bath",
       text: "Basin for sitz baths, useful for personal hygiene and soothing discomfort.",
-      imageSrc: "sitz-bath",
+      imageSrc: "sitzBath",
       border_hex: "#c01313",
       title_hex: "#c01313"
     },
     {
       title: "3 in 1 commode",
       text: "Versatile commode with adjustable features for ease of use.",
-      imageSrc: "3-1Commode",
+      imageSrc: "Commode",
       border_hex: "#c01313",
       title_hex: "#c01313"
     },
@@ -219,14 +246,14 @@ function Medical() {
     {
       title: "GaitBelt",
       text: "Belts used by caregivers to assist patients with walking.",
-      imageSrc: "gait-belts",
+      imageSrc: "gaitBelt",
       border_hex: "#c01313",
       title_hex: "#c01313"
     },
     {
       title: "Orthotic supports",
       text: "Devices to provide extra support for knees, back, and ankles.",
-      imageSrc: "orthotic-supports",
+      imageSrc: "soles",
       border_hex: "#c01313",
       title_hex: "#c01313"
     },
@@ -240,7 +267,7 @@ function Medical() {
     {
       title: "Daily living aids",
       text: "Various tools and devices to assist with daily tasks.",
-      imageSrc: "daily-living-aids",
+      imageSrc: "dailyLivingAids",
       border_hex: "#c01313",
       title_hex: "#c01313"
     },
@@ -273,18 +300,12 @@ function Medical() {
       title_hex: "#c01313"
     },
     {
-      title: "Diabetic shoes",
-      text: "Footwear specially designed for individuals with diabetes.",
-      imageSrc: "shoe",
-      border_hex: "#c01313",
-      title_hex: "#c01313"
-    },
-    {
       title: "Therapeutic shoes",
       text: "Footwear designed for specific medical conditions.",
       imageSrc: "shoe",
       border_hex: "#c01313",
-      title_hex: "#c01313"
+      title_hex: "#c01313",
+      LearnMore: "Diabetic Shoes among others"
     },
     {
       title: "Humidifiers",
