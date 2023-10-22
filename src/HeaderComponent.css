@@ -30,9 +30,6 @@
   max-height: auto;
 }
 
-.logo_div {
-  flex: 1;
-}
 
 .nav-section {
   display: flex;
@@ -144,13 +141,6 @@
   }
 }
 
-.logo {
-  transition: max-width 0.3s linear;
-}
-
-.logo_div {
-  transition: margin-left 0.3s linear;
-}
 
 /* Initial styles for the navigation */
 .nav-list {
