@@ -2,10 +2,8 @@ import React from "react";
 import logoWebp from "../src/images/logo.webp";
 import logoPng from "../src/images/PMLOGO.png";
 import "./Featured.css";
-import { useNavigate } from 'react-router-dom';
 
 function Featured() {
-  const navigate = useNavigate();
   return (
     <div className="featured_container">
       <div className="featured_box">

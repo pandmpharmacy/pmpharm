@@ -2,14 +2,10 @@ import React, { useState, useEffect } from "react";
 import logo from "../src/images/logo.webp";
 import "./HeaderComponent.css";
 import logoWebp from "../src/images/logo.webp";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 function HeaderComponent() {
-  const navigationItems = [
-
-    "About",
-    "Contact Us",
-
-  ];
+  const navigate = useNavigate(); // Hook to get the navigate function
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -21,7 +17,9 @@ function HeaderComponent() {
     return scrollY / (documentHeight - viewportHeight);
   }
   const MAX_MARGIN_LEFT = -25; // This is a sample value. You can adjust based on your layout.
-
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
   window.addEventListener("scroll", () => {
     // Get the logo and its div
     const logo = document.querySelector(".logo");
@@ -59,13 +57,13 @@ function HeaderComponent() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navList = document.querySelector('.nav-list');
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".nav-list");
 
     if (menuToggle && navList) {
-      menuToggle.addEventListener('click', function () {
-        navList.classList.toggle('active');
+      menuToggle.addEventListener("click", function () {
+        navList.classList.toggle("active");
       });
     }
   });
@@ -91,7 +89,6 @@ function HeaderComponent() {
         </div>
         <header className="header-container">
           <nav className="nav-section">
-
             <>
               <div onClick={toggleMobileMenu} className="menu-toggle_container">
                 <div class="menu-toggle">
@@ -99,37 +96,43 @@ function HeaderComponent() {
                   <div class="bar"></div>
                   <div class="bar"></div>
                 </div>
-
               </div>
 
               <ul className="nav-list">
-                {navigationItems.map((navItem, index) => (
-                  <li className="nav-item" key={index}>
-                    {navItem}
-                  </li>
-                ))}
+                <li
+                  onClick={() => handleNavigation("/compounding")}
+                  className="nav-item"
+                >
+                  About Us
+                </li>
+                <li
+                  onClick={() => handleNavigation("/contact-us")}
+                  className="nav-item"
+                >
+                  Contact Us
+                </li>
               </ul>
             </>
-
-
-
           </nav>
         </header>
-
       </div>
       {showMobileMenu ? (
-  <ul className="mobile_nav-list active">
-    {navigationItems.map((navItem, index) => (
-      <li className="mobile_nav-item" key={index}>
-        {navItem}
-      </li>
-    ))}
-  </ul>
-) : null}
-
-
+        <ul className={`mobile_nav-list ${showMobileMenu ? "active" : ""}`}>
+          <li
+            className="mobile_nav-item"
+            onClick={() => handleNavigation("/compounding")}
+          >
+            About
+          </li>
+          <li
+            className="mobile_nav-item"
+            onClick={() => handleNavigation("/contact-us")}
+          >
+            Contact Us
+          </li>
+        </ul>
+      ) : null}
     </>
-
   );
 }
 

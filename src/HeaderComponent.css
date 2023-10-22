@@ -138,7 +138,6 @@
     margin-top: 10px;
   }
 
-
   .logo_div {
     flex: 0;
     padding: 4px;
@@ -196,34 +195,36 @@
     text-align: center;
   }
 
-  .nav-list.active {
-    display: flex;
-  }
   .mobile_nav-list {
-    height: 0px;
     overflow: hidden;
-    transition: height 3.6s ease-out;
   }
   
-  .mobile_nav-list.active {
-  height: 500px;
+  .mobile_nav-item {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
   }
+  
+  .mobile_nav-list.active .mobile_nav-item {
+    opacity: 1;
+    max-height: 50px;
+    transform: translateY(0px);
+  }
+  
 }
 
 .mobile_nav-list {
   background-color: #c01313;
   margin-top: 0px;
   padding: 20px;
- 
 }
-
 
 .mobile_nav-item {
   color: #fff;
   text-decoration: none;
   list-style: none;
   text-align: right;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
-
 }
