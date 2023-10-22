@@ -16,7 +16,7 @@ function Featured() {
       </div>
       <div id="featured_text" className="">
         <h1 className="featured_header">
-          Welcome to P & M Pharmacy for all your medication needs.
+          Welcome to P&M Pharmacy for all your medication needs.
         </h1>
         <h3 id="alert">
           The Most Trusted Compounding Pharmacy in West Palm Beach.
@@ -26,7 +26,7 @@ function Featured() {
           serve Lake Worth, Wellington, Atlantis, Greenacres, Boynton Beach,
           West Palm Beach, Lantana and all surrounding areas in Florida.
         </p>
-        <h3 onClick={() => navigate('/contact-us')}  className="featured_footer">
+        <h3 className="featured_footer">
           Contact <br />
           <a href="tel:561-660-8650">561-660-8650</a>
         </h3>

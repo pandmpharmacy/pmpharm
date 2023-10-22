@@ -17,8 +17,6 @@ function App() {
     <Router>
       <div className="App">
         <HeaderComponent />
-        
-        {/* Routes go here */}
         <Routes>
           <Route path="/" element={<BodyComponent />} />
           <Route path="/compounding" element={<Compounding />} />
@@ -29,7 +27,6 @@ function App() {
           <Route path="/pet-compounding" element={<PetCompunding />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
-        
         <FooterComponent />
       </div>
     </Router>

@@ -70,13 +70,14 @@ function Boxes({ data, imageMap }) {
                 >
                     <div>
                         <h2
+                        id="boxes_subtitle"
                             key={index}
                             style={{
                                 color: item.title_hex,
                                 marginBottom: '4%',
                                 textAlign: 'left',
                                 fontWeight: 900,
-                                fontSize: '28px',
+                               
                             }}
                         >
                             {item.title}

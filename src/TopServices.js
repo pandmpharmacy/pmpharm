@@ -9,17 +9,11 @@ function TopServices() {
 
   return (
     <div className="service-container">
+     
       <div>
-      <div  onClick={() => navigate('/retail')} className="service-box">
+      <div  onClick={() => navigate('/retail')} id="height_box" className="service-box">
           <h1 className="box_image1">&#x1F48A;</h1>
           <h4>Retail Pharmacy</h4>
-          {/* <button className="box_button">More</button> */}
-        </div>
-      </div>
-      <div>
-        <div onClick={() => navigate('/compounding')} className="service-box">
-        <h1 className="box_image1">&#x1FAD9;</h1>
-          <h4>Compounding Services</h4>
           {/* <button className="box_button">More</button> */}
         </div>
       </div>
@@ -31,6 +25,13 @@ function TopServices() {
         </div>
       </div>
       <div>
+      <div onClick={() => navigate('/compounding')} id="compounding_boxes" className="service-box">
+        <h1 className="box_image1">&#x1FAD9;</h1>
+          <h4>Compounding Services</h4>
+          {/* <button className="box_button">More</button> */}
+        </div>
+      </div>
+      <div>
       <div  onClick={() => navigate('/Immunization')} className="service-box">
         <h1 className="box_image1">&#x1F489;</h1>
           <h4>Immunization</h4>
@@ -38,7 +39,7 @@ function TopServices() {
         </div>
       </div>
       <div>
-      <div  onClick={() => navigate('/medical')} className="service-box">
+      <div  onClick={() => navigate('/medical')} id="height_box" className="service-box">
         <h1 className="box_image1">&#x1FA7C;</h1>
           <h4>Medical Equipment</h4>
           {/* <button className="box_button">More</button> */}

@@ -30,14 +30,26 @@
 /* Media query for larger screens */
 @media screen and (min-width: 768px) {
   /* Adjust styles for screens with a minimum width of 768px */
-  .service-box {
-    padding: 30px; /* Restore padding for larger screens */
+  
+  #height_box{
+    height: 120px;
+  }#height_box h4{
+    padding: 0px;
   }
+#compounding_boxes{
+ 
+  border: 2px solid #616c4e;
+ 
 
+}#compounding_boxes h4{
+
+  
+  
+}
   .service-container {
-    grid-template-columns: repeat(5, 1fr); /* Four columns for larger screens */
-    margin: 50px auto; /* Restore margin for larger screens */
-    gap: 20px; /* Restore gap for larger screens */
+    grid-template-columns: 13.75% 13.75% 45% 13.75% 13.75%; /* 40% for the logo boxes, 60% for the center box */
+    gap: 10px; /* Add some space between columns */    margin: 50px auto; 
+/* Restore margin for larger screens */
   }
 
   .box_image1 {

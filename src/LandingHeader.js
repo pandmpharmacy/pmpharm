@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './LandingHeader.css'
 function LandingHeader({title}) {
   return (
-    <h1>{title}</h1>
+    <h1 className='landing_header'>{title}</h1>
   )
 }
 

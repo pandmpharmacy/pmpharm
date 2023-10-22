@@ -17,10 +17,10 @@ function Speciality() {
       case "Dermatology":
         hash = "#compoundingDerm-title-box";
         break; // Add the break statement here
-      case "Vets/Pets":
+      case "Veterinarian":
         hash = "#compoundingPet-title-box";
         break; // And here
-      case "Hormone Replacement Therapy":
+      case "Hormone Replacement Therapy (HRT)":
         hash = "#compoundingHRT-title-box";
         break; // This one is fine
       default:

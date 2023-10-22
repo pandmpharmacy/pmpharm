@@ -348,7 +348,6 @@ const PeopleDermpairedBoxData = [
       {/* Compounding Section */}
       <div className="compounding-title-box">
         <LandingHeader title={"Compounding Pharmacy"} />
-        <p>Customized medications for you.</p>
       </div>
       <Boxes imageMap={imageMap} data={pairedBoxData} />
       {/* Pet Compounding Section */}
@@ -359,7 +358,6 @@ const PeopleDermpairedBoxData = [
       >
         <LandingHeader title={"Dermatology Compounding"} />
 
-        <p>Customized Skin Solutions</p>
       </div>
       <Boxes imageMap={imageMap} data={PeopleDermpairedBoxData} />
       {/* People Compounding Section */}
@@ -370,7 +368,6 @@ const PeopleDermpairedBoxData = [
         ref={petRef}
       >
         <LandingHeader title={"Pet Compounding Pharmacy"} />
-        <p>Tailored Pet Medications</p>
       </div>
 
       <Boxes imageMap={imageMap} data={PetpairedBoxData} />
@@ -381,7 +378,6 @@ const PeopleDermpairedBoxData = [
         ref={HRTReft}
       >
         <LandingHeader title={"Hormone Replacement Therapy Compounding"} />
-        <p>Balanced Hormone Solutions</p>
       </div>
 
       <Boxes imageMap={imageMap} data={PeopleHRTpairedBoxData} />

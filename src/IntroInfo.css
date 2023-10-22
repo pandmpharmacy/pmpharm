@@ -5,7 +5,7 @@
   font-weight: bold;
   text-align: center;
   color: #616c4e;
-  padding: 30px;
+  padding: 10px;
   height: 65%;
 }
 #service_text{
@@ -18,8 +18,8 @@
   /* Center the container horizontally and add top margin */
   border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Create four equal-width columns */
-  gap: 20px; /* Add some space between columns */
+  grid-template-columns: 20% 20% 40% 20% 20%; /* 40% for the logo boxes, 60% for the center box */
+  gap: 10px; /* Add some space between columns */
 }
 
 
