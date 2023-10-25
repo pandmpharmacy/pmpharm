@@ -12,11 +12,8 @@ function BodyComponent() {
         <Featured />
       </div>
       <TopServices />
-      {/* <LeftInterlockedTextBoxes message={first_intro} />
-      <RightInterlockedTextBoxes message={second_intro} />
-      <LeftInterlockedTextBoxes message={third_intro} /> */}
+
       <Speciality />
-      {/* <RightInterlockedTextBoxes message={fourth_intro} /> */}
     </div>
   );
 }

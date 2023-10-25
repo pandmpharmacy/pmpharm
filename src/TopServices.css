@@ -6,16 +6,21 @@
   font-weight: bold;
   text-align: center;
   color: #616c4e;
-  padding: 20px; /* Reduced padding for mobile */
-  cursor: pointer; /* Add cursor property to change to pointer on hover */
+  padding: 20px;
+  /* Reduced padding for mobile */
+  cursor: pointer;
+  /* Add cursor property to change to pointer on hover */
 }
 
 .service-container {
-  margin: 20px auto; /* Reduced margin for mobile */
+  margin: 20px auto;
+  /* Reduced margin for mobile */
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr; /* Single column for mobile */
-  gap: 10px; /* Reduced gap for mobile */
+  grid-template-columns: 1fr;
+  /* Single column for mobile */
+  gap: 10px;
+  /* Reduced gap for mobile */
 }
 
 /* Hover effect for mobile */
@@ -24,35 +29,47 @@
 }
 
 .box_image1 {
-  font-size: 30px; /* Adjusted font size for mobile */
+  font-size: 30px;
+  /* Adjusted font size for mobile */
 }
-
+.service-container {
+  grid-template-columns: 13.75% 13.75% 45% 13.75% 13.75%;
+  /* 40% for the logo boxes, 60% for the center box */
+  gap: 10px;
+  /* Add some space between columns */
+  margin: 50px auto;
+  /* Restore margin for larger screens */
+}
 /* Media query for larger screens */
 @media screen and (min-width: 768px) {
   /* Adjust styles for screens with a minimum width of 768px */
-  
-  #height_box{
+
+  #height_box {
     height: 120px;
-  }#height_box h4{
+  }
+
+  #height_box h4 {
     padding: 0px;
   }
-#compounding_boxes{
- 
-  border: 2px solid #616c4e;
- 
 
-}#compounding_boxes h4{
+  #compounding_boxes {
 
-  
-  
-}
+    border: 2px solid #616c4e;
+
+
+  }
+
   .service-container {
-    grid-template-columns: 13.75% 13.75% 45% 13.75% 13.75%; /* 40% for the logo boxes, 60% for the center box */
-    gap: 10px; /* Add some space between columns */    margin: 50px auto; 
-/* Restore margin for larger screens */
+    grid-template-columns: 13.75% 13.75% 45% 13.75% 13.75%;
+    /* 40% for the logo boxes, 60% for the center box */
+    gap: 10px;
+    /* Add some space between columns */
+    margin: 50px auto;
+    /* Restore margin for larger screens */
   }
 
   .box_image1 {
-    font-size: 50px; /* Restore font size for larger screens */
+    font-size: 50px;
+    /* Restore font size for larger screens */
   }
 }
