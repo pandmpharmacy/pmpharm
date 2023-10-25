@@ -7,8 +7,8 @@ import FooterComponent from "./FooterComponent";
 import HeaderComponent from "./HeaderComponent";
 import RetailPharm from './RetailPharm';
 import PetPharm from './PetPharm';
-import Immunization from './Immunization';
-import PetCompunding from './PetCompunding';
+//import Immunization from './Immunization';
+import PrayerTimesTest from './PrayerTimesTest';
 import Medical from './Medical';
 import Contact from './Contact';
 
@@ -23,8 +23,7 @@ function App() {
           <Route path="/retail" element={<RetailPharm />} />
           <Route path="/pet" element={<PetPharm />} />
           <Route path="/medical" element={<Medical />} />
-          <Route path="/Immunization" element={<Immunization />} />
-          <Route path="/pet-compounding" element={<PetCompunding />} />
+          <Route path="/Immunization" element={<PrayerTimesTest />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
         <FooterComponent />
