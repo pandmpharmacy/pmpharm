@@ -5,47 +5,56 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Boxes.css";
 
-function LazyImage({ src, alt }) {
+function LazyImage({ src, alt, placeholder }) {
     const containerRef = useRef(null);
-    const imgRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
-  
+
     useEffect(() => {
-      const currentContainerRef = containerRef.current; // Create a variable here
-  
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(currentContainerRef); // Use the variable for cleanup
-          }
-        });
-      });
-  
-      observer.observe(currentContainerRef);
-  
-      return () => {
-        observer.unobserve(currentContainerRef);
-      };
+        if (!('IntersectionObserver' in window)) {
+            require('intersection-observer');
+        }
+
+        const observerOptions = {
+            rootMargin: '0px',
+            threshold: 0.1 // Adjust this value based on when you want the image to load
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect(); // Disconnect the observer when it’s no longer needed
+                }
+            });
+        }, observerOptions);
+
+        observer.observe(containerRef.current);
+
+        return () => {
+            observer.disconnect();
+        };
     }, []);
-  
+
     return (
-      <div
-        ref={containerRef}
-        className="medical_box"
-        style={{
-          backgroundImage: isVisible ? `url(${src})` : 'none',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
-        {isVisible && <img ref={imgRef} src={src} alt={alt} style={{ display: 'none' }} />}
-      </div>
+        <div
+            ref={containerRef}
+            className="medical_box"
+            style={{
+                backgroundImage: isVisible ? `url(${src})` : `url(${placeholder})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+            }}
+        >
+            {/* This img tag ensures that the image can be indexed by search engines and is accessible, but it's visually hidden */}
+            {/* isVisible && <img src={src} alt={alt} style={{ display: 'none' }} /> */}
+        </div>
     );
-  }
-  
-  
+}
+
+
+
+
 
 function Boxes({ data, imageMap }) {
     const [activeBox, setActiveBox] = useState(null);
@@ -70,14 +79,14 @@ function Boxes({ data, imageMap }) {
                 >
                     <div>
                         <h2
-                        id="boxes_subtitle"
+                            id="boxes_subtitle"
                             key={index}
                             style={{
                                 color: item.title_hex,
                                 marginBottom: '4%',
                                 textAlign: 'left',
                                 fontWeight: 900,
-                               
+
                             }}
                         >
                             {item.title}
