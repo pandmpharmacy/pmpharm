@@ -1,6 +1,6 @@
 //import React from "react";
 import "./PrayerTimesTest.css";
-import React, { useState, useEffect, useNavigate } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function PrayerTimes() {
   const [prayerData, setPrayerData] = useState({
