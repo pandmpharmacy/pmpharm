@@ -73,22 +73,64 @@ function PrayerTimes() {
       console.error('Error fetching data:', error);
     }
   };
+  const currentTimee = new Date();
+  const currentHours = currentTimee.getHours();
+  const currentMinutes = currentTimee.getMinutes();
+  
+  // Determine if it's AM or PM
+  const amOrPm = currentHours >= 12 ? "PM" : "AM";
+  
+  // Convert hours to 12-hour format
+  const hours12 = (currentHours % 12) || 12; // Ensure 12:00 PM, not 0:00 PM
+  
+  // Format the time as h:MM AM/PM
+  const formattedTime = `${hours12}:${String(currentMinutes).padStart(2, '0')} ${amOrPm}`;
+  console.log('Current time in 12-hour format: ' + formattedTime);
+  
+  
 
   // Define an array of prayer times in the order you want to highlight
   const prayerTimes = ['fajr', 'dhuhr', 'asr', 'maghrib', 'isha'];
   const [currentTime, setCurrentTime] = useState('');
 
   // Function to calculate the current prayer
-  const getCurrentPrayer = () => {
-    const sanAntonioTime = moment.tz('America/Chicago'); // San Antonio timezone
-    const currentTime = sanAntonioTime.format('HH:mm');
-    for (const prayer of prayerTimes) {
-      if (currentTime < prayerData[prayer].time) {
-        return prayer;
+  const getCurrentAndNextPrayer = () => {
+    //const sanAntonioTime = moment.tz('America/Chicago'); // San Antonio timezone
+    //const currentTime = sanAntonioTime.format('HH:mm');
+
+  
+    
+    let nextTime = null;
+    let followingTime = null;
+    
+    const prayerTimesArray = Object.values(prayerData);
+
+    // Sort the prayer times in ascending order
+    prayerTimesArray.sort((a, b) => a.time.localeCompare(b.time));
+    
+    for (const prayerTimeData of prayerTimesArray) {
+      const prayerTime = prayerTimeData.time;
+    
+      // Compare formattedTime and prayerTime
+      if (formattedTime < prayerTime) {
+        if (nextTime === null) {
+          nextTime = prayerTime;
+        } else if (prayerTime < nextTime) {
+          followingTime = nextTime;
+          nextTime = prayerTime;
+        } else if (followingTime === null || prayerTime < followingTime) {
+          followingTime = prayerTime;
+        }
       }
     }
-    return null; // Return null if all prayers have passed
+    
+    console.log('Next time:', nextTime);
+    console.log('Following time:', followingTime);
+  
+    return { followingTime, nextTime };
   };
+  
+  
 
   // Function to format the date
   function formatDate(dateString) {
@@ -99,33 +141,35 @@ function PrayerTimes() {
     const suffix = day === 1 ? 'st' : day === 2 ? 'nd' : day === 3 ? 'rd' : 'th';
     return formattedDate.replace(/\d{1,2}/, (day) => day + suffix);
   }
+  
+  const { nextTime, followingTime } = getCurrentAndNextPrayer();
+
 
   // Check if the current day is Friday
-  const isFriday = moment.tz('America/Chicago').isoWeekday() === 5;
-
+ // const isFriday = moment.tz('America/Chicago').isoWeekday() === 5;
   // Data Display
   return (
     <div id="prayerTimes">
-       <div>
+      <div>
         <h2 id="dateElement">{formatDate(prayerData.date)}</h2>
         <h3 id="currentTimeElement">Current Time in San Antonio: {currentTime}</h3>
       </div>
       <div className="prayer-info">
         {prayerTimes.map((prayer) => (
-          <div className={`prayer-item ${prayer === getCurrentPrayer() ? 'highlighted' : ''}`} key={prayer}>
+          <div id={`${formattedTime === followingTime && 'highlighted-red' } `} className={`prayer-item ${formattedTime === nextTime && 'highlighted-yellow' } `} key={prayer}>
             <h3>{prayer.charAt(0).toUpperCase() + prayer.slice(1)}</h3>
             <p>Time: {prayerData[prayer].time}</p>
             <p>Iqama: {prayerData[prayer].iqama}</p>
           </div>
         ))}
-      </div>
-      {isFriday && (
-        <div>
+      <div className="prayer-item highlighted-yellow">
           <h2>Jummah Prayer Times</h2>
           <p>1st Jummah: 1:00 PM</p>
           <p>2nd Jummah: 2:00 PM</p>
         </div>
-      )}
+      </div>
+
+    
     </div>
   );
 }

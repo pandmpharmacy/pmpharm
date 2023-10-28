@@ -95,9 +95,14 @@
     }
   
     /* Add styles for the highlighted prayer */
-    .prayer-item.highlighted {
+    .prayer-item.highlighted-yellow {
       background-color: #FFFF00; /* Yellow background for the highlighted prayer */
       border: 2px solid #FFA500; /* Orange border for the highlighted prayer */
       color: #333; /* Text color */
+    }.prayer-item.highlighted-red {
+      background-color: #FF0000; /* Red background for the highlighted prayer */
+      border: 2px solid #FFA500; /* Orange border for the highlighted prayer */
+      color: #333; /* Text color */
     }
+    
   }
