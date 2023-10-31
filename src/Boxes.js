@@ -74,7 +74,7 @@ function Boxes({ data, imageMap }) {
                     key={index}
                     style={{
                         gridArea: `box${index + 1}`,
-                        marginBottom: '20%',
+                        marginBottom: '1%',
                     }}
                 >
                     <div>

@@ -110,82 +110,15 @@ function Compounding() {
         imageSrc: "image5.jpg",      border_hex: "#c01313",
         title_hex: "#c01313",
       },
-      {
-        title: "Diabetic Supplies",
-        text: "Comprehensive diabetes management.",
-        imageSrc: "RetailDiabeticSupply",      border_hex: "#c01313",
-        title_hex: "#c01313",
-      },
-      {
-        title: "Orthopedic Supplies",
-        text: "Aid for comfort and recovery.",
-        imageSrc: "image7.jpg",      border_hex: "#c01313",
-        title_hex: "#c01313",
-      },
-      {
-        title: "Ostomy and Urinary Supplies",
-        text: "Support for healthcare needs.",
-        imageSrc: "image8.jpg",      border_hex: "#c01313",
-        title_hex: "#c01313",
-      },
-      {
-        title: "Nebulizers",
-        text: "Respiratory treatments at home.",
-        LearnMore: "Explore nebulizer options.",
-        imageSrc: "image9.jpg",      border_hex: "#c01313",
-        title_hex: "#c01313",
-      },
-      {
-        title: "Wound Care Supplies",
-        text: "Facilitate wound healing.",
-        LearnMore: "Wide range in stock.",
-        imageSrc: "image10.jpg",      border_hex: "#c01313",
-        title_hex: "#c01313",
-      },
-      {
-        title: "Support Stockings",
-        text: "Improve circulation, alleviate discomfort.",
-        LearnMore: "Discover support stockings.",
-        imageSrc: "image12.jpg",      border_hex: "#c01313",
-        title_hex: "#c01313",
-      },
-      {
-        title: "Daily Living Aids",
-        text: "Enhance independence and quality of life.",
-        LearnMore: [
-          { 1: "Explore our aids range"}
-        ],
-        imageSrc: "image13.jpg",
-      },
-      {
-        title: "Incontinence Supplies",
-        text: "Ensure comfort and confidence.",
-        LearnMore: "Find incontinence supplies.",
-        imageSrc: "image14.jpg",      border_hex: "#c01313",
-        title_hex: "#c01313",
-      },
-      {
-        title: "Foot Care Products",
-        text: "Maintain healthy, comfortable feet.",
-        LearnMore: "Explore our foot care range.",
-        imageSrc: "image15.jpg",      border_hex: "#c01313",
-        title_hex: "#c01313",
-      },
-      {
-        title: "OTC Products",
-        text: "Diverse OTC selection for health and wellness.",
-        LearnMore: "Vitamins, skincare, and more.",
-        imageSrc: "image16.jpg",      border_hex: "#c01313",
-        title_hex: "#c01313",
-      }
-  
+     
+   
     // Add more data for additional boxes if needed
   ];
 
   return (
     <div className="compounding-container">
       {/* Compounding Section */}
-      <div className="compounding-title-box">
+      <div className="compounding-title-box">{/*  */}
         <LandingHeader title={"Retail Pharmacy"} />
         <p>Retail Pharmacy Short message goes here.</p>
       </div>

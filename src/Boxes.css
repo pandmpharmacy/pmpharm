@@ -1,6 +1,6 @@
 .boxes-container {
     display: grid;
-    gap: 20px;
+    gap: 100px;
     grid-template-columns: 1fr;
     /* For mobile by default, boxes will stack */
     grid-template-areas:
@@ -38,7 +38,7 @@
 
 
 @media (min-width: 768px) {
-    .boxes-container{
+    .medical_container .boxes-container{
         grid-template-columns: repeat(10, 1fr);
         /* Three columns to achieve your structure */
         grid-template-areas:
@@ -51,12 +51,23 @@
             "box13 box13 box13 box13 box13 box14 box14 box14 box14 box14"
             "box15 box15 box15 box15 box15 box15 box15 box16 box16 box16"
             "box17 box17 box17 box17 box17 box18 box18 box18 box18 box18"
-            "box19 box19 box19 box19 box19 box19 box19 box20 box20 box20"
+            "box19 box19 box19 box19 box19 box19 box19 box20 box20 box20" 
             "box21 box21 box21 box21 box21 box22 box22 box22 box22 box22"
             "box23 box23 box23 box23 box23 box23 box23 box24 box24 box24"
             "box25 box25 box25 box25 box25 box26 box26 box26 box26 box26"
             "box27 box27 box27 box27 box27 box27 box27 box28 box28 box28"
             "box29 box29 box29 box29 box29 box30 box30 box30 box30 box30"
+    }
+    .boxes-container{
+        grid-template-columns: repeat(10, 1fr);
+        /* Three columns to achieve your structure */
+        grid-template-areas:
+            "box1 box1 box1 box1 box1 box2 box2 box2 box2 box2"
+            "box3 box3 box3 box3 box3 box3 box3 box4 box4 box4"/*  */
+            "box5 box5 box5 box5 box5 box6 box6 box6 box6 box6"
+            "box7 box7 box7 box7 box7 box7 box7 box8 box8 box8"
+            "box9 box9 box9 box9 box9 box10 box10 box10 box10 box10"
+           
             
     }
 }
@@ -85,23 +96,30 @@
 
 
 @media (min-width: 2000px) {
+    .medical_container .boxes-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "box7 box8 box9"
+        "box10 box11 box12"/*  */
+        "box13 box14 box15"
+        "box16 box17 box18"
+        "box19 box20 box21"
+        "box22 box23 box24"/*  */
+        "box25 box26 box27"
+        "box28 box29 box30"
+    }
     .boxes-container{
         grid-template-columns: repeat(3, 1fr);
-        /* Three columns to achieve your structure */
         grid-template-areas:
         "box1 box2 box3"
         "box4 box5 box6"
         "box7 box8 box9"
         "box10 box11 box12"
-        "box13 box14 box15"
-        "box16 box17 box18"
-        "box19 box20 box21"
-        "box22 box23 box24"
-        "box25 box26 box27"
-        "box28 box29 box30"
-
+    
     }
 }
 #boxes_subtitle{
-    font-size: 18px;
+    font-size: 30px;
 }
