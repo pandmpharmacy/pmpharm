@@ -152,7 +152,7 @@ function PrayerTimes() {
     <div id="prayerTimes">
       <div>
         <h2 id="dateElement">{formatDate(prayerData.date)}</h2>
-        <h3 id="currentTimeElement">Current Time in San Antonio: {currentTime}</h3>
+        <h3 id="currentTimeElement">Local Time: {currentTime}</h3>
       </div>
       <div className="prayer-info">
         {prayerTimes.map((prayer) => (
@@ -163,7 +163,7 @@ function PrayerTimes() {
           </div>
         ))}
       <div className="prayer-item highlighted-yellow">
-          <h2>Jummah Prayer Times</h2>
+          <h2>Jummah</h2>
           <p>1st Jummah: 1:00 PM</p>
           <p>2nd Jummah: 2:00 PM</p>
         </div>
