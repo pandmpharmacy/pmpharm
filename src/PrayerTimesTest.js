@@ -49,7 +49,7 @@ function PrayerTimes() {
       const rows = Iqma_data.split("\n");
       const headerRow = rows[0].split(",");
 
-      const date_startIndex = headerRow.indexOf("Date Start");
+      // const date_startIndex = headerRow.indexOf("Date Start");
       const date_endIndex = headerRow.indexOf("Date End");
       const fajrIndex = headerRow.indexOf("Fajr");
       const dhuhrIndex = headerRow.indexOf("Dhur");
@@ -80,7 +80,7 @@ function PrayerTimes() {
           .toString()
           .padStart(2, "0")} ${period}`;
       }
-      const maghrib_idx = rows[1].split(",")[maghribIndex];
+      // const maghrib_idx = rows[1].split(",")[maghribIndex];
       const date_end = rows[1].split(",")[date_endIndex];
       let fajr_igma_time;
       if (date_end >= current_day) {
@@ -142,7 +142,7 @@ function PrayerTimes() {
   // Function to calculate the current prayer
 
   const currentDate = new Date();
-  const month = currentDate.getMonth() + 1; // Adding 1 to get a 1-based index
+  // const month = currentDate.getMonth() + 1; // Adding 1 to get a 1-based index
 
   console.log("Month:", currentDate);
   // Function to format the date
