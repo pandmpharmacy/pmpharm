@@ -14,9 +14,10 @@ import Contact from './Contact';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <HeaderComponent />
+    <div className="App">
+      <PrayerTimesTest/>
+        {/* <Router> */}
+        {/* <HeaderComponent />
         <Routes>
           <Route path="/" element={<BodyComponent />} />
           <Route path="/compounding" element={<Compounding />} />
@@ -26,9 +27,9 @@ function App() {
           <Route path="/Immunization" element={<PrayerTimesTest />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
-        <FooterComponent />
+        <FooterComponent /> */}
+    {/* </Router> */}
       </div>
-    </Router>
   );
 }
 
