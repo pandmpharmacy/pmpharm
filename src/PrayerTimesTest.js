@@ -54,7 +54,7 @@ function PrayerTimes() {
       const fajrIndex = headerRow.indexOf("Fajr");
       const dhuhrIndex = headerRow.indexOf("Dhur");
       const asrIndex = headerRow.indexOf("Asr");
-      const maghribIndex = headerRow.indexOf("Maghrib");
+      // const maghribIndex = headerRow.indexOf("Maghrib");
       const ishaIndex = headerRow.findIndex((header) =>
         header.includes("Isha")
       );
