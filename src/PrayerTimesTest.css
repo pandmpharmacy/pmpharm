@@ -24,7 +24,6 @@
   @media screen and (max-width: 767px) {
     #prayerTimes {
       background-color: #E8D8C9;
-      border-radius: 10px;
     }
   
     #dateElement {
