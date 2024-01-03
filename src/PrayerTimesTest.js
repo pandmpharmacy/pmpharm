@@ -46,7 +46,7 @@ function PrayerTimes() {
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vSeZ26h2oufYXq0i04ioOoH7aDkOHl0pvQ9E8mbIzxpVsElIoeUq0FJhwRgHkaiRlPn6IEcoM-0vty9/pub?output=csv"
       );
       const Iqma_data = await iqma_response.text();
-      const rows = Iqma_data.split("\n");
+    const rows = Iqma_data.split("\n");
       const headerRow = rows[0].split(",");
 
       // const date_startIndex = headerRow.indexOf("Date Start");
