@@ -1,106 +1,90 @@
 /* Base styles for all viewports */
 #prayerTimes {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+
 #dateElement {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Styles for the current time element */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
 #currentTimeElement {
-    font-size: 24px; /* Adjust the font size as needed */
-    margin-top: 10px; /* Add margin to separate it from the date element */
-    color: #333; /* Text color */
+  font-size: 24px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Styles for mobile view */
+@media screen and (max-width: 767px) {
+  #prayerTimes {
+    background-color: #E8D8C9;
   }
-  
-  /* Styles for mobile view */
-  @media screen and (max-width: 767px) {
-    #prayerTimes {
-      background-color: #E8D8C9;
-    }
-  
-    #dateElement {
-      font-size: 20px;
-    }
-  
-    .prayer-info {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-  
-    .prayer-item {
-      background-color: #ffffff;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 10px;
-    }
-  
-    .prayer-item h3 {
-      font-size: 20px;
-    }
-  
-    .prayer-item p {
-      font-size: 16px;
-    }
-  
-    /* Add styles for the highlighted prayer */
-    .prayer-item.highlighted {
-      background-color: #FFFF00; /* Yellow background for the highlighted prayer */
-      border: 2px solid #FFA500; /* Orange border for the highlighted prayer */
-      color: #333; /* Text color */
-    }
+
+  #dateElement {
+    font-size: 20px;
   }
-  
-  /* Styles for tablet view */
-  @media screen and (min-width: 768px) {
-    #prayerTimes {
-      background-color: #E8D8C9;
-      padding: 30px;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    #dateElement {
-      font-size: 28px;
-    }
-  
-    .prayer-info {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
-  
-    .prayer-item {
-      background-color: #ffffff;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 15px;
-    }
-  
-    .prayer-item h3 {
-      font-size: 24px;
-    }
-  
-    .prayer-item p {
-      font-size: 20px;
-    }
-  
-    /* Add styles for the highlighted prayer */
-    .prayer-item.highlighted-yellow {
-      background-color: #FFFF00; /* Yellow background for the highlighted prayer */
-      border: 2px solid #FFA500; /* Orange border for the highlighted prayer */
-      color: #333; /* Text color */
-    }.prayer-item.highlighted-red {
-      background-color: #FF0000; /* Red background for the highlighted prayer */
-      border: 2px solid #FFA500; /* Orange border for the highlighted prayer */
-      color: #333; /* Text color */
-    }
-    
+
+  .prayer-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
+
+  .prayer-item {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .prayer-item h3 {
+    font-size: 20px;
+  }
+
+  .prayer-item p {
+    font-size: 16px;
+  }
+
+  /* Add styles for the highlighted prayers */
+  .prayer-item.highlighted-yellow,
+  .prayer-item.highlighted-red {
+    background-color: #FFFF00;
+    border: 2px solid #FFA500;
+    color: #333;
+  }
+}
+
+/* Styles for tablet and larger screens */
+@media screen and (min-width: 768px) {
+  #prayerTimes {
+    background-color: #E8D8C9;
+    padding: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #dateElement {
+    font-size: 28px;
+  }
+
+  .prayer-info {
+    gap: 15px;
+  }
+
+  .prayer-item {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .prayer-item h3 {
+    font-size: 24px;
+  }
+
+  .prayer-item p {
+    font-size: 20px;
+  }
+}
