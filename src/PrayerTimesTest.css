@@ -17,11 +17,20 @@
   margin-top: 10px;
   color: #333;
 }
-
+.prayer-info div {
+  border: 3px solid #223881;
+  border-radius: 124px;
+  height: 144px;
+  width: 150px;
+}
+.prayer-item {
+  height: 205px !important;
+  
+}
 /* Styles for mobile view */
 @media screen and (max-width: 767px) {
   #prayerTimes {
-    background-color: #E8D8C9;
+    background-color: #e8d8c9;
   }
 
   #dateElement {
@@ -53,8 +62,8 @@
   /* Add styles for the highlighted prayers */
   .prayer-item.highlighted-yellow,
   .prayer-item.highlighted-red {
-    background-color: #FFFF00;
-    border: 2px solid #FFA500;
+    background-color: #ffff00;
+    border: 2px solid #ffa500;
     color: #333;
   }
 }
@@ -62,7 +71,7 @@
 /* Styles for tablet and larger screens */
 @media screen and (min-width: 768px) {
   #prayerTimes {
-    background-color: #E8D8C9;
+    background-color: #e8d8c9;
     padding: 30px;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -72,7 +81,9 @@
   }
 
   .prayer-info {
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Adjust the gap according to your preference */
   }
 
   .prayer-item {
