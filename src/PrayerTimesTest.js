@@ -63,6 +63,7 @@ function PrayerTimes() {
       } else {
         setIsRamadan(false);
       }
+      
       // Extracting prayer times from the API response
       function convertTo12HourFormat(time24, offsetMinutes = 0) {
         const [hour, minute] = time24.split(":");
