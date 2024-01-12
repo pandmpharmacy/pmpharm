@@ -33,7 +33,7 @@ function PrayerTimes() {
       const current_day = currentDate.getDay();
       console.log(current_day);
       const response = await fetch(
-        `https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=29.571327257078686&longitude=-98.58932947425924&method=2`
+        `https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=29.57942825605261&longitude=-98.63939827435681&method=2`
       );
       const data = await response.json();
       const todayData = data.data[0].timings;
