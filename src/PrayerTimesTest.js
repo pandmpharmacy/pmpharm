@@ -11,10 +11,14 @@ function PrayerTimes() {
     maghrib: { time: "-", iqama: "-" },
     isha: { time: "-", iqama: "-" },
   });
+ /*
   const [hijriMonth, setHijriMonth] = useState("");
   const [hijriYear, setHijriYear] = useState("");
   const [hijriDay, setHijriDay] = useState("");
+ */
+
   const [isRamadan, setIsRamadan] = useState(false);
+  
   useEffect(() => {
     fetchPrayerData();
     const interval = setInterval(() => {
@@ -38,10 +42,12 @@ function PrayerTimes() {
       const data = await response.json();
       const todayData = data.data[0].timings;
       const hijriNumber = data.data[0].date.hijri.month.number;
-
-      setHijriMonth(data.data[0].date.hijri.month.en);
-      setHijriYear(data.data[0].date.hijri.year);
-      setHijriDay(data.data[0].date.hijri.day);
+/*
+      const hijriDate = data.data[0].date.hijri;
+      setHijriMonth(hijriDate.month.en);
+      setHijriYear(hijriDate.year);
+      setHijriDay(hijriDate.day);
+*/
       const iqma_response = await fetch(
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vSeZ26h2oufYXq0i04ioOoH7aDkOHl0pvQ9E8mbIzxpVsElIoeUq0FJhwRgHkaiRlPn6IEcoM-0vty9/pub?output=csv"
       );
@@ -63,7 +69,7 @@ function PrayerTimes() {
       } else {
         setIsRamadan(false);
       }
-      
+
       // Extracting prayer times from the API response
       function convertTo12HourFormat(time24, offsetMinutes = 0) {
         const [hour, minute] = time24.split(":");
@@ -156,16 +162,17 @@ function PrayerTimes() {
 
   // Check if the current day is Friday
   // const isFriday = moment.tz('America/Chicago').isoWeekday() === 5;
+  //<h3 id="date_hijra">{hijriMonth} {hijriDay}, {hijriYear}</h3>
   // Data Display
+
   return (
     <div id="prayerTimes">
       <div>
         <h2 id="dateElement">{formattedDate}</h2>
-        <h3 id="date_hira">
-  {hijriMonth} {hijriDay}, {hijriYear}
-</h3>
+        
         <h3 id="currentTimeElement">Local Time: {currentTime}</h3>
       </div>
+     
       <div className="prayer-info">
         {prayerTimes.map((prayer) => (
           <div key={prayer}>
