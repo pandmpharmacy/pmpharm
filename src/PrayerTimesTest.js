@@ -31,17 +31,19 @@ function PrayerTimes() {
 
   const fetchPrayerData = async () => {
     try {
-      const currentDate = new Date();
-      const year = currentDate.getFullYear();
-      const month = currentDate.getMonth() + 1;
-      const current_day = currentDate.getDay();
-      console.log(current_day);
-      const response = await fetch(
-        `https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=29.57942825605261&longitude=-98.63939827435681&method=2`
-      );
-      const data = await response.json();
-      const todayData = data.data[0].timings;
-      const hijriNumber = data.data[0].date.hijri.month.number;
+        const currentDate = new Date();
+        const formattedDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
+
+        const address = encodeURIComponent('5281 Casa Bella St, San Antonio, Texas, United States');
+        const method = 2;
+
+        const response = await fetch(
+            `https://api.aladhan.com/v1/timingsByAddress/${formattedDate}?address=${address}&method=${method}`
+        );
+
+        const data = await response.json();
+        const todayData = data.data.timings;
+        const hijriNumber = data.data.date.hijri.month.number;
 /*
       const hijriDate = data.data[0].date.hijri;
       setHijriMonth(hijriDate.month.en);
@@ -90,7 +92,7 @@ function PrayerTimes() {
       // const maghrib_idx = rows[1].split(",")[maghribIndex];
       const date_end = rows[1].split(",")[date_endIndex];
       let fajr_igma_time;
-      if (date_end >= current_day) {
+      if (date_end >= currentDate) {
         fajr_igma_time = rows[1].split(",")[fajrIndex];
       } else {
         fajr_igma_time = rows[2].split(",")[fajrIndex];
