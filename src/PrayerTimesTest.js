@@ -11,14 +11,14 @@ function PrayerTimes() {
     maghrib: { time: "-", iqama: "-" },
     isha: { time: "-", iqama: "-" },
   });
- /*
+  /*
   const [hijriMonth, setHijriMonth] = useState("");
   const [hijriYear, setHijriYear] = useState("");
   const [hijriDay, setHijriDay] = useState("");
  */
 
   const [isRamadan, setIsRamadan] = useState(false);
-  
+
   useEffect(() => {
     fetchPrayerData();
     const interval = setInterval(() => {
@@ -31,20 +31,24 @@ function PrayerTimes() {
 
   const fetchPrayerData = async () => {
     try {
-        const currentDate = new Date();
-        const formattedDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
+      const currentDate = new Date();
+      const formattedDate = `${currentDate.getDate()}-${
+        currentDate.getMonth() + 1
+      }-${currentDate.getFullYear()}`;
 
-        const address = encodeURIComponent('5281 Casa Bella St, San Antonio, Texas, United States');
-        const method = 2;
+      const address = encodeURIComponent(
+        "5281 Casa Bella St, San Antonio, Texas, United States"
+      );
+      const method = 2;
 
-        const response = await fetch(
-            `https://api.aladhan.com/v1/timingsByAddress/${formattedDate}?address=${address}&method=${method}`
-        );
+      const response = await fetch(
+        `https://api.aladhan.com/v1/timingsByAddress/${formattedDate}?address=${address}&method=${method}`
+      );
 
-        const data = await response.json();
-        const todayData = data.data.timings;
-        const hijriNumber = data.data.date.hijri.month.number;
-/*
+      const data = await response.json();
+      const todayData = data.data.timings;
+      const hijriNumber = data.data.date.hijri.month.number;
+      /*
       const hijriDate = data.data[0].date.hijri;
       setHijriMonth(hijriDate.month.en);
       setHijriYear(hijriDate.year);
@@ -54,7 +58,7 @@ function PrayerTimes() {
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vSeZ26h2oufYXq0i04ioOoH7aDkOHl0pvQ9E8mbIzxpVsElIoeUq0FJhwRgHkaiRlPn6IEcoM-0vty9/pub?output=csv"
       );
       const Iqma_data = await iqma_response.text();
-    const rows = Iqma_data.split("\n");
+      const rows = Iqma_data.split("\n");
       const headerRow = rows[0].split(",");
 
       // const date_startIndex = headerRow.indexOf("Date Start");
@@ -62,7 +66,7 @@ function PrayerTimes() {
       const fajrIndex = headerRow.indexOf("Fajr");
       const dhuhrIndex = headerRow.indexOf("Dhur");
       const asrIndex = headerRow.indexOf("Asr");
-      // const maghribIndex = headerRow.indexOf("Maghrib");
+      const maghribIndex = headerRow.indexOf("Maghrib");
       const ishaIndex = headerRow.findIndex((header) =>
         header.includes("Isha")
       );
@@ -92,13 +96,18 @@ function PrayerTimes() {
       // const maghrib_idx = rows[1].split(",")[maghribIndex];
       const date_end = rows[1].split(",")[date_endIndex];
       let fajr_igma_time;
-      if (date_end >= currentDate) {
+      let newCurrentTIme = currentDate.getDate().toString().padStart(2, "0");
+      let magrib_time = rows[1].split(",")[maghribIndex];
+      let int_magrib = parseInt(magrib_time)
+      if (date_end >= newCurrentTIme) {
         fajr_igma_time = rows[1].split(",")[fajrIndex];
       } else {
         fajr_igma_time = rows[2].split(",")[fajrIndex];
       }
-      const Maghrib_iqma = convertTo12HourFormat(todayData.Maghrib, 5);
-      console.log(Maghrib_iqma, "Fajr_iqma");
+      const Maghrib_iqma = convertTo12HourFormat(
+        todayData.Maghrib,
+        int_magrib
+      );
       setPrayerData({
         date: todayData.readable,
         fajr: {
@@ -171,10 +180,10 @@ function PrayerTimes() {
     <div id="prayerTimes">
       <div>
         <h2 id="dateElement">{formattedDate}</h2>
-        
+
         <h3 id="currentTimeElement">Local Time: {currentTime}</h3>
       </div>
-     
+
       <div className="prayer-info">
         {prayerTimes.map((prayer) => (
           <div key={prayer}>
