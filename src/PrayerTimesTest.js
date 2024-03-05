@@ -15,7 +15,10 @@ function PrayerTimes() {
   const [hijriMonth, setHijriMonth] = useState("");
   const [hijriYear, setHijriYear] = useState("");
   const [hijriDay, setHijriDay] = useState("");
+
  */
+  const [PrayerMasterData, setPrayerMasterData] = useState([]);
+  const [prayerIftar, setprayerIftar] = useState();
 
   const [isRamadan, setIsRamadan] = useState(false);
 
@@ -27,7 +30,7 @@ function PrayerTimes() {
       setCurrentTime(formattedTime);
     }, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, );
 
   const fetchPrayerData = async () => {
     try {
@@ -47,13 +50,9 @@ function PrayerTimes() {
 
       const data = await response.json();
       const todayData = data.data.timings;
+      setPrayerMasterData(todayData);
       const hijriNumber = data.data.date.hijri.month.number;
-      /*
-      const hijriDate = data.data[0].date.hijri;
-      setHijriMonth(hijriDate.month.en);
-      setHijriYear(hijriDate.year);
-      setHijriDay(hijriDate.day);
-*/
+
       const iqma_response = await fetch(
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vSeZ26h2oufYXq0i04ioOoH7aDkOHl0pvQ9E8mbIzxpVsElIoeUq0FJhwRgHkaiRlPn6IEcoM-0vty9/pub?output=csv"
       );
@@ -98,16 +97,16 @@ function PrayerTimes() {
       let fajr_igma_time;
       let newCurrentTIme = currentDate.getDate().toString().padStart(2, "0");
       let magrib_time = rows[1].split(",")[maghribIndex];
-      let int_magrib = parseInt(magrib_time)
+      let int_magrib = parseInt(magrib_time);
       if (date_end >= newCurrentTIme) {
         fajr_igma_time = rows[1].split(",")[fajrIndex];
       } else {
         fajr_igma_time = rows[2].split(",")[fajrIndex];
       }
-      const Maghrib_iqma = convertTo12HourFormat(
-        todayData.Maghrib,
-        int_magrib
-      );
+      const Maghrib_iqma = convertTo12HourFormat(todayData.Maghrib, int_magrib);
+      const rawIftar = convertTo12HourFormat(todayData.Maghrib);
+      setprayerIftar(rawIftar);
+      console.log(prayerIftar, "IFTAR");
       setPrayerData({
         date: todayData.readable,
         fajr: {
@@ -175,48 +174,52 @@ function PrayerTimes() {
   // const isFriday = moment.tz('America/Chicago').isoWeekday() === 5;
   //<h3 id="date_hijra">{hijriMonth} {hijriDay}, {hijriYear}</h3>
   // Data Display
-
   return (
     <div id="prayerTimes">
       <div>
         <h2 id="dateElement">{formattedDate}</h2>
 
         <h3 id="currentTimeElement">Local Time: {currentTime}</h3>
-      </div>
+        {isRamadan ? (
+          <>
+            <h2 id="title">Ramadan Times</h2>
+            <div className="ramadan_wrapper" id="pr;ayerTimes">
+              <div className="ramadanItems">
+                <h3>Imsak</h3>
+                <p>
+                  {PrayerMasterData.Imsak ? PrayerMasterData.Imsak : "-"}{" "}
+                  AM
+                </p>
+              </div>
 
-      <div className="prayer-info">
-        {prayerTimes.map((prayer) => (
-          <div key={prayer}>
-            <h3>{prayer.charAt(0).toUpperCase() + prayer.slice(1)}</h3>
-            <p>Time: {prayerData[prayer].time}</p>
-            <p>Iqama: {prayerData[prayer].iqama}</p>
+              <div className="ramadanItems">
+                <h3>Iftar</h3>
+                <p>{prayerIftar ? prayerIftar : "-"}</p>
+              </div>
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
+      <div>
+        {isRamadan ?  <h2 id="title">Prayer Times</h2>:<></> }
+       
+        <div className="prayer-info">
+          {prayerTimes.map((prayer) => (
+            <div key={prayer}>
+              <h3>{prayer.charAt(0).toUpperCase() + prayer.slice(1)}</h3>
+              <p>Time: {prayerData[prayer].time}</p>
+              <p>Iqama: {prayerData[prayer].iqama}</p>
+            </div>
+          ))}
+          <div className="prayer-item highlighted-yellow">
+            <h2>Jummah</h2>
+            <p>1st Jummah: 1:00 PM</p>
+            <p>2nd Jummah: 2:00 PM</p>
           </div>
-        ))}
-        <div className="prayer-item highlighted-yellow">
-          <h2>Jummah</h2>
-          <p>1st Jummah: 1:00 PM</p>
-          <p>2nd Jummah: 2:00 PM</p>
         </div>
       </div>
-      {isRamadan ? (
-        <div id="prayerTimes">
-          <h2>Ramadan Times</h2>
-
-          <div>
-            <div className="prayer-item">
-              <h3>Imsak</h3>
-              <p>Time: {prayerData.imsak ? prayerData.imsak : "-"}</p>
-            </div>
-
-            <div className="prayer-item">
-              <h3>Iftar</h3>
-              <p>Time: {prayerData.iftar ? prayerData.iftar : "-"}</p>
-            </div>
-          </div>
-        </div>
-      ) : (
-        <></>
-      )}
 
       {/* Display Imsak and Iftar times only during Ramadan */}
 
